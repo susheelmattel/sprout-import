@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sproutling.common">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <!--<activity-->
+        <!--android:name="com.sproutling.common.ui.view.AccountSetupView"-->
+        <!--android:configChanges="orientation|screenSize"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+        <!--<activity-->
+        <!--android:name="com.sproutling.common.ui.view.BaseForgotPasswordView"-->
+        <!--android:configChanges="orientation|screenSize"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--/>-->
+        <!--<activity-->
+        <!--android:name=".ui.view.ProfilePhotoView"-->
+        <!--android:configChanges="orientation|screenSize"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--/>-->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sproutling.common.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <service
+            android:name="com.fisherprice.api.ble.FPBLECentralService"
+            android:enabled="true"
+            android:stopWithTask="true"
+            />
+    </application>
+
+</manifest>

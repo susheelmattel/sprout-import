@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/custom_toast__layout_padding">
+
+    <TextView android:id="@+id/text"
+        android:padding="@dimen/custom_toast__text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_none"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+</LinearLayout>

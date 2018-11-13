@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/settings_caregivers_detail_title"
+        style="@style/SubtextFour.8"/>
+
+    <RelativeLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:drawableLeft="@drawable/ic_name_grey"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                style="@style/SubtextOne.6"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:drawableLeft="@drawable/ic_name_grey"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                style="@style/SubtextOne.6"/>
+        </LinearLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_layout"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_phone_grey"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            style="@style/SubtextOne.6"/>
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/settings_caregivers_detail_remove"
+        style="@style/SubtextSix.7"/>
+
+</RelativeLayout>

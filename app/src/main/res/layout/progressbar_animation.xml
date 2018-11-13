@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/progressbar_bg"
+    android:padding="10dp"
+    android:id="@+id/progressbar_animation_layout">
+
+    <ImageView
+        android:id="@+id/face_mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_mouth" />
+
+    <ImageView
+        android:id="@+id/face_mouth_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_mouth_cover" />
+
+    <ImageView
+        android:id="@+id/face_eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_eyes" />
+
+    <ImageView
+        android:id="@+id/face_eyes_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_eyes_cover" />
+
+    <ImageView
+        android:id="@+id/face_outline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_outline" />
+
+    <ImageView
+        android:id="@+id/face_outline_cover_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_outline_cover_bottom" />
+
+    <ImageView
+        android:id="@+id/face_outline_cover_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/face_outline_cover_top" />
+
+    <ImageView
+        android:id="@+id/bulb_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_bottom" />
+
+    <ImageView
+        android:id="@+id/bulb_bottom_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_bottom_cover" />
+
+    <ImageView
+        android:id="@+id/bulb_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_line" />
+
+    <ImageView
+        android:id="@+id/bulb_line_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_line_cover" />
+
+    <ImageView
+        android:id="@+id/bulb_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_middle" />
+
+    <ImageView
+        android:id="@+id/bulb_middle_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_middle_cover" />
+
+    <ImageView
+        android:id="@+id/bulb_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_head" />
+
+    <ImageView
+        android:id="@+id/bulb_head_cover_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_head_cover_right" />
+
+    <ImageView
+        android:id="@+id/bulb_head_cover_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bulb_head_cover_left" />
+
+    <ImageView
+        android:id="@+id/asterisk_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_four" />
+
+    <ImageView
+        android:id="@+id/asterisk_four_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_four_cover" />
+
+    <ImageView
+        android:id="@+id/asterisk_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_three" />
+
+    <ImageView
+        android:id="@+id/asterisk_three_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_three_cover" />
+
+    <ImageView
+        android:id="@+id/asterisk_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_two" />
+
+    <ImageView
+        android:id="@+id/asterisk_two_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_two_cover" />
+
+    <ImageView
+        android:id="@+id/asterisk_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_one" />
+
+    <ImageView
+        android:id="@+id/asterisk_one_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/asterisk_one_cover" />
+</RelativeLayout>

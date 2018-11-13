@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/success_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_sproutling"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin8"
+        >
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            style="@style/SubtextThree.10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/check"
+            android:text="@string/setup_connect_device_success"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_sproutling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_setting_up_2"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_connected"
+        style="@style/SubtextThree.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_sproutling"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin6"
+        android:text="@string/connected"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_wifi_success"
+        style="@style/SubtextFour.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_connected"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin2"
+        android:text="@string/wifi_setup_successfully"/>
+
+</RelativeLayout>

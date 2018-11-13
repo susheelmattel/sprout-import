@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/add_child_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera_dots_add_child"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/add_photo"
+            style="@style/SubtextFive.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/setup_add_child_add_photo"/>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/gender_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/add_photo"-->
+        <!--android:layout_marginEnd="@dimen/gender_margin_right"-->
+        <!--android:layout_marginStart="@dimen/gender_margin_left"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.sproutling.ui.widget.ShTextView-->
+        <!--android:id="@+id/select_gender"-->
+        <!--style="@style/SubtextSeven.6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="@string/setup_add_child_select_gender"/>-->
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/gender_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginStart="@dimen/gender_group_margin_left"-->
+        <!--android:layout_toEndOf="@id/select_gender"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/girl"-->
+        <!--style="@style/SubtextSeven.6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/setup_add_child_girl"/>-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/boy"-->
+        <!--style="@style/SubtextSeven.6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/gender_boy_margin_left"-->
+        <!--android:text="@string/setup_add_child_boy"/>-->
+        <!--</RadioGroup>-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_photo"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/margin2">
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/nameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorMsg="@string/setup_add_child_baby_name_error">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_add_child_baby_name_hint"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            <RelativeLayout
+                android:id="@+id/gender_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameWrapper"
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/select_gender"
+                    style="@style/SubtextSeven.6"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_add_child_select_gender"/>
+
+                <RadioGroup
+                    android:id="@+id/gender_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_gender"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/girl"
+                        style="@style/SubtextSeven.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_add_child_girl"/>
+
+                    <RadioButton
+                        android:id="@+id/boy"
+                        style="@style/SubtextSeven.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:text="@string/setup_add_child_boy"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/birthdayWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_layout"
+                android:layout_marginTop="@dimen/margin"
+                app:errorMsg="@string/setup_add_child_birthday_error">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_add_child_birthday_hint"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/due_dateWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthdayWrapper"
+                android:layout_marginTop="@dimen/margin">
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/due_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_add_child_due_date_hint"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/why"
+            style="@style/SubtextFive.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin2"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_light_bulb_small"
+            android:gravity="center_vertical"
+            android:text="@string/setup_add_child_why"/>
+    </RelativeLayout>
+</ScrollView>

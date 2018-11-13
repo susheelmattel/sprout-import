@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="@dimen/wifi_setup_ssid_padding"
+                android:paddingRight="@dimen/wifi_setup_ssid_padding">
+
+    <ImageView
+        android:id="@+id/img_exclamation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_wep_alert"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/ssid"
+        style="@style/SubtextOne.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/check"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/accept"/>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ssid"
+        android:background="@color/steelGrey"/>
+
+</RelativeLayout>

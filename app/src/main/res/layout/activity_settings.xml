@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/navigation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings_title"
+            style="@style/HeaderTwo.9"/>
+
+        <ImageView
+            android:id="@+id/navigation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingEnd="27dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_android_back_green" />
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/navigation_action"
+            style="@style/SubtextFive.9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="?selectableItemBackground"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/action_button"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/navigation_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/navigation_layout"
+        android:background="@color/greyish" />
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_layout"
+        android:background="@color/red"
+        android:padding="2dp"
+        android:gravity="center"
+        android:text="@string/settings_warning"
+        style="@style/SubtextTwo.2"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/settings_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_divider">
+
+    </FrameLayout>
+
+</RelativeLayout>

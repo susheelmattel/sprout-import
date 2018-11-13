@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey05">
+
+    <!--<com.sproutling.ui.view.WifiRefreshFrameLayout-->
+    <!--android:id="@+id/refresh_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--cube_ptr:ptr_duration_to_close="200"-->
+    <!--cube_ptr:ptr_duration_to_close_header="1000"-->
+    <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+    <!--cube_ptr:ptr_pull_to_fresh="false"-->
+    <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+    <!--cube_ptr:ptr_resistance="1.7">-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/down_arrow"-->
+        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@mipmap/down_arrow" />-->
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/helper_text"
+            style="@style/HeaderTwo.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/view_between_padding"
+            android:layout_marginLeft="@dimen/wifi_setup_ssid_padding"
+            android:paddingTop="@dimen/view_between_padding"
+            android:text="@string/setup_wifi_message"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/helper_text"
+            android:background="@color/white"/>
+
+
+    <!--</com.sproutling.ui.view.WifiRefreshFrameLayout>-->
+
+</RelativeLayout>

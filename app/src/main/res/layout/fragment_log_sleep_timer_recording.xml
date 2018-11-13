@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/et_fell_asleep_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:focusable="false"
+            app:errorEnabled="true">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/et_fell_asleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/fell_asleep"
+                android:inputType="none"
+                android:textIsSelectable="true"/>
+
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/et_woke_up_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_fell_asleep_wrapper"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:focusable="false"
+            app:errorEnabled="true">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/et_woke_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/woke_up"
+                android:inputType="none"
+                android:textIsSelectable="true"/>
+
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tvStartTimer"
+            style="@style/SubtextFive.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_woke_up_wrapper"
+            android:layout_centerHorizontal="true"
+
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/margin"
+            android:text="@string/set_sleep_dlg_live"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_total_time_slept"
+            style="@style/SubtextFour.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/total_time_slept"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_timer"
+            style="@style/SubtextThree.11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_time_slept"
+            android:layout_centerHorizontal="true"
+            android:text="@string/total_time_slept"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_stop_timer"
+            style="@style/RoundButtonStyle.Red"
+            android:layout_width="@dimen/round_button_radius"
+            android:layout_height="@dimen/round_button_radius"
+            android:layout_centerHorizontal="true"
+            android:text="@string/stop"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="btnHandler" type="com.sproutling.ui.fragment.status.CoachmarkFragment.BtnHandler" />
+        <variable name="batteryValue" type="int" />
+        <variable name="childName" type="String" />
+    </data>
+
+
+    <FrameLayout
+        android:id="@+id/Coachmarks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <LinearLayout android:id="@+id/layoutRootStatusView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+
+            android:background="@drawable/shape_status_bg"
+            android:paddingLeft="@dimen/contentPaddingHorizontal"
+            android:paddingRight="@dimen/contentPaddingHorizontal"
+            android:visibility="visible">
+
+            <!-- Battery, Child name, Control icon-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin7">
+
+                <com.sproutling.ui.widget.BatteryDisplay
+                    android:id="@+id/batteryDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin2"
+                    app:battery_display_value="@{batteryValue}" />
+
+                <com.sproutling.ui.widget.ChildNameButton
+                    android:id="@+id/childNameButton"
+                    style="@style/HeaderTwo.11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:child_name="@{childName}" />
+
+                <ImageView android:id="@+id/img_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/ic_control_icon"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_settings_darkgrey" />
+            </FrameLayout>
+
+            <com.sproutling.ui.widget.StatusView
+                android:id="@+id/rootStatusView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusView_height"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <com.sproutling.ui.view.StatusScreen.StatusScreenCoachmarksBackground
+            android:id="@+id/CoachmarksBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout android:id="@+id/layoutWelcomePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/welcome_title"
+                style="@style/HeaderTwo.11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tooltips_welcome_title"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/welcome_description"
+                style="@style/SubtextTwo.10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tooltips_welcome_descrip"
+                android:gravity="center"
+
+                android:textColor="@color/white"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/btnLetsGo"
+                android:text="@string/tooltips_welcome_btn"
+                android:gravity="center"
+                style="@style/SubtextFive.6"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:minWidth="164dp"
+                android:layout_height="38dp"
+                android:background="@drawable/shape_welcome_btn"
+                android:onClick="@{() -> btnHandler.onLetsGoClicked()}"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/btnNoThanks"
+                style="@style/SubtextTwo.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tooltips_welcome_no_thanks"
+                android:gravity="center"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/white"
+                android:onClick="@{() -> btnHandler.onNoThanksClicked()}"/>
+        </LinearLayout>
+
+
+        <FrameLayout android:id="@+id/layoutBigCirclePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/big_circle_arrow_marginTop"
+                android:rotation="45"
+                android:src="@color/white"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/big_circle_marginTop"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtTitle_BigCirclePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_big_circle_title"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    style="@style/HeaderTwo.6"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtDescrip_BigCirclePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_big_circle_descrip"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextOne.5"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtNext_BigCirclePage"
+                    style="@style/SubtextFive.6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="12dp"
+                    android:onClick="@{() -> btnHandler.onBigCircleNextClicked()}"
+                    android:text="@string/next" />
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/layoutSmallCirclePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="113dp"
+                android:layout_marginLeft="20dp"
+                android:rotation="45"
+                android:src="@color/white"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtTitle_SmallCirclePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_small_circle_title"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    style="@style/HeaderTwo.6"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtDescrip_SmallCirclePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_small_circle_descrip"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextOne.5"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtNext_SmallCirclePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextFive.6"
+                    android:onClick="@{() -> btnHandler.onSmallCircleNextClicked()}"/>
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/layoutRetanglePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="132dp"
+                android:rotation="45"
+                android:src="@color/white"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="140dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtTitle_RetanglePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_timeline_title"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    style="@style/HeaderTwo.6"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtDescrip_RetanglePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_timeline_descrip"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextOne.5"
+                    />
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtNext_RetanglePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/Got_It"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextFive.6"
+                    android:onClick="@{() -> btnHandler.onRectangleNextClicked()}"/>
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/layoutProgressPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:paddingLeft="@dimen/contentPaddingHorizontal"
+                android:paddingRight="@dimen/contentPaddingHorizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_settings_darkgrey" />
+                </FrameLayout>
+
+                <com.sproutling.ui.widget.StatusView
+                    android:id="@+id/pStatusView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/statusView_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/sleep_prediction_arrow_marginTop"
+                android:layout_marginBottom="30dp"
+                android:rotation="45"
+                android:src="@color/white"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/sleep_prediction_marginTop"
+                android:layout_marginBottom="30dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtTitle_ProgressPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_sleep_prediction_title"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    style="@style/HeaderTwo.6"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtDescrip_ProgressPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooltips_sleep_prediction_descrip"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextOne.5"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/txtNext_ProgressPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/Got_It"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="12dp"
+                    style="@style/SubtextFive.6"
+                    android:onClick="@{() -> btnHandler.onProgressNextClicked()}"/>
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

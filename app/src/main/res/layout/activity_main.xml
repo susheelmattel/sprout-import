@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_screen_bg"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/img_family"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_welcome_bg_1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha=".3"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="83dp"
+        android:layout_height="97dp"
+        android:layout_above="@+id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin2"
+        android:src="@drawable/ic_sproutling_logo_white"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/message"
+        style="@style/SubtextTwo.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/taking_the_guesswork_out_of_sleep"/>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_up_layout"
+        android:layout_marginLeft="@dimen/margin2"
+        android:layout_marginRight="@dimen/margin2"
+        android:background="@drawable/button_bg_filled"
+        android:stateListAnimator="@null"
+        android:text="@string/main_button_sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/sign_up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin3"
+        android:layout_marginTop="@dimen/margin3"
+        >
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_account_ques"
+            style="@style/SubtextTwo.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:text="@string/have_an_account"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_sign_in"
+            style="@style/HeaderOne.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_account_ques"
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/margin"
+            android:text="@string/login_sign_in"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:scaleType="center"
+        android:src="@mipmap/page1"
+        android:visibility="visible"/>
+</RelativeLayout>

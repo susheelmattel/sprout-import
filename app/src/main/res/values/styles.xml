@@ -1,0 +1,755 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Helpshift.Theme.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/dolphin</item>
+        <item name="android:textColorSecondary">@color/text_secondary_color</item>
+        <item name="hs__chatBubbleUserBackgroundColor">@color/chat_bubble_background</item>
+        <item name="hs__chatBubbleAdminBackgroundColor">@color/admin_chat_bubble_background</item>
+        <item name="hs__searchHighlightColor">@color/chat_bubble_background</item>
+        <!--<item name="actionMenuTextColor">@color/white</item>-->
+        <!--<item name="android:actionMenuTextColor">@color/white</item>-->
+        <!--<item name="android:actionMenuTextAppearance">@style/ActionBarMenuItem</item>-->
+        <!--<item name="actionButtonStyle">@style/ActionBarMenuItem</item>-->
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/AppTheme">
+        <item name="actionMenuTextColor">@color/white</item>
+
+    </style>
+
+    <!--<style name="AppTheme.Widget.ActionButton" parent="android:TextAppearance.l">-->
+    <!--<item name="textAllCaps">false</item>-->
+    <!--</style>-->
+
+    <!--<style name="ActionBarMenuItem" parent="@style/AppTheme">-->
+    <!--<item name="actionMenuTextColor">@color/white</item>-->
+    <!--<item name="android:textAllCaps">false</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AddMeasurementTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Helpshift.Theme.Base" parent="AppTheme">
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="PopupWindowAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="Theme.Dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:progressBarStyle">@android:style/Widget.Holo.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">
+            @android:style/Widget.Holo.ProgressBar.Horizontal
+        </item>
+        <item name="android:progressBarStyleSmall">@android:style/Widget.Holo.ProgressBar.Small
+        </item>
+        <item name="android:progressBarStyleSmallTitle">
+            @android:style/Widget.Holo.ProgressBar.Small.Title
+        </item>
+        <item name="android:progressBarStyleLarge">@android:style/Widget.Holo.ProgressBar.Large
+        </item>
+    </style>
+
+    <style name="DialogFragmentPopup" parent="Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="WhyDatePopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="InternetOfflinePopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="SoftwareUpdatePopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="FutureBirthdayPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="AcceptInvitationPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="CodeResentPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="RemoveCaregiverPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="LogOutPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="EraseAccountPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="RemoveDevicePopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="DeleteSummeryPopup" parent="DialogFragmentPopup">
+    </style>
+
+    <style name="PuttingOnPopup" parent="DialogFragmentPopup"/>
+
+    <style name="HowToChargePopup" parent="DialogFragmentPopup"/>
+
+    <style name="DialogThemeActivity" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/peacock</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowFixedHeightMajor">100%</item>
+        <item name="windowFixedHeightMinor">100%</item>
+        <item name="windowFixedWidthMajor">100%</item>
+        <item name="windowFixedWidthMinor">100%</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@color/color_picker_background</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+    </style>
+
+    <style name="ErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@drawable/text_input_layout_error_selector</item>
+    </style>
+
+    <style name="NonErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+
+    </style>
+
+    <style name="ErrorAppearance.Msg" parent="ErrorAppearance">
+        <item name="android:textSize">@dimen/err_info_msg_text_size</item>
+
+    </style>
+
+    <style name="InfoAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/err_info_msg_text_size</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/custom_sh_button</item>
+    </style>
+
+    <style name="RoundButtonStyle">
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="RoundButtonStyle.Green">
+        <item name="android:background">@drawable/sh_round_button</item>
+    </style>
+
+    <style name="RoundButtonStyle.Red">
+        <item name="android:background">@drawable/sh_red_round_btn</item>
+    </style>
+
+    <style name="ButtonRoundedEdge">
+        <item name="android:background">@drawable/button_bg_rounded_edges_white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonRoundedEdge.Negative">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="ButtonRoundedEdge.Positive">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="WifiSettingTitle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/brownishGrey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="WifiSettingSubText">
+        <item name="shFontStyle">paris</item>
+        <item name="android:textColor">@color/greyishBrown</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="shFontStyle">newyork</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <style name="TimelineTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/tealish2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="SeekBarColor"
+           parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/dolphin</item>
+    </style>
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="FeedbackDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:colorBackground">@color/transparent</item>
+    </style>
+
+    <style name="HubControlBottomDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:colorBackground">@color/transparent</item>
+    </style>
+
+    <style name="ParentTextStyle">
+        <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+
+    <style name="SubtextOne" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/dolphin</item>
+    </style>
+
+    <style name="SubtextOne.1" parent="SubtextOne">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextOne.2" parent="SubtextOne">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextOne.3" parent="SubtextOne">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextOne.3_5" parent="SubtextOne">
+        <item name="android:textSize">11.5sp</item>
+    </style>
+
+    <style name="SubtextOne.4" parent="SubtextOne">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextOne.5" parent="SubtextOne">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextOne.6" parent="SubtextOne">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextOne.7" parent="SubtextOne">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextOne.8" parent="SubtextOne">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextOne.9" parent="SubtextOne">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextOne.10" parent="SubtextOne">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextOne.32" parent="SubtextOne">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+
+    <style name="SubtextTwo" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/snow</item>
+    </style>
+
+    <style name="SubtextTwo.1" parent="SubtextTwo">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextTwo.2" parent="SubtextTwo">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextTwo.3" parent="SubtextTwo">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextTwo.4" parent="SubtextTwo">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextTwo.5" parent="SubtextTwo">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextTwo.6" parent="SubtextTwo">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextTwo.7" parent="SubtextTwo">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextTwo.8" parent="SubtextTwo">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextTwo.9" parent="SubtextTwo">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextTwo.10" parent="SubtextTwo">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextThree" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/dark_dolphin</item>
+    </style>
+
+    <style name="SubtextThree.1" parent="SubtextThree">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextThree.2" parent="SubtextThree">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextThree.3" parent="SubtextThree">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextThree.4" parent="SubtextThree">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextThree.5" parent="SubtextThree">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextThree.6" parent="SubtextThree">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextThree.7" parent="SubtextThree">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextThree.8" parent="SubtextThree">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextThree.9" parent="SubtextThree">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextThree.10" parent="SubtextThree">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextThree.11" parent="SubtextThree">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="SubtextFour" parent="ParentTextStyle">
+        <item name="shFontStyle">paris</item>
+        <item name="android:textColor">@color/dark_dolphin</item>
+    </style>
+
+    <style name="SubtextFour.1" parent="SubtextFour">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextFour.2" parent="SubtextFour">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextFour.3" parent="SubtextFour">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextFour.3_5" parent="SubtextFour">
+        <item name="android:textSize">11.5sp</item>
+    </style>
+
+    <style name="SubtextFour.4" parent="SubtextFour">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextFour.5" parent="SubtextFour">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextFour.6" parent="SubtextFour">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextFour.7" parent="SubtextFour">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextFour.8" parent="SubtextFour">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextFour.9" parent="SubtextFour">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextFour.10" parent="SubtextFour">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextFive" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/peacock</item>
+    </style>
+
+    <style name="SubtextFive.1" parent="SubtextFive">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextFive.2" parent="SubtextFive">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextFive.3" parent="SubtextFive">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextFive.3_5" parent="SubtextFive">
+        <item name="android:textSize">11.5sp</item>
+    </style>
+
+    <style name="SubtextFive.4" parent="SubtextFive">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextFive.5" parent="SubtextFive">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextFive.6" parent="SubtextFive">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextFive.7" parent="SubtextFive">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextFive.8" parent="SubtextFive">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextFive.9" parent="SubtextFive">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextFive.10" parent="SubtextFive">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextSix" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/dark_poppy</item>
+    </style>
+
+    <style name="SubtextSix.1" parent="SubtextSix">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextSix.2" parent="SubtextSix">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextSix.3" parent="SubtextSix">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextSix.4" parent="SubtextSix">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextSix.5" parent="SubtextSix">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextSix.6" parent="SubtextSix">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextSix.7" parent="SubtextSix">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextSix.8" parent="SubtextSix">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextSix.9" parent="SubtextSix">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextSix.10" parent="SubtextSix">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextSeven" parent="ParentTextStyle">
+        <item name="shFontStyle">london</item>
+        <item name="android:textColor">@color/fog</item>
+    </style>
+
+    <style name="SubtextSeven.1" parent="SubtextSeven">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextSeven.2" parent="SubtextSeven">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextSeven.3" parent="SubtextSeven">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextSeven.4" parent="SubtextSeven">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextSeven.5" parent="SubtextSeven">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextSeven.6" parent="SubtextSeven">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextSeven.7" parent="SubtextSeven">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextSeven.8" parent="SubtextSeven">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextSeven.9" parent="SubtextSeven">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextSeven.10" parent="SubtextSeven">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubtextEight" parent="ParentTextStyle">
+        <item name="shFontStyle">paris</item>
+        <item name="android:textColor">@color/peacock</item>
+    </style>
+
+    <style name="SubtextEight.1" parent="SubtextEight">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="SubtextEight.2" parent="SubtextEight">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SubtextEight.3" parent="SubtextEight">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SubtextEight.4" parent="SubtextEight">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SubtextEight.5" parent="SubtextEight">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SubtextEight.6" parent="SubtextEight">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubtextEight.7" parent="SubtextEight">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtextEight.8" parent="SubtextEight">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SubtextEight.9" parent="SubtextEight">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SubtextEight.10" parent="SubtextEight">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderOne" parent="ParentTextStyle">
+        <item name="shFontStyle">newyork</item>
+        <item name="android:textColor">@color/snow</item>
+    </style>
+
+    <style name="HeaderOne.1" parent="HeaderOne">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="HeaderOne.2" parent="HeaderOne">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="HeaderOne.3" parent="HeaderOne">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="HeaderOne.4" parent="HeaderOne">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HeaderOne.5" parent="HeaderOne">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="HeaderOne.6" parent="HeaderOne">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HeaderOne.7" parent="HeaderOne">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="HeaderOne.8" parent="HeaderOne">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HeaderOne.9" parent="HeaderOne">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="HeaderOne.10" parent="HeaderOne">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderOne.11" parent="HeaderOne">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="HeaderTwo" parent="ParentTextStyle">
+        <item name="shFontStyle">newyork</item>
+        <item name="android:textColor">@color/dolphin</item>
+    </style>
+
+    <style name="HeaderTwo.1" parent="HeaderTwo">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="HeaderTwo.2" parent="HeaderTwo">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="HeaderTwo.3" parent="HeaderTwo">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="HeaderTwo.4" parent="HeaderTwo">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HeaderTwo.5" parent="HeaderTwo">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="HeaderTwo.6" parent="HeaderTwo">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HeaderTwo.7" parent="HeaderTwo">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="HeaderTwo.8" parent="HeaderTwo">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HeaderTwo.9" parent="HeaderTwo">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="HeaderTwo.10" parent="HeaderTwo">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderTwo.11" parent="HeaderTwo">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="HeaderTwo.12" parent="HeaderTwo">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="HeaderTwo.22" parent="HeaderTwo">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="HeaderTwo.20" parent="HeaderTwo">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="HeaderTwo.26" parent="HeaderTwo">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+
+</resources>

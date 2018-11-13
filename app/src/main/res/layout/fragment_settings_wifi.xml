@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wifi_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/wifi_top"/>
+
+    <ImageView
+        android:id="@+id/wifi_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/wifi_top"
+        android:src="@mipmap/wifi_middle"/>
+
+    <ImageView
+        android:id="@+id/wifi_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/wifi_top"
+        android:src="@mipmap/wifi_bottom"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifi_bottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/settings_wifi_message"
+        style="@style/HeaderTwo.6"/>
+
+    <ListView
+        android:id="@+id/wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white">
+
+    </ListView>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifi_list"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/settings_wifi_manual"
+        style="@style/SubtextFive.4"/>
+
+</RelativeLayout>

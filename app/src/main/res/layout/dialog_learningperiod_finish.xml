@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialogfragment_bg"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/ic_lp_finish"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        style="@style/SubtextThree.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="@string/learningperiod_finish_dlg_title"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_lp_description"
+        style="@style/SubtextOne.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/learningperiod_finish_dlg_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:orientation="horizontal"></LinearLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/btnGotIt"
+        style="@style/SubtextFive.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:padding="@dimen/margin2"
+        android:text="@string/got_it"/>
+</LinearLayout>

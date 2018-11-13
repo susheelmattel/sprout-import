@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sproutling.ui.widget.ShTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_hubcontrol_end"
+    android:gravity="center_vertical"
+    android:drawableStart="@drawable/shape_item_oval_blue"
+    android:drawablePadding="10dp"
+    style="@style/SubtextOne.6"/>

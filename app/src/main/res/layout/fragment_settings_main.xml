@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_grey_FAFAFA">
+
+        <RelativeLayout
+            android:id="@+id/device_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigation_layout">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/no_device"
+                style="@style/SubtextOne.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:text="@string/settings_no_device"/>
+
+            <RelativeLayout
+                android:id="@+id/device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/device_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin7"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@mipmap/sproutling_photo"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/device_image">
+
+                    <com.sproutling.ui.widget.ShTextView
+                        android:id="@+id/tv_device_profile"
+                        style="@style/SubtextOne.6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_settings_next"/>
+
+                    <com.sproutling.ui.widget.ShTextView
+                        android:id="@+id/device_name"
+                        style="@style/SubtextSeven.4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_device_profile"
+                        android:layout_marginTop="5dp"
+                        android:text="Alexi's Sproutling"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_right_arrow"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/add_device"
+            style="@style/SubtextFive.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_layout"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/settings_add_device"/>
+
+        <LinearLayout
+            android:id="@+id/setting_options_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_device"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_options_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/settings_version"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_server_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="test"/>
+
+    </RelativeLayout>
+</ScrollView>

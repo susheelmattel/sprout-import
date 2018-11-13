@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/linearlayout_nap">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/timeline_circle_size"
+            android:layout_height="@dimen/timeline_circle_size"
+            android:src="@drawable/timeline_circle"
+            android:id="@+id/point" />
+
+        <ImageView
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:src="#d3d3d3"
+            android:id="@+id/line"
+            android:layout_marginStart="3.5dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/timeline_list_item_bg">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--app:cardElevation="0dp"-->
+            <!--app:cardCornerRadius="5dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignBottom="@+id/frameLayout">-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_event_title">
+
+            <ImageView
+                android:id="@+id/title_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_zzz_header"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Nap"
+                android:layout_marginStart="48dp"
+                style="@style/HeaderTwo.4"
+                android:layout_gravity="center_vertical" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical|end"
+                style="@style/SubtextOne.2" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="1dp"
+            android:background="#d8d8d8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/frameLayout">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/txt_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/arrow"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_centerVertical="true"
+                style="@style/SubtextOne.3"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

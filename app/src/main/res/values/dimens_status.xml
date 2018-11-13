@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circle_sizeNormal">108dp</dimen>
+    <dimen name="circle_sizeSmallR">28dp</dimen>
+    <dimen name="faceBgSize">50dp</dimen>
+    <dimen name="statusView_height">240dp</dimen> <!--255-->
+    <dimen name="statusView_learning_height">345dp</dimen><!--320-->
+    <dimen name="wearableState_height">230dp</dimen>
+    <dimen name="flowerR">116dp</dimen>
+    <dimen name="statusProgressbar_width_small">6dp</dimen>
+    <dimen name="statusProgressbar_width">12dp</dimen>
+
+    <dimen name="face_headMarginVertical">13dp</dimen>
+    <dimen name="face_hairMarginLeft">58dp</dimen><!-- 48dp -->
+    <dimen name="face_awake_eyesMarginTop">48dp</dimen><!-- 41dp -->
+    <dimen name="face_awake_mouthMarginTop">13dp</dimen>
+    <dimen name="face_asleep_eyesMarginTop">52dp</dimen><!-- 44dp -->
+    <dimen name="face_asleep_mouthMarginTop">18dp</dimen><!-- 20dp -->
+    <dimen name="face_headAll_marginV">12dp</dimen>
+    <dimen name="face_headAll_marginH">36dp</dimen>
+    <dimen name="face_z1_marginLeft">130dp</dimen><!-- 120dp -->
+    <dimen name="face_z1_marginTop">20dp</dimen>
+    <dimen name="face_z2_marginLeft">145dp</dimen><!-- 140dp -->
+    <dimen name="face_z2_marginTop">0dp</dimen>
+    <dimen name="face_awake_mouthMarginLeft">38dp</dimen><!-- 28dp -->
+    <dimen name="face_awake_eyesMarginLeft">43dp</dimen><!-- 34dp -->
+    <dimen name="face_asleep_mouthMarginLeft">60dp</dimen><!-- 49dp -->
+    <dimen name="face_asleep_eyesMarginLeft">38dp</dimen><!-- 27dp -->
+    <dimen name="contentPaddingHorizontal">@dimen/margin2</dimen>
+
+    <dimen name="flowerItem_icon_size">32dp</dimen>
+
+    <dimen name="big_circle_spacing">25dp</dimen>
+    <dimen name="big_circle_text_spacing">10dp</dimen>
+    <dimen name="big_circle_text_left_spacing">5dp</dimen>
+    <dimen name="big_circle_12_spacing">4dp</dimen>
+    <dimen name="big_circle_error_spacing">12dp</dimen>
+    <dimen name="big_circle_6_12_y_error_spacing">6dp</dimen>
+
+    <dimen name="progress_text_left_spacing1">30dp</dimen>
+    <dimen name="progress_text_left_spacing2">50dp</dimen>
+    <dimen name="progress_text_down_spacing">30dp</dimen>
+
+    <dimen name="tip_card_padding_top">14.5dp</dimen>
+    <dimen name="tip_card_padding_bottom">14.5dp</dimen>
+    <dimen name="tip_card_padding_left">10dp</dimen>
+    <dimen name="tip_card_padding_right">10dp</dimen>
+    <dimen name="tip_card_margin_bottom">10dp</dimen>
+    <dimen name="tip_card_margin_left">10dp</dimen>
+    <dimen name="tip_card_margin_right">10dp</dimen>
+    <dimen name="tip_card_icon_width">78dp</dimen>
+    <dimen name="tip_card_icon_height">80dp</dimen>
+
+    <dimen name="img_stirring_icon_btn_marginLeft">-10dp</dimen>
+</resources>

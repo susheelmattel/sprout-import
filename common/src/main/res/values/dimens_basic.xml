@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DO NOT modify this file -->
+<resources>
+    <!-- -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin1">12dp</dimen>
+    <dimen name="margin2">16dp</dimen>
+    <dimen name="margin3">24dp</dimen>
+    <dimen name="margin4">32dp</dimen>
+    <dimen name="margin5">36dp</dimen>
+    <dimen name="margin6">40dp</dimen>
+    <dimen name="margin8">56dp</dimen>
+    <dimen name="margin9">64dp</dimen>
+    <dimen name="margin10">72dp</dimen>
+
+    <dimen name="dashboard_baby_name">19sp</dimen>
+    <dimen name="textview_padding1">20dp</dimen>
+    <dimen name="cardview_padding">15dp</dimen>
+    <dimen name="cardview_border_width">3dp</dimen>
+    <dimen name="lineSpaceDefault">5dp</dimen>
+
+</resources>

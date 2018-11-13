@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+    <include
+        android:id="@+id/helpLayout"
+        layout="@layout/status_feedback_help_layout"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpLayout"
+        android:background="@drawable/bg_top_rounded_white">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/title"
+                style="@style/HeaderTwo.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin1"
+                android:layout_toLeftOf="@+id/imgFeedbackInfo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/report_baby_current_status"/>
+
+            <ImageView
+                android:id="@+id/imgFeedbackInfo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin1"
+                android:src="@drawable/ic_help"
+                />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/imgFeedbackInfo"
+                android:background="@color/divider"/>
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/question"
+            style="@style/SubtextThree.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLayout"
+            android:layout_margin="@dimen/margin1"
+            android:text="@string/is_babyname_status"/>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:layout_marginBottom="@dimen/margin1"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin2">
+
+            <RelativeLayout
+                style="@style/ButtonRoundedEdge.Negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin2"
+                android:layout_marginRight="@dimen/margin2"
+                android:layout_weight="1">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/btnNo"
+                    style="@style/ButtonRoundedEdge.Negative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/margin"
+                    android:text="@string/no"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ButtonRoundedEdge.Positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin2"
+                android:layout_marginRight="@dimen/margin2"
+                android:layout_weight="1">
+
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/btnYes"
+                    style="@style/ButtonRoundedEdge.Positive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/margin"
+                    android:text="@string/yes"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

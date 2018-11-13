@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/btnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_status_btn"
+        android:paddingLeft="18.5dp"
+        android:paddingRight="18.5dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/chlidName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/HeaderTwo.11"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableRight ="@drawable/ic_sc_circle_caret" />
+    </LinearLayout>
+
+    <ImageView android:id="@+id/redDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/red_dot"
+        android:visibility="gone"/>
+
+</FrameLayout>

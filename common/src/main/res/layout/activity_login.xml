@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/back_toolbar"
+        layout="@layout/toolbar_layout"/>
+
+
+    <com.sproutling.common.ui.widget.CustomShInputTextLayout
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_toolbar"
+        android:layout_marginLeft="@dimen/margin2"
+        android:layout_marginRight="@dimen/margin2"
+        android:layout_marginTop="@dimen/margin3"
+        app:errorMsg="@string/username_error_invalid_try_again"
+        >
+
+        <com.sproutling.common.ui.widget.CustomShEditText
+            android:id="@+id/userID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_email_placeholder"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+    <com.sproutling.common.ui.widget.CustomShInputTextLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailWrapper"
+        android:layout_marginLeft="@dimen/margin2"
+        android:layout_marginRight="@dimen/margin2"
+        android:layout_marginTop="@dimen/margin3"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent">
+
+        <com.sproutling.common.ui.widget.CustomShEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password_placeholder"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/emailWrapper"
+        android:layout_alignRight="@id/emailWrapper"
+        android:layout_below="@id/passwordWrapper"
+        android:layout_marginTop="@dimen/margin3"
+        android:text="@string/login_sign_in_button"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin3"
+        android:padding="@dimen/margin"
+        android:text="@string/login_forgot_password_button"/>
+
+    <TextView
+        android:id="@+id/tv_update_url"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin2"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin"
+        android:text="@string/login_update_url"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--指定形狀的填充色-->
+    <solid android:color="@color/white_A30"/>
+
+    <!--設定內容區域離邊界的間距-->
+    <!--<padding-->
+        <!--android:bottom="4dp"-->
+        <!--android:left="6dp"-->
+        <!--android:right="6dp"-->
+        <!--android:top="4dp" />-->
+
+    <!--設定圓角，只適用於 rectangle-->
+    <corners android:radius="80dp" />
+
+    <!--設定描邊-->
+    <!--<stroke-->
+    <!--android:width="2dp"-->
+    <!--android:color="#2DA9A0"-->
+    <!--android:dashGap="4dp"-->
+    <!--android:dashWidth="4dp" />-->
+</shape>

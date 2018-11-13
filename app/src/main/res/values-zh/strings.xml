@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "发芽">
+    ]>
+<resources>
+    <string name="app_name">&appname;</string>
+
+    <string name="legal_title">Important</string>
+    <string name="legal_content">Sproutling® Wearable Baby Monitor is not a medical device.\n\n
+        What Information May Be Collected
+        \n \t \t \u2022 First and last name of parent/caregiver
+        \n \t \t \u2022 Email address
+        \n \t \t \u2022 Mobile phone number
+        \n \t \t \u2022 Baby\'s photo, gender, date of birth and original due date
+        \n \t \t \u2022 Baby\'s heart rate, motion activity and room conditions (e.g. noise level, temperature)
+        \n \t \t \u2022 Technical (Connected monitor ID, Device ID, IP address, etc.) \n\n
+        Why It’s Collected
+        \n \t \t \u2022 Internal operations (e.g. analytics, including determining sleep patterns) \n\n
+        With Whom It\'s Shared
+        \n \t \t \u2022 Internal operations\’ service providers\n\n
+        Contact Us/Review or Delete Your or Your Baby\'s Collected Info
+        \n \t \t  Mattel Consumer Relations \n
+        \t \t 636 Girard Avenue\n
+        \t \t East Aurora, NY 14052
+        \n \t \t  Call: 1-877-219-8335
+         \n \t \t E-mail: service@mattel.com
+    </string>
+    <!--<string name="legal_content" > <![CDATA[Sproutling® Wearable Baby Monitor is not a medical device.</br>What Information May Be Collected<ul>  <li>First and last name of parent/caregiver</li><li>Email address</li><li>Mobile phone number</li><li>Baby\'s photo, gender, date of birth and original due date</li><li>Baby\'s heart rate, motion activity and room conditions (e.g. noise level, temperature)</li><li>Technical (Connected monitor ID, Device ID, IP address, etc.)</li></ul>Why It\'s Collected<ul><li>Internal operations (e.g. analytics, including determining sleep patterns)</li></ul>With Whom It\’s Shared<ul><li>Internal operations\' service providers</li></ul>Contact Us/Review or Delete Your or Your Baby\'s Collected Info<ul><li>Mattel</br>Consumer Relations</br>636 Girard Avenue</br>East Aurora, NY 14052</li> <li>Call: 1-877-219-8335</br> E-mail: service@mattel.com</li></ul>]]></string>-->
+    <string name="legal_button_accept">I Accept</string>
+    <string name="legal_terms" formatted="false">By tapping I Accept, you agree to our <a href="http://bit.ly/sproutling-terms_of_service">Terms of Service</a>  and <a href="http://bit.ly/sproutling-privacy_statement">Privacy Statement</a>.</string>
+    <string name="legal_tos_scheme">terms</string>
+    <string name="legal_pp_scheme">privacy</string>
+
+    <string name="tos_title_terms">Terms of Service</string>
+    <string name="tos_title_pp">Privacy Statement</string>
+
+    <string name="action_settings">设置</string>
+    <string name="main_message">守望宝宝好梦未来</string>
+    <string name="main_button_log_in">登录</string>
+    <string name="main_button_sign_up">注册</string>
+    <string name="main_button_setup_account">设置新的智能脚环账户</string>
+    <string name="main_button_join_family">加入现有家庭账户</string>
+
+    <string name="server_error_message_title">哦不……</string>
+    <string name="server_error_message_body">Something went wrong.\nPlease try again.</string>
+    <string name="server_error_message_button">知道了</string>
+
+    <string name="login_title">欢迎回来</string>
+    <string name="login_or">或者</string>
+    <string name="login_email">电邮</string>
+    <string name="login_email_error">Error</string>
+    <string name="login_password">密码</string>
+    <string name="login_password_error">Error</string>
+    <string name="login_sign_in">登录</string>
+    <string name="login_forgot_password">忘记密码？</string>
+    <string name="login_error_message_title">哦不……</string>
+    <string name="login_error_message_body">电邮和密码不匹配。请重试</string>
+
+    <string name="forgot_navigation_send">发送</string>
+    <string name="forgot_navigation_next">下一步</string>
+    <string name="forgot_navigation_save">保存</string>
+
+    <string name="forgot_enter_phone_number_navigation_title">忘记密码</string>
+    <string name="forgot_enter_phone_number_title">输入手机号</string>
+    <string name="forgot_enter_phone_number_message">输入注册时使用的手机号。我们将向您发送验证码短信，用于创建新密码</string>
+    <string name="forgot_enter_phone_number_phone_hint">手机</string>
+    <string name="forgot_enter_phone_number_phone_error">Unkown phone number. Please try again.</string>
+    <string name="forgot_enter_phone_number_notice">按标准短信费率收费</string>
+
+    <string name="forgot_verification_navigation_title">验证码</string>
+    <string name="forgot_verification_title">输入验证码</string>
+    <string name="forgot_verification_message">阅读发自智能脚环的验证码短信，重新设置密码</string>
+    <string name="forgot_verification_instruction">输入发送给%s的验证码</string>
+    <string name="forgot_verification_error_expired">Verification Code is expired. Please tap on\nResend Code and enter the new code sent.</string>
+    <string name="forgot_verification_error_invalid">请查讯您的短信以取得验证码</string>
+    <string name="forgot_verification_resend">重新发送验证码</string>
+
+    <string name="forgot_resent_title">Verification Code Re-sent</string>
+    <string name="forgot_resent_message">阅读发自智能脚环的验证码短信，重新设置密码</string>
+    <string name="forgot_resent_ok">知道了</string>
+
+    <string name="forgot_new_password_navigation_title">新密码</string>
+    <string name="forgot_new_password_title">输入新密码</string>
+    <string name="forgot_new_password_message">请为您的账户输入新密码</string>
+    <string name="forgot_new_password_new_password_hint">新密码</string>
+    <string name="forgot_new_password_confirm_password_hint">确认密码</string>
+    <string name="forgot_new_password_password_not_matching">密码不匹配</string>
+    <string name="forgot_new_password_tips">密码提示</string>
+    <string name="forgot_new_password_tips_content">至少8个字符至少包含1个数字包含大写和小写字母添加一个特殊字符</string>
+
+    <string name="qr_scanner_title">二维码</string>
+    <string name="qr_scanner_message">扫描您的智能脚环二维码，立即接受邀请</string>
+    <string name="qr_scanner_message_expired">二维码已失效。请让家长生成一个新二维码</string>
+    <string name="qr_scanner_message_wait">请等待……</string>
+    <string name="qr_scanner_message_allow_camera">允许智能脚环访问您的相机来扫描智能脚环的二维码</string>
+    <string name="qr_scanner_allow_text">允许访问照相机</string>
+    <string name="qr_scanner_permission_title">Camera Permission</string>
+    <string name="qr_scanner_permission_message">Need to grant camera permission!</string>
+    <string name="qr_scanner_permission_positive">设置</string>
+    <string name="qr_scanner_permission_negative">取消</string>
+
+    <string name="setup_navigation_next">下一步</string>
+    <string name="setup_navigation_try_again">重试</string>
+    <string name="setup_navigation_join">加入</string>
+
+    <string name="setup_account_creation_title">账户创建</string>
+    <string name="setup_account_creation_navigation_next">下一步</string>
+    <string name="setup_account_creation_terms" formatted="false">注册代表我同意费雪婴幼儿智能穿戴脚环的 %1$s and %2$s.</string>
+    <string name="setup_account_creation_tos"><u>服务条款</u></string>
+    <string name="setup_account_creation_tos_scheme">terms</string>
+    <string name="setup_account_creation_pp"><u>隐私政策</u></string>
+    <string name="setup_account_creation_pp_scheme">privacy</string>
+    <string name="setup_account_creation_or">或者</string>
+    <string name="setup_account_creation_first_name">名</string>
+    <string name="setup_account_creation_first_name_error">名，必填</string>
+    <string name="setup_account_creation_last_name">姓</string>
+    <string name="setup_account_creation_last_name_error">姓，必填</string>
+    <string name="setup_account_creation_email">电邮</string>
+    <string name="setup_account_creation_email_error">电邮，必填</string>
+    <string name="setup_account_creation_email_invalid">无效电邮地址</string>
+    <string name="setup_account_creation_email_used">该电邮地址已被注册</string>
+    <string name="setup_account_creation_email_scheme">email</string>
+    <string name="setup_account_creation_phone">手机</string>
+    <string name="setup_account_creation_phone_error">手机，必填</string>
+    <string name="setup_account_creation_phone_invalid">无效手机号码</string>
+    <string name="setup_account_creation_phone_used">该手机号码已被注册</string>
+    <string name="setup_account_creation_password">密码</string>
+    <string name="setup_account_creation_password_error">密码，必填</string>
+    <string name="setup_account_creation_password_short">密码必须至少8个字符</string>
+    <string name="setup_account_creation_password_long">密码不能超过72个字符</string>
+    <string name="setup_account_creation_retype_password">重新输入密码</string>
+    <string name="setup_account_creation_retype_password_error">密码，必填</string>
+    <string name="setup_account_creation_retype_password_mismatch">密码不匹配</string>
+    <string name="setup_account_creation_error_message_title">哦不……</string>
+    <string name="setup_account_creation_error_message_body">There was a problem creating your account, please try again.</string>
+    <string name="setup_account_creation_error_email_title">Uh Oh</string>
+    <string name="setup_account_creation_error_email_body">This email address is already registered.</string>
+    <string name="setup_account_creation_error_email_button">Tap here to sign in</string>
+
+    <string name="setup_add_child_title">添加宝宝</string>
+    <string name="setup_add_child_add_photo">Add a Photo</string>
+    <string name="setup_add_child_select_gender">Select a Gender</string>
+    <string name="setup_add_child_girl">女孩</string>
+    <string name="setup_add_child_boy">男孩</string>
+    <string name="setup_add_child_baby_name_hint">宝宝的名字</string>
+    <string name="setup_add_child_baby_name_error">宝宝的名字，必填</string>
+    <string name="setup_add_child_birthday_hint">出生日期</string>
+    <string name="setup_add_child_birthday_error">宝宝的出生日期，必填</string>
+    <string name="setup_add_child_birthday_error_future">Birthday cannot be in the future.</string>
+    <string name="setup_add_child_due_date_hint">原始预产期</string>
+    <string name="setup_add_child_due_date_error">宝宝的原始预产期，必填</string>
+    <string name="setup_add_child_due_date_error_after">预产期不能超过出生日期后的20周</string>
+    <string name="setup_add_child_due_date_error_before">预产期不能超过出生日期前的6周</string>
+    <string name="setup_add_child_why">为什么我们要求日期</string>
+    <string name="setup_add_child_skip">跳过设置</string>
+    <string name="setup_add_child_popup_import_from_facebook">Import from Facebook</string>
+    <string name="setup_add_child_popup_take_photo">拍摄照片</string>
+    <string name="setup_add_child_popup_choose_from_library">从已有相册中选择</string>
+    <string name="setup_add_child_popup_cancel">取消</string>
+    <string name="setup_add_child_dialog_fragment_title">我们为何询问宝宝的原始预产期</string>
+    <string name="setup_add_child_dialog_fragment_message">了解宝宝早产还是晚产将有助于我们提高观察的准确性</string>
+    <string name="setup_add_child_dialog_fragment_ok">知道了</string>
+    <string name="setup_add_child_error_message_title">哦不……</string>
+    <string name="setup_add_child_error_message_body">There was a problem creating a child, please try again.</string>
+    <string name="setup_add_camera_permission_title">Camera Settings</string>
+    <string name="setup_add_camera_permission_error_msg">Please enable camera permission to take photo</string>
+
+    <string name="setup_setting_up_title">智能云底座</string>
+    <string name="setup_setting_up_step_1_title">步骤 1</string>
+    <string name="setup_setting_up_step_1_description">在宝宝睡眠的房间内插上智能云底座</string>
+    <string name="setup_setting_up_step_2_title">步骤 2</string>
+    <string name="setup_setting_up_step_2_description">将智能脚环放在智能云底座的顶端</string>
+    <string name="setup_setting_up_step_3_title">步骤 3</string>
+    <string name="setup_setting_up_step_3_description">等智能云底座闪烁蓝光，轻击下一步</string>
+    <string name="setup_setting_up_skip">跳过设置</string>
+
+    <string name="setup_connect_device_title">连接中</string>
+    <string name="setup_connect_device_status_connecting">连接中</string>
+    <string name="connected">已连接</string>
+    <string name="setup_connect_device_description_connecting">正在搜索智能云底座……</string>
+    <string name="setup_connect_device_description_connected">连接到智能云底座</string>
+    <string name="setup_connect_device_success">成功!</string>
+    <string name="setup_connect_device_skip">跳过设置</string>
+
+    <string name="setup_wifi_title">连接到 Wi-Fi</string>
+    <string name="setup_wifi_message">选择您的 Wi-Fi 网络</string>
+    <string name="setup_wifi_no_network_error">下拉刷新页面或者轻击其他网络手动进入</string>
+    <string name="setup_wifi_other">其他网络 . . .</string>
+    <string name="setup_wifi_enter_network_information">输入网络信息</string>
+    <string name="setup_wifi_security">安全性</string>
+    <string name="setup_wifi_err_msg">Smart Charger failed to connect to Wifi. Please re-enter your settings.</string>
+
+    <string name="setup_password_title">连接到 Wi-Fi</string>
+    <string name="setup_password_instruction">为 %1$s 输入密码</string>
+    <string name="setup_password_manual_settings">手动设置</string>
+    <string name="setup_password_connection_error_msg">Smart Charger can\'t join the network. Please re-type your password.</string>
+
+    <string name="setup_putting_on_title">戴上智能脚环</string>
+    <string name="setup_putting_on_message">Watch the video walk-through to see the proper way to put the &appname;
+        wearable on your baby.</string>
+    <string name="setup_putting_on_steps">View step by step instructions</string>
+    <string name="setup_putting_on_ok">知道了</string>
+    <string name="setup_putting_on_1_step">Step 1</string>
+    <string name="setup_putting_on_1_title">戴上智能脚环</string>
+    <string name="setup_putting_on_1_description">将腕带末端穿过插口，把传感器固定在您宝宝的上脚踝背面</string>
+    <string name="setup_putting_on_2_step">Step 2</string>
+    <string name="setup_putting_on_2_title">检查智能脚环的方向</string>
+    <string name="setup_putting_on_2_description">腕带的形状像箭头一样。正确穿戴时，应该指向您宝宝的心脏。笑脸应该跟您宝宝的脸在同一个方向</string>
+    <string name="setup_putting_on_3_step">Step 3</string>
+    <string name="setup_putting_on_3_title">检查松紧度</string>
+    <string name="setup_putting_on_3_description">请确保腕带穿戴足够舒适，使其贴合在宝宝的脚踝背面，不会四处转动</string>
+    <string name="setup_putting_on_4_step">Step 4</string>
+    <string name="setup_putting_on_4_title">检查腕带尺寸</string>
+    <string name="setup_putting_on_4_description">腕带应该足够大，使尼龙搭扣不会触碰到宝宝的腿。如果腕带太小，请从盒子中寻找更大的腕带</string>
+    <string name="setup_putting_on_5_step">Step 5</string>
+    <string name="setup_putting_on_5_title">如有需要更换腕带</string>
+    <string name="setup_putting_on_5_description">如需更换腕带，请取下传感器。然后把新腕带放在传感器的顶端上方，将圆环安装进传感器周围的凹槽中</string>
+
+    <string name="setup_how_to_charge_title">How to Charge Wearable</string>
+    <string name="setup_how_to_charge_content_title">Charging the Wearable</string>
+    <string name="setup_how_to_charge_content_description">Watch the video walk-through to see the proper way to charge your &appname;
+        wearable.</string>
+    <string name="setup_how_to_charge_instructions">View instructions</string>
+    <string name="setup_how_to_charge_dialog_title">为智能脚环充电</string>
+    <string name="setup_how_to_charge_dialog_description">将智能脚环放在智能充电器的上方充电。充电时，指示灯将缓慢闪烁。宝宝醒着时，每天至少为智能脚环充电一次</string>
+
+    <string name="setup_hub_title">智能云底座</string>
+    <string name="setup_hub_message">未找到智能云底座</string>
+    <string name="setup_hub_tips">设置提示</string>
+    <string name="setup_hub_tip1_what">插上智能云底座</string>
+    <string name="setup_hub_tip2_what">靠近智能云底座</string>
+    <string name="setup_hub_tip3_what">确认蓝牙开启</string>
+    <string name="setup_hub_tip1_how">等智能云底座闪烁蓝光，然后轻击重试</string>
+    <string name="setup_hub_tip2_how">设置时，您的手机应该放在距智能云底座20英尺范围以内</string>
+    <string name="setup_hub_tip3_how">向上滑动确保手机蓝牙开启</string>
+    <string name="setup_hub_help">需要帮助</string>
+    <string name="setup_hub_skip">跳过设置</string>
+
+    <string name="setup_alert_title">提醒</string>
+
+    <string name="setup_dialog_internet_offline_title">哦不……</string>
+    <string name="setup_dialog_internet_offline_message">网络似乎未连接。\n请检查您的网络连接，\n然后重试</string>
+    <string name="setup_dialog_internet_offline_ok">知道了</string>
+
+    <string name="timeline_dialog_future_birthday_title">哦不……</string>
+    <string name="timeline_dialog_future_birthday_message">宝宝的出生日期还未到来。请在宝宝出生后再访问时间线</string>
+    <string name="timeline_dialog_future_birthday_ok">知道了</string>
+
+    <string name="avatar_use">使用</string>
+    <string name="avatar_cancel">取消</string>
+    <string name="avatar_view_message">通过拖放收缩裁切照片</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_navigation_save">保存</string>
+    <string name="settings_navigation_join">加入</string>
+    <string name="settings_warning">You will not be able to receieve any alerts. Tap here to enable.</string>
+    <string name="settings_list_item_notification">通知提醒</string>
+    <string name="settings_list_item_account">我的账户</string>
+    <string name="settings_list_item_baby">宝宝资料</string>
+    <string name="settings_list_item_caregivers">看护人</string>
+    <string name="settings_list_item_wifi">Wi-Fi 设置</string>
+    <string name="settings_list_item_help">客服</string>
+    <string name="settings_list_item_walkthrough">重播APP入门指引</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_no_device">无已连接的智能传感器可用</string>
+    <string name="settings_add_device">设置一个新的智能传感器</string>
+
+    <string name="settings_notification_title">通知</string>
+    <string name="settings_notification_notification_allow">接收通知</string>
+    <string name="settings_notification_notification_allow_off_description">接收宝宝穿戴费雪婴幼儿智能穿戴脚环时发生事件的推送通知</string>
+    <string name="settings_notification_notification_allow_on_description">接收宝宝穿戴费雪婴幼儿智能穿戴脚环时发生事件的推送通知 从以下选项中选择希望接收通知的事件类型</string>
+    <string name="settings_notification_red_alerts">紧急提醒</string>
+    <string name="settings_notification_red_alerts_rollover">翻身</string>
+    <string name="settings_notification_red_alerts_heart_rate">心跳异常</string>
+    <string name="settings_notification_red_alerts_description">我们将只向您发送宝宝穿戴智能脚环睡着或半睡半醒时的选定紧急提醒。请记住，智能脚环不是一种医疗设备，不能取代您的监护</string>
+    <string name="settings_notification_room">房间情况异常</string>
+    <string name="settings_notification_room_temperature">温度</string>
+    <string name="settings_notification_room_humidity">湿度</string>
+    <string name="settings_notification_room_light">亮度</string>
+    <string name="settings_notification_room_noise">噪声级</string>
+    <string name="settings_notification_room_description">我们将向您发送宝宝穿戴智能脚环睡着或半睡半醒时的选定房间情况提醒</string>
+    <string name="settings_notification_sleep">睡眠提醒</string>
+    <string name="settings_notification_sleep_wake">苏醒</string>
+    <string name="settings_notification_sleep_asleep">入睡</string>
+    <string name="settings_notification_sleep_stirring">半睡半醒</string>
+    <string name="settings_notification_sleep_description">我们将向您发送宝宝穿戴智能脚环开始入睡、半睡半醒或苏醒时的选定睡眠提醒</string>
+    <string name="settings_notification_system">系统提醒</string>
+    <string name="settings_notification_system_wearable_fell">智能脚环掉落</string>
+    <string name="settings_notification_system_sproutling_off">智能脚环离线</string>
+    <string name="settings_notification_system_missing">找不到您的智能脚环</string>
+    <string name="settings_notification_system_far">智能脚环太远</string>
+    <string name="settings_notification_system_battery_low">电量低</string>
+    <string name="settings_notification_system_battery_out">电量耗尽</string>
+    <string name="settings_notification_system_description">选定的系统提醒一旦出现，我们将随时向您发送，无论宝宝是否穿戴智能脚环</string>
+
+    <string name="settings_device_settings_title">设备配置文件</string>
+    <string name="device_settings_next">设备配置文件</string>
+    <string name="settings_device_settings_name_error">设备名称必填</string>
+    <string name="settings_device_settings_battery_level">电池电量</string>
+    <string name="settings_device_settings_signal_level_strong">强</string>
+    <string name="settings_device_settings_signal_level_okay">好</string>
+    <string name="settings_device_settings_signal_level_weak">弱</string>
+    <string name="unknown">未知</string>
+    <string name="settings_device_settings_wifi_signal">Wi-Fi 信号</string>
+    <string name="settings_device_settings_bluetooth_signal">蓝牙信号</string>
+    <string name="settings_device_settings_firmware">固件</string>
+
+    <string name="settings_device_settings_firmware_remove">从我的账号中删除这台设备</string>
+    <string name="settings_device_settings_firmware_updating">Updating&#8230;</string>
+    <string name="settings_device_settings_firmware_version">%s</string>
+    <string name="settings_device_settings_wearable">智能穿戴脚环</string>
+    <string name="settings_device_settings_smart_charger">智能云底座</string>
+
+    <string name="settings_device_settings_light_alerts">Smart Charger Light Alerts</string>
+    <string name="settings_device_settings_light_alerts_far">Wearable Too Far Away</string>
+    <string name="settings_device_settings_light_alerts_offline">Sproutling Offline</string>
+    <string name="settings_device_settings_light_alerts_description">The light on the Smart Charger will flash whenever the selected alerts occur.</string>
+
+    <string name="settings_device_settings_change_wifi">Change Wi-Fi</string>
+
+    <string name="settings_account_title">我的账户</string>
+    <string name="settings_account_section_account">我的账户</string>
+    <string name="settings_account_first_name">名</string>
+    <string name="settings_account_last_name">姓</string>
+    <string name="settings_account_email">电邮</string>
+    <string name="settings_account_phone">手机</string>
+    <string name="settings_account_change_password">更改密码</string>
+    <string name="settings_account_first_name_error">名，必填</string>
+    <string name="settings_account_last_name_error">姓，必填</string>
+    <string name="settings_account_email_error">电邮，必填</string>
+    <string name="settings_account_email_invalid">无效电邮地址</string>
+    <string name="settings_account_email_used">该电邮地址已被注册</string>
+    <string name="settings_account_phone_error">手机，必填</string>
+    <string name="settings_account_phone_invalid">无效手机号码</string>
+    <string name="settings_account_phone_used">该手机号码已被注册</string>
+    <string name="settings_account_sign_out">退出</string>
+    <string name="settings_account_error_message_title">哦不……</string>
+    <string name="settings_account_error_message_body">There was a problem updating your account, please try again.</string>
+
+    <string name="settings_log_out_dialog_fragment_title">退出</string>
+    <string name="settings_log_out_dialog_fragment_message">确定想要退出？</string>
+    <string name="settings_log_out_dialog_fragment_btn_remove">是的，退出</string>
+    <string name="settings_log_out_dialog_fragment_btn_cancel">取消</string>
+
+    <string name="settings_erase_account_dialog_fragment_title">Erase All Content and Settings</string>
+    <string name="settings_erase_account_dialog_fragment_message">Are you sure you want to erase all your data from this &appname;
+        and reset to factory settings?</string>
+    <string name="settings_erase_account_dialog_fragment_yes">是的，删除</string>
+    <string name="settings_erase_account_dialog_fragment_cancel">取消</string>
+
+    <string name="settings_remove_device_dialog_fragment_title">从账号中删除智能穿戴脚环</string>
+    <string name="settings_remove_device_dialog_fragment_message">确定要从账号中删除智能穿戴脚环吗？此操作不可撤销</string>
+    <string name="settings_remove_device_dialog_fragment_yes">是的，删除</string>
+    <string name="settings_remove_device_dialog_fragment_cancel">取消</string>
+
+    <string name="settings_change_password_title">更改密码</string>
+    <string name="settings_change_password_section_password">密码</string>
+    <string name="settings_change_password_old_password_hint">旧密码</string>
+    <string name="settings_change_password_new_password_hint">新密码</string>
+    <string name="settings_change_password_retype_password_hint">确认新密码</string>
+    <string name="settings_change_password_error">旧密码不匹配</string>
+    <string name="settings_change_password_error_short">密码必须至少8个字符</string>
+    <string name="settings_change_password_error_long">密码不能超过72个字符</string>
+    <string name="settings_change_password_error_not_match">新密码不匹配</string>
+    <string name="settings_change_password_old_password_error">旧密码不匹配</string>
+    <string name="settings_change_password_new_password_error">密码不能超过72个字符</string>
+    <string name="settings_change_password_retype_password_error">密码不能超过72个字符</string>
+
+    <string name="settings_baby_title">宝宝资料</string>
+    <string name="settings_baby_girl">女孩</string>
+    <string name="settings_baby_boy">男孩</string>
+    <string name="settings_baby_baby_name_hint">宝宝的名字</string>
+    <string name="settings_baby_birthday_hint">出生日期</string>
+    <string name="settings_baby_due_date_hint">原始预产期</string>
+    <string name="settings_baby_why">为什么我们要求日期</string>
+    <string name="settings_baby_error_message_title">哦不……</string>
+    <string name="settings_baby_get_error_message_body">There was a problem retrieving your child information, please try again.</string>
+    <string name="settings_baby_update_error_message_body">There was a problem updating your child information, please try again.</string>
+
+    <string name="settings_caregivers_title">看护人</string>
+    <string name="settings_caregivers_invite">通过二维码邀请</string>
+    <string name="settings_caregivers_info_title">看护人</string>
+    <string name="settings_caregivers_info_description">与看护人共用智能穿戴脚环，这样他们也能够看到宝宝的状态，在他们的智能手机上收到提醒</string>
+    <string name="settings_caregivers_info_invite_text">通过二维码邀请</string>
+    <string name="settings_caregivers_qr_code_title">您的二维码</string>
+    <string name="settings_caregivers_qr_code_message">请您的看护人扫描这个二维码，使用&appname;APP加入您的家庭账户。为保障安全，这个二维码将在15分钟后失效</string>
+    <string name="settings_caregivers_qr_code_generate">更换至新二维码</string>
+    <string name="settings_caregivers_detail_title">看护人信息</string>
+    <string name="settings_caregivers_detail_remove">删除看护人</string>
+
+    <string name="settings_wifi_title">Wi-Fi设置</string>
+    <string name="change_wifi_network">更换Wi-Fi网络</string>
+    <string name="scan_for_wifi_networks">正在搜寻Wi-Fi网络</string>
+    <string name="connecting_to_another_wifi_network">正在连接另一个Wi-Fi网络</string>
+    <string name="connecting_to_another_wifi_network_step_1">1. 拔下智能云底座插头，并从顶部取下智能脚环</string>
+    <string name="connecting_to_another_wifi_network_step_2">2. 使智能脚环与智能云底座保持断开，并重新插上智能云底座插头</string>
+    <string name="connecting_to_another_wifi_network_step_3">3. 智能云底座显示闪烁蓝光时，您可以开始搜寻Wi-Fi网络</string>
+    <string name="settings_wifi_message">选择您的Wi-Fi网络</string>
+    <string name="settings_wifi_manual">手动设置</string>
+    <string name="settings_wifi_password_instruction">为%1$s输入密码</string>
+    <string name="settings_wifi_password_hint">密码</string>
+
+    <string name="settings_help_title">帮助和常见问答</string>
+
+    <string name="settings_walkthrough_title">APP入门指引</string>
+
+    <string name="expectations_title">Expectations</string>
+    <string name="expectations_header">How to get the most accurate results from Sproutling</string>
+    <string name="expectations_section_1_title">The First of Its Kind</string>
+    <string name="expectations_section_1_content">Sproutling is the first productItem of its kind for babies. We\'re just getting started and we plan to make updates as we go to make Sproutling even better.\nThe more you use Sproutling when your baby is sleeping, the more accurate your predictions will be.</string>
+    <string name="expectations_section_2_title">Getting the best Asleep or Awake results</string>
+    <string name="expectations_section_2_content">For best results, make sure your baby is:\n\n• Put to sleep on their back\n• Sleeping alone\n\n• In a stationary crib or sleeping space\n• With the Smart Charger in the same room</string>
+    <string name="expectations_section_3_title">What Not to Do</string>
+    <string name="expectations_section_3_content">Our sleep algorithms are based on movement, so Sproutling does NOT work well in the following scenarios at this time:\n\n• Breastfeeding\n• Co-sleeping or bed sharing\n• Baby held to sleep in arms, sling, or carrier\n• In a swing or rocker</string>
+    <string name="expectations_section_4_title">Getting the best wake up predictions</string>
+    <string name="expectations_section_4_content">We know it\'s not always possible to avoid some of those scenarios. But keeping your Timeline up-to-date makes your wake up predictions more accurate. Adjust the start or end time of a nap, delete an incorrect one, or add a nap that was missed. And those corrections help Sproutling to learn too.</string>
+    <string name="expectations_section_5_title">Coming Soon</string>
+    <string name="expectations_section_5_content">Our next big update will include some changes to make it better in some of those scenarios (but note that the American Academy of Pediatrics recommends NEVER bed sharing with baby.)</string>
+    <string name="expectations_let_us_know">Let us know how you think we\'re doing. We want to hear your feedback. Drop us a line</string>
+    <string name="expectations_text_bold_not">NOT</string>
+    <string name="expectations_text_bold_never">NEVER</string>
+    <string name="expectations_text_tealish_drop">Drop us a line</string>
+
+    <string name="caregiver_accept_invitation_popup_title">来自 %s 的邀请</string>
+    <string name="caregiver_accept_invitation_popup_message">%s 邀请您共用智能穿戴脚环</string>
+    <string name="caregiver_accept_invitation_popup_btn_ok">接受邀请</string>
+    <string name="caregiver_accept_invitation_popup_btn_cancel">取消</string>
+
+    <string name="caregiver_remove_popup_title">删除看护人</string>
+    <string name="caregiver_remove_popup_message">确定将%1$s从看护人中删除吗？删除后他们将无法访问%2$s的数据或接收通知</string>
+    <string name="caregiver_remove_popup_btn_remove">删除看护人</string>
+    <string name="caregiver_remove_popup_btn_cancel">取消</string>
+
+    <string name="sleep_dlg_title">捕获睡眠状态</string>
+    <string name="sleep_dlg_text">输入之前睡眠的次数</string>
+    <!--<string name="sleep_dlg_begin">Begin Time</string>-->
+    <!--<string name="sleep_dlg_end">End Time</string>-->
+    <string name="sleep_dlg_enter_time">Enter Time</string>
+    <string name="sleep_dlg_begin">开始时间</string>
+    <string name="sleep_dlg_end">结束时间</string>
+    <!--<string name="sleep_dlg_datetime_format">%1$s %2$d, %3$d \t \t %4$d:%5$02d%6$s</string>-->
+    <string name="sleep_dlg_save">保存</string>
+    <string name="sleep_dlg_discard">放弃</string>
+    <string name="sleep_dlg_cancel">取消</string>
+    <string name="sleep_dlg_edit_total_time">总时间</string>
+    <string name="sleep_dlg_edit_time_format">%1$d:%2$02d:%3$02d</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+    <string name="set_sleep_dlg_title">睡眠计时器</string>
+    <string name="set_sleep_dlg_text">轻击开始，立即记录正在进行的睡眠</string>
+    <string name="set_sleep_dlg_start">开始</string>
+    <string name="set_sleep_dlg_stop">停止</string>
+    <string name="set_sleep_dlg_reset_timer">重置时间</string>
+    <string name="set_sleep_dlg_manually">或者手动输入</string>
+    <string name="set_sleep_dlg_live">或者开启直播计时器</string>
+    <string name="set_sleep_dlg_enter_time">Enter Time</string>
+    <string name="set_sleep_dlg_start_message">Begin time cannot be in the future</string>
+    <string name="set_sleep_dlg_end_message1">End time cannot be in the future</string>
+    <string name="set_sleep_dlg_end_message2">结束时间必须晚于开始时间</string>
+    <string name="set_sleep_dlg_end_message3">小睡必须至少持续1分钟</string>
+    <string name="set_sleep_dlg_end_message4">Enter a nap that is 1 minute or longer</string>
+    <string name="edit_sleep_activity_error">Nap must be at least 5 minute long or less than 15 hours.</string>
+
+    <string name="timeline_dlg_night_sleep_title">什么时间是夜间睡眠</string>
+    <string name="timeline_dlg_night_sleep_text">夜间睡眠是指从晚上7点开始到次日上午7点结束的所有睡眠</string>
+    <string name="timeline_dlg_timeline_title">时间线</string>
+    <string name="timeline_dlg_timeline_text">这里将显示宝宝的睡眠数据。宝宝苏醒后查看此处，了解宝宝穿戴智能脚环时的睡眠情况</string>
+
+    <string name="stirring_dlg_title">什么是半睡半醒？</string>
+    <string name="stirring_dlg_text">半睡半醒是指宝宝介于睡眠和苏醒之间的状态。宝宝可能挪动位置或发出声响，并可能重新入睡</string>
+
+    <string name="rollover_dlg_title">翻身提醒</string>
+    <string name="rollover_dlg_text">您六个月大的宝宝准备翻身了。您想关闭翻身提醒吗？</string>
+    <string name="rollover_dlg_yes">是的，关闭翻身提醒</string>
+    <string name="rollover_dlg_cancel">取消</string>
+
+    <string name="turn_off_rollover_dlg_title">关闭翻身提醒</string>
+    <string name="turn_off_rollover_dlg_text">确定要关闭翻身提醒吗？您之后可以在设置中设置是否想要接收通知</string>
+    <string name="turn_off_rollover_dlg_yes">关闭翻身提醒</string>
+    <string name="turn_off_rollover_dlg_cancel">本次取消</string>
+
+    <string name="learningperiod_start_dlg_title">学习期</string>
+    <string name="learningperiod_start_dlg_text">每个宝宝都不相同。在您使用智能穿戴脚环的第一周内，我们将了解您独一无二的宝宝，从而提高我们观察和预测的准确性</string>
+    <string name="learningperiod_start_dlg_begin">开始</string>
+
+    <string name="learningperiod_finish_dlg_title">了解期完成</string>
+    <string name="learningperiod_finish_dlg_text">我们现在对%s已足够了解，可以解锁更多观察</string>
+
+    <string name="got_it">知道了</string>
+
+    <string name="input_measurement">Input Measurement</string>
+    <string name="done">Done</string>
+    <string name="input_measurement_description">Enter your baby\'s head circumference, weight,\n and length to chart their growth over time.</string>
+    <string name="input_measurement_head_circumference">Head Circumference</string>
+    <string name="input_measurement_weight">Weight</string>
+    <string name="input_measurement_length">Length</string>
+    <string name="input_measurement_head_format">%d cm</string>
+    <string name="input_measurement_weight_format">%d lbs</string>
+    <string name="input_measurement_length_format">%d cm</string>
+
+    <!--<string name="status_babyname">Mosiah</string>-->
+    <!--<string name="status_title">Asleep</string>-->
+    <string name="status_title_awake">苏醒</string>
+    <string name="status_title_initial">请等待…</string>
+    <string name="status_title_detecting">Detecting…</string>
+    <string name="status_title_stirring">半睡半醒</string>
+    <string name="status_title_asleep">睡眠</string>
+    <string name="status_title_learning_period">学习期</string>
+    <string name="status_title_unsual_haertbeat">心跳异常</string>
+    <string name="status_title_rolled_over">已翻身</string>
+    <string name="status_title_full_battery">充电完毕</string>
+    <string name="status_title_wearable_ready">智能穿戴脚环就绪</string>
+    <string name="status_title_wearable_charging">可穿戴设备充电中</string>
+    <string name="status_title_wearable_charged">充电完毕</string>
+    <string name="status_title_wearable_too_far_away">智能穿戴脚环太远</string>
+    <string name="status_title_wearable_not_found">找不到您的智能穿戴脚环</string>
+    <string name="status_title_wearable_fell_off">智能穿戴脚环掉落</string>
+    <string name="status_title_wearable_out_of_battery">电量耗尽</string>
+    <string name="status_title_no_service">无服务</string>
+    <string name="status_title_sprouting_offline">智能穿戴脚环离线</string>
+    <string name="status_title_no_configured_device">No Configured Device</string>
+    <string name="status_title_updating_firmware">Updating Firmware</string>
+
+    <string name="status_title_btn">记录睡眠</string>
+
+    <string name="status_detail_lp_in_progress">Learning Period in progress</string>
+
+    <string name="status_detail_asleep_no_prediction">No prediction available</string>
+    <string name="status_detail_asleep">Predicting wake up time…</string>
+    <string name="status_detail_asleep_wake_up">%1$s is predicted to wake up %2$s</string>
+    <string name="status_detail_asleep_wake_up_time">in\n%s</string>
+    <string name="status_detail_asleep_wake_up_time_any">any minute</string>
+    <string name="status_detail_asleep_wake_up_time_in">in\n%1$s - %2$s</string>
+    <string name="status_detail_asleep_wake_up_time_between">between\n%1$s - %2$s</string>
+    <string name="status_detail_asleep_wake_up_time_at">at\n%s</string>
+    <string name="status_detail_awake_back_to_sleep">%1$s may fall back to sleep for another %2$s</string>
+
+    <string name="status_detail_initial"></string>
+    <string name="status_detail_detecting"></string>
+    <string name="status_detail_learning_period">确保您的宝宝每次入睡时佩戴智能穿戴脚环</string>
+    <string name="status_detail_awake"></string>
+    <string name="status_detail_stirring">进一步了解轻微动静</string>
+    <string name="status_detail_unsual_haertbeat">您宝宝的心跳有显著变化</string>
+    <string name="status_detail_rollover_alert">关闭翻身提醒</string>
+    <string name="status_detail_wearable_ready">将智能穿戴脚环佩戴在您宝宝的脚踝背面，开始监控</string>
+    <string name="status_detail_wearable_fell_off">将智能穿戴脚环佩戴在您宝宝的脚踝背面，继续监控</string>
+    <string name="status_detail_wearable_out_of_battery">Charge the wearable before using it again.</string>
+    <string name="status_detail_wearable_charging"></string>
+    <string name="status_detail_wearable_charged">将智能穿戴脚环佩戴在您宝宝的脚踝背面，开始监控</string>
+    <string name="status_detail_wearable_too_far_away">将智能穿戴脚环放在距智能云底座25英尺范围内</string>
+    <string name="status_detail_wearable_not_found">可能离智能云底座太远或电量耗尽</string>
+    <string name="status_detail_no_service">检查您手机的网络连接</string>
+    <string name="status_detail_sprouting_offline">可能由于未插充电器或网络断开导致</string>
+    <string name="status_detail_no_configured_device">There is no device configured for this account.</string>
+    <string name="status_detail_updating_firmware">We are currently updating the firmware on your device. This will only take a minute.</string>
+
+    <!--<string name="status_logsleep">Log Sleep</string>-->
+
+    <string name="status_notification_title_wifi">Wi-Fi</string>
+    <string name="status_notification_description_wifi">The Wi-Fi signal is weak. Move the charger closer to your Wi-Fi router.</string>
+    <string name="status_notification_title_battery">Battery</string>
+    <string name="status_notification_description_battery">The wearable is almost out of battery. Charge it before using it again.</string>
+    <string name="status_notification_title_bluetooth">蓝牙</string>
+    <string name="status_notification_description_bluetooth">Keep the wearable within 25 feet of the charger for the best signal.</string>
+    <string name="status_notification_title_timeline">时间线</string>
+    <string name="status_notification_description_timeline">轻击宝宝的姓名，查看他的睡眠记录</string>
+    <string name="status_notification_title_advice_01">建议</string>
+    <string name="status_notification_description_advice_01">我们正在学习！请确保您宝宝每天穿戴费雪婴幼儿智能穿戴脚环。使用记录睡眠按钮来记录全部睡眠</string>
+    <string name="status_notification_title_advice_02">建议</string>
+    <string name="status_notification_description_advice_02">Log all sleep during the learning period to teach &appname;
+        about your baby.</string>
+    <string name="status_notification_title_temperature">温度</string>
+    <string name="status_notification_description_temperature">Placeholder text for recommendation and information. the card will slip out from the bottom and give users helpful information.</string>
+    <string name="status_notification_title_expectations">建议</string>
+    <string name="status_notification_description_expectations">Learn how our sleep algorithms work, and how to make them more accurate.\nRead more</string>
+    <string name="status_notification_description_expectations_spannable">Read more</string>
+    <string name="status_notification_title_rollover">Rollover</string>
+    <string name="status_notification_description_rollover">%1$s rolled over at %2$s</string>
+
+    <string name="back">返回</string>
+    <string name="status_dismiss">取消</string>
+
+    <string name="flower_sleepAwake_title">睡眠/苏醒</string>
+    <string name="flower_about_title">关于学习期</string>
+    <string name="flower_about_desc">智能脚环需要在开始几天中了解%1$s。轻击各圆圈了解更多</string>
+    <string name="flower_sleepAwake_desc">Enter the begin and end time of each \nsleep session using the Sleep Log to help \nus learn your baby\'s schedule.</string>
+    <string name="flower_temperature_desc">We\'re capturing the normal range \nof temperature in the room.</string>
+    <string name="flower_humidity_desc">We\'re observing the normal humidity \nlevel in the room.</string>
+    <string name="flower_light_desc">We\'re capturing the range of light levels \nin the room when %s sleeps.</string>
+    <string name="flower_noise_desc">We\'re observing the regular noise level \nin the room where %s sleeps.</string>
+
+    <string name="flower_whatToExpect_title">期待事项</string>
+    <string name="flower_whatToExpect_desc">您的宝宝穿戴智能脚环的次数越多，我们了解的就越多，因此请确保%1$s每次%2$s睡眠时戴上智能脚环。记得记录所有睡眠，即使%1$s在出行期间小睡</string>
+    <string name="flower_sleepPrediction_title">睡眠 预测</string>
+    <string name="flower_sleepPrediction_desc">我们正在了解您宝宝的睡眠模式，以预测%2$s何时会苏醒。请确保使用主屏中的记录睡眠按钮记录下宝宝的全部睡眠。记录%1$s戴着智能脚环时的每次小睡</string>
+
+    <string name="flower_unusualHeartbeat_title">心跳异常</string>
+    <string name="flower_unusualHeartbeat_desc">我们正在了解您宝宝的正常心跳，这样我们便能在%2$s睡眠心跳异常时提醒您。请确保%1$s每次睡眠时戴上智能脚环，以便帮助我们更快地了解</string>
+    <string name="flower_duration_title">持续时间</string>
+    <string name="flower_duration_desc">智能脚环在7天时间中收集关于您宝宝的数据，以便为您更加准确地预测宝宝的实时状态及%2$s睡眠作息</string>
+    <string name="flower_improving_title">我们将持续学习</string>
+    <string name="flower_improving_desc">了解期结束后，我们的观察将继续进行，并将随着您宝宝的成长和变化自动调整</string>
+
+    <string name="nap_text">%1$s小睡了%2$s。轻击详细查看%3$s小睡情况</string>
+
+    <string name="learning_period_text">The learning period will take around 7 days for us to learn more about your baby.</string>
+    <string name="learning_period_day_one">Learning Period Day One</string>
+
+    <string name="learning_period_started_text">智能穿戴脚环正在了解%s。您使用智能穿戴脚环的次数越多，我们的学习速度就越快</string>
+    <string name="learning_period_started">学习期开始</string>
+
+    <string name="learning_period_end_text">我们现在对%1$s已经足够了解，开始在%2$s每次入睡时显示苏醒预测。智能穿戴脚环将会越来越准确</string>
+    <string name="learning_period_end">学习期完成</string>
+
+    <string name="heartRate_txt">%1$s\'s heart rate was unusual.</string>
+    <string name="humidity_txt">The humidity was abnormally high in %1$s\'s room.</string>
+    <string name="lightLevel_txt">The light level was abnormally high in %1$s\'s room.</string>
+    <string name="roomTemperature_txt">The room temperature was abnormally low in  %1$s\'s room.</string>
+    <string name="noiseLevel_txt">The noise level was abnormally high in %1$s\'s room.</string>
+
+    <string name="he">他</string>
+    <string name="his">他的</string>
+    <string name="she">她</string>
+    <string name="her">她的</string>
+    <string name="mock_data_status_logsleep">记录睡眠</string>
+    <string name="was_born">%1$s\n%2$s出生</string>
+    <string name="help_sproutling_learn_logsleep">帮助智能穿戴脚环了解您宝宝的睡眠习惯。使用下方的+按钮记录您的宝宝入睡和苏醒的时间</string>
+
+    <string name="morning_nap">Morning Nap</string>
+    <string name="afternoon_nap">Afternoon Nap</string>
+    <string name="night_sleep">夜晚睡眠</string>
+    <string name="last_night_summary">昨晚摘要</string>
+
+    <string name="heartRate">心率</string>
+    <string name="humidity">湿度</string>
+    <string name="lightLevel">亮度</string>
+    <string name="roomTemperature">温度</string>
+    <string name="noiseLevel">NoiseLevel</string>
+
+    <string name="nap_time_asleep">入睡时间</string>
+    <string name="nap_time_stirring">半睡半醒时间</string>
+    <string name="nap_time_awake">苏醒时间</string>
+    <string name="nap_wakings">苏醒次数</string>
+
+    <string name="dialog_delete_summary_title">Delete this %s summary from my timeline</string>
+    <string name="dialog_delete_summary_content">Are you sure you want to delete this %s summary from your timeline? This action cannot be undone.</string>
+    <string name="dialog_delete_summary_ok">Yes, Delete</string>
+    <string name="dialog_delete_summary_cancel">Cancel</string>
+
+    <string name="nap_summary_delete_type_nap">nap</string>
+    <string name="nap_summary_delete_type_sleep">sleep</string>
+    <string name="nap_summary_delete_event">Delete this %s summary from my timeline</string>
+
+    <string name="manually_adjust_nap">手动调整小睡？</string>
+    <string name="when_is_night_sleep">什么时间是夜间睡眠？</string>
+    <string name="Week_Summary">%s 一周小结</string>
+    <string name="Nap_Summary">小睡摘要</string>
+    <string name="Night_Summary">Night Summary</string>
+    <string name="Night_Sleep_Summary">Night Sleep Summary</string>
+    <string name="week_sleep_text">%1$s小睡了%2$s。轻击查看更多信息</string>
+    <string name="hours_minutes">%1$d 小时 %2$d 分钟</string>
+    <string name="hours_minute">%1$d 小时 %2$d 分钟</string>
+    <string name="hour_minutes">%1$d 小时 %2$d 分钟</string>
+    <string name="hour_minute">%1$d 小时 %2$d 分钟</string>
+    <string name="hours">%d 小时</string>
+    <string name="hour">%d 小时</string>
+    <string name="minutes">%d 分钟</string>
+    <string name="minute">%d 分钟</string>
+    <string name="hour_minute_short">%1$d小时 %2$d分钟</string>
+    <string name="hour_short">%d小时</string>
+    <string name="minute_short">%d分钟</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="before_yesterday">The day before yesterday</string>
+
+    <string name="location_permission">Location Permission</string>
+    <string name="location_permission_turn_on_msg">Location permission is turned off. Please enable location permission to setup the Smart Charger.</string>
+    <string name="enable">Enable</string>
+    <string name="okay">Okay</string>
+    <string name="location_access_info">Allow location access and turn on your location to continue setting up your &appname;.</string>
+    <string name="allow_access">Allow Access</string>
+    <string name="location_must_be_on">Location Must Be On</string>
+    <string name="location_must_be_on_msg">You must turn on your location in your Settings before you set up &appname;.</string>
+    <string name="location_access_info_settings">You must allow location access in Settings > Apps > &appname;
+        > Permissions before you set up &appname;.</string>
+    <string name="location_access">Location Access</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="bluetooth_settings">蓝牙设置</string>
+    <string name="bluetooth_turn_on">打开</string>
+    <string name="bluetooth_warning">打开您手机中的蓝牙  来设置智能穿戴脚环</string>
+    <string name="my_sproutling">My &appname;</string>
+    <string name="enter_information">Enter information</string>
+    <string name="enter_information_txt">You can tap on this button to enter %1$s\'s sleep information.</string>
+    <string name="add_a_missed_nap">Add a Missed Nap</string>
+    <string name="add_a_missed_nap_txt">Forgot to put on Sprouting and your baby fell asleep? Manually log sleep to help us provide more accurate sleep predictions.</string>
+    <string name="Got_It">知道了</string>
+
+    <string name="tooltips_welcome_title">欢迎</string>
+    <string name="tooltips_welcome_descrip">快速浏览，了解使用智能穿戴脚环所能做的事</string>
+    <string name="tooltips_welcome_btn">太好了，开始吧！</string>
+    <string name="tooltips_welcome_no_thanks">不，谢谢</string>
+
+    <string name="tooltips_big_circle_title">时钟和心跳</string>
+    <string name="tooltips_big_circle_descrip">圆圈是时钟，心形的位置指示当前时间。您还可以看到利用心形看到宝宝心跳的反应</string>
+    <string name="next">下一步</string>
+
+    <string name="tooltips_small_circle_title">智能云底座控制</string>
+    <string name="tooltips_small_circle_descrip">您还可以轻击此处，打开智能云底座的更多功能</string>
+
+    <string name="tooltips_timeline_title">时间线</string>
+    <string name="tooltips_timeline_descrip">您可以轻击%1$s的姓名或向左滑动访问她的时间线页面</string>
+
+    <string name="tooltips_sleep_prediction_title">睡眠预测</string>
+    <string name="tooltips_sleep_prediction_descrip">智能穿戴脚环现在可以预测宝宝的苏醒时间。白色实线表示目前已睡的时间，浅色线表示宝宝可能继续睡眠的时间</string>
+
+    <string name="cm">cm</string>
+    <string name="lbs">lbs</string>
+
+    <string name="cant_set_up">无法设置</string>
+    <string name="device_create_err_msg">无法设置这台智能穿戴脚环设备，因为该设备目前注册在另一用户名下</string>
+    <string name="contact_support">联系技术支持</string>
+
+    <string name="dialog_update_title">软件更新</string>
+    <string name="dialog_update_message">一项重要更新可用，准备安装</string>
+    <string name="dialog_update_ok">更新</string>
+    <string name="firmware_update">Firmware Update</string>
+    <string name="firmware_updating_message">An important update is being installed at the moment. Thank you for your patience.</string>
+    <string name="firmware_updated_message">Your firmware is up to date now.</string>
+
+    <string name="timeline_week_summary_total_sleep">每周睡眠总计</string>
+
+    <string name="hub_control_title">智能云底座控制键</string>
+    <string name="hub_control_description">使用灯光和音乐安抚宝宝入睡</string>
+
+    <string name="hub_control_nightlight">小夜灯</string>
+    <string name="hub_control_musicplay">Music Play</string>
+
+    <string name="hub_control_nightlight_off">Off</string>
+    <string name="hub_control_nightlight_charging">Charging…</string>
+
+    <string name="hub_control_choose_a_color">Choose a color</string>
+    <string name="hub_control_choose_a_song">Choose a song</string>
+
+    <string-array name="color_string_list">
+        <item>@string/blue</item>
+        <item>@string/green</item>
+        <item>@string/red</item>
+        <item>@string/white</item>
+        <item>@string/yellow</item>
+        <item>@string/pink</item>
+        <item>@string/amber</item>
+    </string-array>
+
+    <string name="classical_playlist">Classical Playlist</string>
+    <string name="lullabies_playlist">Lullabies Playlist</string>
+    <string name="ambient_playlist">Ambient Playlist</string>
+    <string name="custom_playlist">Custom Playlist</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="white">White</string>
+    <string name="yellow">Yellow</string>
+    <string name="pink">Pink</string>
+    <string name="amber">Amber</string>
+
+    <string-array name="color_icon_list">
+        <item>@drawable/shape_item_oval_blue</item>
+        <item>@drawable/shape_item_oval_green</item>
+        <item>@drawable/shape_item_oval_red</item>
+        <item>@drawable/shape_item_oval_white</item>
+        <item>@drawable/shape_item_oval_yellow</item>
+        <item>@drawable/shape_item_oval_pink</item>
+        <item>@drawable/shape_item_oval_amber</item>
+    </string-array>
+
+    <string-array name="music_string_list">
+        <item>@string/hsl_air_on_g_string</item>
+        <item>@string/hsl_are_you_sleeping</item>
+        <item>@string/hsl_beautiful_dreamer</item>
+        <item>@string/hsl_brahms_lullaby</item>
+        <item>@string/hsl_clair_de_lune</item>
+        <item>@string/hsl_dance_of_the_spirits</item>
+        <item>@string/hsl_hush_little_baby</item>
+        <item>@string/hsl_liebestraum</item>
+        <item>@string/hsl_schuberts_lullaby</item>
+        <item>@string/hsl_twinkle_twinkle_little_star</item>
+        <item>@string/hsl_ambient_a</item>
+        <item>@string/hsl_ambient_b</item>
+        <item>@string/hsl_ambient_c</item>
+        <item>@string/hsl_ambient_d</item>
+        <item>@string/hsl_ambient_e</item>
+        <item>@string/hsl_white</item>
+        <item>@string/hsl_brown</item>
+        <item>@string/hsl_pink</item>
+        <item>@string/hsl_ocean</item>
+        <item>@string/hsl_rain</item>
+        <item>@string/hsl_thunder</item>
+        <item>@string/hsl_heart_slow</item>
+        <item>@string/hsl_heart_fast</item>
+    </string-array>
+
+    <string-array name="whats_new_feature_list">
+        <item>Now you can tell us if we got your baby\'s sleep status right</item>
+        <item>More intuitive hub controls design that includes timers and music playlists</item>
+    </string-array>
+
+    <string name="hsl_air_on_g_string">Air on G String</string>
+    <string name="hsl_ambient_a">Ambient A</string>
+    <string name="hsl_ambient_b">Ambient B</string>
+    <string name="hsl_ambient_c">Ambient C</string>
+    <string name="hsl_ambient_d">Ambient D</string>
+    <string name="hsl_ambient_e">Ambient E</string>
+    <string name="hsl_are_you_sleeping">Are You Sleeping?</string>
+    <string name="hsl_beautiful_dreamer">Beautiful Dreamer</string>
+    <string name="hsl_brahms_lullaby">Brahms\' Lullaby</string>
+    <string name="hsl_clair_de_lune">Clair de Lune</string>
+    <string name="hsl_dance_of_the_spirits">Dance of the Spirits</string>
+    <string name="hsl_hush_little_baby">Hush, Little Baby</string>
+    <string name="hsl_liebestraum">Liebestraum</string>
+    <string name="hsl_schuberts_lullaby">Schubert\'s Lullaby</string>
+    <string name="hsl_twinkle_twinkle_little_star">Twinkle, Twinkle, Little Star</string>
+    <string name="hsl_brown">Brown Noise</string>
+    <string name="hsl_ocean">Ocean Waves</string>
+    <string name="hsl_pink">Pink Noise</string>
+    <string name="hsl_rain">Gentle Rain</string>
+    <string name="hsl_thunder">Thunderstorm</string>
+    <string name="hsl_white">White Noise</string>
+    <string name="hsl_heart_slow">Slow Heartbeat</string>
+    <string name="hsl_heart_fast">Fast Heartbeat</string>
+    <string name="updating...">Updating...</string>
+    <string name="ok">OK</string>
+    <string name="server_url">Server Url</string>
+    <string name="mqtt_url">MQTT Url</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_url">Update Server Url</string>
+    <string name="taking_the_guesswork_out_of_sleep">Taking the guesswork out of sleep.</string>
+    <string name="i_dont_have_a_sproutling">I don\'t have a Sproutling</string>
+    <string name="what_is_sproutling">What is Sproutling?</string>
+    <string name="watch_the_video">Watch the video.</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="server_url_mqtt_url" formatted="false">Server URL : %s \n MQTT URL : %s</string>
+    <string name="accept">Accept</string>
+    <string name="network_not_supported">Network Not Supported</string>
+    <string name="network_not_supported_msg">Due to security concerns, Sproutling does not support WEP networks. Please upgrade your router to support WPA2.</string>
+    <string name="dont_see_your_network">Don\'t see your network</string>
+    <string name="learning_period">Learning Period</string>
+    <string name="the_learning_baby_monitor">The Learning Baby Monitor</string>
+    <string name="the_learning_baby_monitor_msg">Sproutling uses artificial intelligence to create sleep insights and predictions. We might be off at first, but we learn and get better over time.</string>
+    <string name="unlock_wake_prediction">Unlock Wake Prediction</string>
+    <string name="unlock_wake_prediction_msg">We are learning your baby\'s sleep patterns to unlock wake up predictions. Log any sleep that happens when %s doesn\'t wear Sproutling</string>
+    <string name="the_first_7_days">The First 7 Days</string>
+    <string name="the_first_7_days_msg">The initial Learning Period lasts 7 days. During this time the alogrithms are adapting to give you more accurare sleep insights. The more you use it the better.</string>
+    <string name="never_stop_learning">Never Stop Learning</string>
+    <string name="never_stop_learning_msg">Our insights continue to improve and adjusts as your baby grows and changes. We also learn from all Sproutling owners for better results for you over time.</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="provide_feedback_msg">Tell us if your baby\'s sleep status is correct. The status may not change immediately, but letting us know helps us improve accuracy over time.</string>
+    <string name="close">Close</string>
+    <string name="invalid_ssid_characters_msg">We cannot connect to Wi-Fi networks with special characters in their names. Please change your network name or connect to another network.</string>
+    <string name="your_baby">your baby</string>
+    <string name="wifi_setup_successfully">Wi-Fi Setup Successfully</string>
+    <string name="searching">Searching</string>
+    <string name="log_sleep">Log Sleep</string>
+    <string name="fell_asleep">FELL ASLEEP</string>
+    <string name="woke_up">WOKE UP</string>
+    <string name="total_time_slept">Total Time Slept</string>
+    <string name="stop">Stop</string>
+    <string name="error">Error</string>
+    <string name="time_greater_error">Selected time cannot be greater than current time.</string>
+    <string name="at">at</string>
+    <string name="setup_account_creation_mobile_phone_info">Your phone number will only be used when you need to recover your forgotten password</string>
+    <string name="code">Code</string>
+    <string name="ssid">SSID</string>
+    <string name="device_name">Device Name</string>
+    <string name="style_guide">Style Guide</string>
+    <string name="login_email_or_mobile_phone">E-mail or Mobile Phone #</string>
+    <string name="login_email__or_mobile_phone_error">Invalid email or phone number format</string>
+    <string name="time_lesser_than_sleep_start_error">The selected time cannot be lesser than sleep start time.</string>
+    <string name="wifi_interference">Wi-Fi Router Interference</string>
+    <string name="wifi_interference_msg">We have detected some Bluetooth interference that\'s likely caused by your Wi-Fi router being too close to your Smart Charger. In order for Sproutling to work accurately, please move the router at least 10 feet away from your Smart Charger.</string>
+    <string name="filter_sproutling">sproutlingFilter</string>
+    <string name="music_play_song">Music Play Song</string>
+    <string name="music">Music</string>
+    <string name="sound">Sound</string>
+    <string name="play">Play</string>
+    <string name="whats_new_title">What\'s New</string>
+    <string name="timer_off">Timer: Off</string>
+    <string name="night_light_timer">Night Light Timer</string>
+    <string name="turn_off_in">Turn off in</string>
+    <string name="music_timer">Music Timer</string>
+    <string name="timer_display_h_m_text">Timer: %dh %dm</string>
+    <string name="timer_display_m_text">Timer: %dm</string>
+
+    <string name="report_baby_current_status">Report Baby\'s Current Status</string>
+    <string name="is_babyname_status">Is %s %s ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="babyname_is_currently">%s is currently</string>
+    <string name="asleep">Asleep</string>
+    <string name="stirring">Stirring</string>
+
+    <string name="other">Other</string>
+    <string name="something_else_please_tell_us">Something else? Please tell us...</string>
+    <string name="submit">Submit</string>
+    <string name="thanks_for_your_input">Thanks for Your Input</string>
+    <string name="you_are_making_sproutling_better">You\'re making Sproutling better.</string>
+    <string name="why_we_ask_about_current_status">Why we ask about current status</string>
+    <string name="why_we_ask_about_current_status_msg">&appname; is a learning device. Your input helps us improve the accuracy of sleep status over time.</string>
+    <string name="night_light_color">Night Light Color</string>
+    <string name="select">Select</string>
+    <string name="playlists">Playlists</string>
+    <string name="awake">Awake</string>
+    <string name="reset">Reset</string>
+</resources>

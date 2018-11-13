@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="448dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sleep_dlg_bg">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_dlg_title"
+            style="@style/SubtextThree.10"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_dlg_text"
+            style="@style/SubtextOne.6"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/beginTimeLayout"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/begin_time_selector">
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="38dp"
+                android:text="@string/sleep_dlg_begin"
+                style="@style/HeaderTwo.6"/>
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/beginTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                style="@style/SubtextOne.6"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/endTimeLayout"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/end_time_selector">
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="38dp"
+                android:text="@string/sleep_dlg_end"
+                style="@style/HeaderTwo.6"/>
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/endTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                style="@style/SubtextOne.6"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/SubtextOne.5"
+            android:text="@string/sleep_dlg_edit_total_time"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/totalTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/sleep_dlg_edit_time_format"
+            style="@style/SubtextOne.32"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/btnSave"
+            android:text="@string/sleep_dlg_save"
+            android:textColor="@color/sleep_dlg_save_color"
+            android:gravity="center"
+            style="@style/SubtextFive.7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sleep_dlg_save_button_bg"/>
+
+        <View
+            android:background="@color/color_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/btnCancel"
+            android:text="@string/sleep_dlg_cancel"
+            android:gravity="center"
+            style="@style/SubtextFive.7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sleep_dlg_cancel_button_bg"/>
+    </LinearLayout>
+</RelativeLayout>

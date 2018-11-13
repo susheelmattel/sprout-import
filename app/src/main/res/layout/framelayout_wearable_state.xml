@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_charging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_lightning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lightning"/>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_batteryFrame"-->
+        <!--android:layout_width="@dimen/batteryChargingW"-->
+        <!--android:layout_height="@dimen/batteryChargingW"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/ic_battery_container"/>-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="@dimen/batteryChargingW"-->
+        <!--android:layout_height="@dimen/batteryChargingH"-->
+        <!--android:layout_gravity="center"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:id="@+id/img_batteryValue"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/ic_white_battery_100"/>-->
+        <!--</FrameLayout>-->
+        <com.sproutling.ui.widget.BatteryDisplay
+            android:id="@+id/battery_charging"
+            android:layout_width="@dimen/batteryStatusViewW"
+            android:layout_height="@dimen/batteryStatusViewH"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_charged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <!--android:visibility="gone">-->
+
+        <ImageView
+            android:id="@+id/img_lightning2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lightning"/>
+
+        <ImageView
+            android:id="@+id/img_batteryFrame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_battery_container"/>
+
+        <ImageView
+            android:id="@+id/img_batteryFrame_grow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_battery_full_glow"/>
+
+        <ImageView
+            android:id="@+id/img_batteryValue2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_battery_full"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_out_of_battery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_batteryFrame3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_out_of_battery"/>
+
+        <ImageView
+            android:id="@+id/img_batteryFrame_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_status_line"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_ready"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_wearable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_ready"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_glow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_ready_glow"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_too_far_away"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_wearable_far"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_far_away_wearable"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_far_signal1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_far_away_signal1"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_far_signal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_far_away_signal2"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_far_hub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_far_away_hub"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_cannot_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_not_found_question"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_cannot_find"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_ready"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_fell_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_wearable_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_status_line"/>
+
+        <ImageView
+            android:id="@+id/img_wearable_fell_off"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_not_attached_wearable"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_sproutling_offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_sproutling_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_status_line"/>
+
+        <ImageView
+            android:id="@+id/img_sproutling_offline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_sproutling_offline_hub"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_no_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_no_service_wifi3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_service_wifi3"/>
+
+        <ImageView
+            android:id="@+id/img_no_service_wifi2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_service_wifi2"/>
+
+        <ImageView
+            android:id="@+id/img_no_service_wifi1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_service_wifi1"/>
+
+        <ImageView
+            android:id="@+id/img_no_service_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_service_line"/>
+
+        <ImageView
+            android:id="@+id/img_no_service_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_service_phone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_firmware_updating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_detecting_one"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/ic_detecting_loader_one"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_detecting_two"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/ic_detecting_loader_two"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_detecting_three"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/ic_detecting_loader_three"/>-->
+
+        <ImageView
+            android:id="@+id/img_wearable_firmware_updating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_firmware_update"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_firmware_updating_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_firmware_updating_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_firmware_updating_one"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_firmware_updating_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_firmware_updating_two"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_detecting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_detecting_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_detecting_loader_one"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_detecting_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_detecting_loader_two"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_detecting_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_detecting_loader_three"/>-->
+
+        <ImageView
+            android:id="@+id/img_wearable_detecting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wearable_ready"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/img_detecting_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_detecting_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_detecting_one"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_detecting_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_detecting_two"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/frame_wearable_loading"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:visibility="visible"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_loading_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:src="@drawable/ic_detecting_loader_one"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_loading_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:src="@drawable/ic_detecting_loader_two"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_loading_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:src="@drawable/ic_detecting_loader_three"/>-->
+
+    <!--</FrameLayout>-->
+
+    <FrameLayout
+        android:id="@+id/frame_wearable_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/img_loading_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_loading_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_loading_one"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+
+            <ImageView
+                android:id="@+id/img_loading_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_loading_two"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/shape_dot_white"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center">
+    </FrameLayout>
+
+</LinearLayout>

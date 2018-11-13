@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShTextView">
+        <attr name="shFontStyle" format="enum">
+            <enum name="london" value="0"/>
+            <enum name="newyork" value="1"/>
+            <enum name="paris" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="BatteryDisplay">
+        <attr name="batteryStyle" format="enum">
+            <enum name="white" value="0"/>
+            <enum name="grey" value="1"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="ShEditText" parent="@android:style/Widget.EditText">
+        <attr name="password" format="boolean"/>
+        <attr name="singleLine" format="boolean"/>
+        <attr name="isEditable" format="boolean"/>
+        <attr name="imgLeft" format="integer"/>
+        <attr name="imgRight" format="integer"/>
+        <attr name="focusImg" format="integer"/>
+        <attr name="errorImg" format="integer"/>
+        <attr name="errorText" format="string"/>
+        <attr name="hintText" format="string"/>
+        <attr name="textSize" format="dimension"/>
+
+        <attr name="inputType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="text" value="1"/>
+            <enum name="textCapCharacters" value="2"/>
+            <enum name="textCapWords" value="3"/>
+            <enum name="textCapSentences" value="4"/>
+            <enum name="textAutoCorrect" value="5"/>
+            <enum name="textAutoComplete" value="6"/>
+            <enum name="textMultiLine" value="7"/>
+            <enum name="textImeMultiLine" value="8"/>
+            <enum name="textNoSuggestions" value="9"/>
+            <enum name="textUri" value="10"/>
+            <enum name="textEmailAddress" value="11"/>
+            <enum name="textEmailSubject" value="12"/>
+            <enum name="textShortMessage" value="13"/>
+            <enum name="textLongMessage" value="14"/>
+            <enum name="textPersonName" value="15"/>
+            <enum name="textPostalAddress" value="16"/>
+            <enum name="textPassword" value="17"/>
+            <enum name="textVisiblePassword" value="18"/>
+            <enum name="textWebEditText" value="19"/>
+            <enum name="textFilter" value="20"/>
+            <enum name="textPhonetic" value="21"/>
+            <enum name="textWebEmailAddress" value="22"/>
+            <enum name="textWebPassword" value="23"/>
+            <enum name="number" value="24"/>
+            <enum name="numberSigned" value="25"/>
+            <enum name="numberDecimal" value="26"/>
+            <enum name="numberPassword" value="27"/>
+            <enum name="phone" value="28"/>
+            <enum name="datetime" value="29"/>
+            <enum name="date" value="30"/>
+            <enum name="time" value="31"/>
+        </attr>
+
+        <attr name="showSquareBg" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomShInputTextLayout" parent="@android:style/Widget.InputTextLayout">
+        <attr name="errorMsg" format="string"/>
+        <attr name="infoMsg" format="string"/>
+    </declare-styleable>
+
+</resources>

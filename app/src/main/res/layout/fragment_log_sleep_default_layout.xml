@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_log_sleep_empty"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/set_sleep_dlg_text"/>
+
+        <Button
+            android:id="@+id/btnStartLogSleep"
+            style="@style/RoundButtonStyle.Green"
+            android:layout_width="@dimen/round_button_radius"
+            android:layout_height="@dimen/round_button_radius"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="@string/set_sleep_dlg_start"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+
+        <com.sproutling.ui.widget.ShTextView
+            style="@style/SubtextFive.7"
+            android:id="@+id/tvEnterManually"
+            android:background="?selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin"
+            android:text="@string/set_sleep_dlg_manually"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="pairing_device_ble_note">Note: Make sure your mobile device is within 2 meters of %s when pairing</string>
+    <string name="firmware_update_failed_message">Firmware update has failed. Please try again while staying within 3 meters of the product during the update.</string>
+    <string name="firmware_updating_message">Stay within 6 feet of product and keep the app open until update is complete</string>
+
+</resources>

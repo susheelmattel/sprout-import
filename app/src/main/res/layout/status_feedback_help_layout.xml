@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin2">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/helpTitle"
+                    style="@style/HeaderTwo.6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/why_we_ask_about_current_status"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/helpMessage"
+                    style="@style/SubtextOne.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helpTitle"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="@string/why_we_ask_about_current_status_msg"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/close"
+                    style="@style/SubtextFive.6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/helpMessage"
+                    android:layout_marginTop="@dimen/margin"
+                    android:padding="@dimen/margin"
+
+                    android:text="@string/close"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cardView"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin2"
+            android:layout_marginTop="-8dp"
+            android:rotation="45"
+            android:src="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

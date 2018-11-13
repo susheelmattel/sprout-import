@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomShInputTextLayout" parent="@android:style/Widget.InputTextLayout">
+        <attr name="errorMsg" format="string"/>
+        <attr name="infoMsg" format="string"/>
+    </declare-styleable>
+
+
+    <attr name="tl_backgroundColor" format="color"/>
+    <attr name="btn_disabledColor" format="color"/>
+
+</resources>

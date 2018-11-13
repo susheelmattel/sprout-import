@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/setup_illustration_two"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_hub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/setup_hub_message"
+        android:textColor="@color/greyishBrown"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="@string/setup_hub_tips"
+        style="@style/SubtextOne.5"/>
+
+    <RelativeLayout
+        android:id="@+id/tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help"
+        android:layout_below="@+id/tips">
+
+        <ImageView
+            android:id="@+id/img_plug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_troubleshoot_plug"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip1_what"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/img_plug"
+            android:text="@string/setup_hub_tip1_what"
+            style="@style/SubtextThree.6"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip1_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/tip1_what"
+            android:layout_below="@+id/tip1_what"
+            android:paddingTop="5dp"
+            android:paddingRight="@dimen/margin"
+            android:text="@string/setup_hub_tip1_how"
+            style="@style/SubtextOne.6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tip1_how"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:src="@drawable/ic_troubleshoot_charger"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip2_what"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tip1_what"
+            android:layout_below="@+id/tip1_how"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:text="@string/setup_hub_tip2_what"
+            style="@style/SubtextThree.6"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip2_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tip2_what"
+            android:layout_below="@id/tip2_what"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="5dp"
+            android:text="@string/setup_hub_tip2_how"
+            style="@style/SubtextOne.6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tip2_how"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:src="@drawable/ic_troubleshoot_bluetooth"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip3_what"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tip2_how"
+            android:layout_below="@id/tip2_how"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:text="@string/setup_hub_tip3_what"
+            style="@style/SubtextThree.6"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tip3_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tip3_what"
+            android:layout_below="@id/tip3_what"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="5dp"
+            android:text="@string/setup_hub_tip3_how"
+            style="@style/SubtextOne.6"
+           />
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_skip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/ic_help_tips"
+        android:text="@string/setup_hub_help"
+        android:textColor="@color/tealish" />
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:padding="5dp"
+        android:text="@string/setup_connect_device_skip"
+        style="@style/SubtextOne.2"/>
+</RelativeLayout>
+

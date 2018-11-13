@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_rounded_white">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/title"
+        style="@style/HeaderTwo.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/music_play_song"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/slidingTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TabTextAppearance"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerMusic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomsheet_wheelView"
+        android:layout_below="@+id/slidingTabLayout">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <Button
+        android:id="@+id/btnPlay"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPagerMusic"
+        android:layout_marginEnd="@dimen/margin1"
+        android:layout_marginStart="@dimen/margin1"
+        android:layout_marginBottom="@dimen/margin1"
+        android:text="@string/play"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textNormal"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

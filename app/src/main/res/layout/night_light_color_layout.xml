@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_rounded_white">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/title"
+        style="@style/HeaderTwo.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/night_light_color"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/title"
+        android:background="@color/divider"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/subtitle"
+        style="@style/SubtextThree.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_margin="@dimen/margin1"
+        android:text="@string/hub_control_choose_a_color"/>
+
+    <com.wx.wheelview.widget.WheelView
+        android:id="@+id/colorList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomsheet_wheelView"
+        android:layout_below="@+id/subtitle"/>
+
+    <Button
+        android:id="@+id/btnSelect"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorList"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/select"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textNormal"/>
+
+</RelativeLayout>

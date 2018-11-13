@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">pipetest</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="serial_number">SERIAL NUMBER</string>
+
+    <!--User-->
+    <string name="list_all_users">List all users</string>
+    <string name="create_user">Create user</string>
+    <string name="user_detail">User detail</string>
+    <string name="update_user">Update user</string>
+    <string name="delete_user">Delete user</string>
+
+    <!--Handheld-->
+    <string name="list_all_handhelds">List all Handhelds</string>
+    <string name="create_handheld">Create Handheld</string>
+    <string name="handheld_detail">Handheld Detail</string>
+    <string name="update_a_handheld">Update Handheld</string>
+    <string name="delete_a_handheld">Delete Handheld</string>
+
+    <!--Children-->
+    <string name="list_all_children">List Children</string>
+    <string name="create_children">Create Child</string>
+    <string name="children_detail">Child Detail</string>
+    <string name="update_a_children">Update Child</string>
+    <string name="delete_a_children">Delete Child</string>
+
+    <!--EVENT-->
+    <string name="child_event">Child events</string>
+
+    <!--MQTT-->
+    <string name="subscribe_topic">Subscribe</string>
+    <string name="unsubscribe_topic">Unubscribe</string>
+    <string name="publish_message">Publish Msg</string>
+    <string name="connect_mqtt">Connect MQTT</string>
+    <string name="disconnect_mqtt">DISCONNECT MQTT</string>
+</resources>

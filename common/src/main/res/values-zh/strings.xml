@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">common</string>
+
+    <!--First Launch-->
+    <string name="first_launch_title">未来育儿室</string>
+    <string name="first_launch_login">已经有账号了吗？</string>
+    <string name="first_launch_sign_in"> 登录</string>
+    <string name="first_launch_sign_up">注册</string>
+
+    <!--Legal-->
+    <string name="legal_important">重要提示</string>
+    <string name="legal_agree_button">我同意</string>
+    <string name="legal_terms" formatted="false">点击“我同意”即代表您同意我们的<a href="https://eula.cn.platform.mattel/Mattel_Mobile_Apps_-_EULA_Android_no_virtual_currency_CN.html">最终用户许可协议</a> 以及 <a href="https://www.mattel.com/zh-cn/privacy-statement">隐私声明</a>.</string>
+    <string name="legal_agree_message_01">点击“我同意”即代表您同意我们的</string>
+    <string name="legal_agree_message_02">最终用户许可协议</string>
+    <string name="legal_agree_message_03">以及</string>
+    <string name="legal_agree_message_04">隐私声明</string>
+
+    <string name="legal_content">This summary highlights key parts of the <a href="https://www.mattel.com/zh-cn/privacy-statement">MATTEL GENERAL PRIVACY STATEMENT</a>, which governs. Look for key terms (italicized and underlined <i><a href="">like this</a></i>) in the <a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">DEFINITIONS </a>section \n\n
+        <b> What Information May Be Collected</b>
+        \n \t \t \u2022  <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">Automatically collected info</a></i>, like <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">device info</a></i> and network info
+        \n \t \t \u2022 <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">Approximate, network-based location</a></i>
+        \n \t \t \u2022 <a href="https://www.mattel.com/zh-cn/about-cookies-and-technologies">ABOUT COOKIES &amp; TECH:</a> We, our <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">3rd-party partners</a></i> &amp; <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">3rd-party tech partners get some automatically collected info</a></i> &amp;
+        other <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">info </a></i>using tech like cookies, web beacons, or others. Read more at the <a href="http://corporate.mattel.com/pdfs/third-party-partners.pdf">MOBILE 3RD-PARTY TECH LIST.</a>
+
+        \n\n
+        <b>Why It’s Collected</b>
+        \n \t \t \u2022 Support internal operations (provide and improve products and services, analytics).
+        \n \t \t \u2022 Fulfill requests, including in-app purchases.
+        \n \t \t \u2022 Understand consumers.
+        \n \t \t \u2022 Optimize functionality.
+        \n \t \t \u2022 Manage content and ads.
+        \n \t \t \u2022 For some apps, personalization.
+
+        \n\n
+        <b>With Whom It\'s Shared</b>
+        \n \t \t \u2022 Within the <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">Mattel family of companies</a></i>, and with our <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">3rd-party partners</a></i> and <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">3rd-party technology partners</a></i> to support internal operations.
+        \n \t \t \u2022 With <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">3rd parties</a></i> for marketing purposes.
+        \n \t \t \u2022 For <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">user-generated content,</a></i> if available, with family, friends, or the public as you choose. See app details for info.
+        \n \t \t \u2022 As necessary, required, or permitted by law.
+
+        \n\n
+        <b>Contact Us/Review or Delete Your or Your Baby\'s Collected Info</b>
+        \n \t \t \u2022 Visit <a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-Contact-Us-With-Your-Questions">CONTACT US</a>
+        \n \t \t \u2022 Parents: Use the <a href="http://corporate.mattel.com/ParentalAccessForm.pdf">PARENTAL ACCESS FORM</a> to learn about your <i><a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-1">kid’s personal info</a></i> or start process to make choices about it.
+        \n \t \t \u2022 To make choices about information or communications, please visit <a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-10">YOUR CHOICES AND CONTROLS.</a>
+
+        \n\n
+        <b>Other Important Info</b>
+        \n \t \t \u2022 Data may be transferred to another country
+        \n \t \t \u2022 You can learn about <a href="https://www.mattel.com/zh-cn/privacy-statement#anchor-17">YOUR EUROPEAN PRIVACY RIGHTS</a>
+        \n \t \t \u2022 The full <a href="https://www.mattel.com/zh-cn/privacy-statement">MATTEL GENERAL PRIVACY STATEMENT</a> governs.
+
+        \n\n
+        © 2018 Mattel.
+    </string>
+
+
+    <!--Login-->
+    <string name="login_title">登录</string>
+    <string name="login_sign_in_button">登录</string>
+    <string name="login_facebook_button">使用 Facebook 登录</string>
+    <string name="login_or">或</string>
+    <string name="login_forgot_password_button">忘记密码了？</string>
+    <string name="login_update_url">Update Url</string>
+    <string name="login_invalid_email_address">无效的电子邮件地址</string>
+    <string name="login_email_placeholder">电子邮件</string>
+    <string name="login_password_placeholder">密码</string>
+
+    <string name="login_save">Save</string>
+    <string name="login_cancel">取消</string>
+
+    <!--Login Error Modal-->
+    <string name="login_error_title">糟糕</string>
+    <string name="login_error_message">电子邮件地址与密码不相符，请再试一次。</string>
+    <string name="login_error_try_again">再试一次</string>
+
+    <!--Username Error Modal-->
+    <string name="username_error_invalid_email_phone_number">无效的电子邮件或手机号码</string>
+    <string name="username_error_invalid_try_again">无效的电子邮件或手机号码，请再试一次。</string>
+
+
+    <!--Forgot password screen-->
+    <string name="forgot_password_title">重置密码</string>
+    <!--
+    <string name="forgot_password_message"> 请输入此账号使用的电话号码或电子邮件。</string>
+    <string name="forgot_password_email_placeholder">电子邮件或手机号码：</string>
+    <string name="forgot_password_sms_warning">您的运营商可能会收取标准短信费用</string>
+    -->
+    <!--[START]Temporary placeholders; remove these and uncomment the above strings-->
+    <string name="forgot_password_message">请输入此账号使用的电子邮件。</string>
+    <string name="forgot_password_email_placeholder">电子邮件</string>
+    <string name="forgot_password_sms_warning"></string>
+    <!--[END]Temporary placeholders;-->
+    <string name="forgot_enter_phone_number_message">我们会发送设置新密码所需的验证码给您。</string>
+    <string name="forgot_password_phone_placeholder">手机号码</string>
+    <string name="forgot_invalid_email_format">无效的电子邮件格式</string>
+    <string name="forgot_password_send">发送</string>
+    <string name="forgot_phone_number_error">无效的手机号码，请再试一次。</string>
+
+    <string name="forgot_password_next">下一步</string>
+
+    <!--SMS Verification Screen-->
+    <string name="sms_verification_code">验证码</string>
+    <string name="sms_verification_header">请输入验证码</string>
+    <string name="sms_verification_message_phone">开启由 %s 发送的短信，使用验证码来重置您的密码。</string>
+    <string name="sms_verification_message_email">阅读由 %s 发送的电子邮件，使用验证码来重置您的密码。</string>
+    <string name="sms_verification_next">下一步</string>
+    <string name="sms_verification_phone_instruction">请输入发送给 %s 的验证码</string>
+    <string name="sms_verification_code_hint">验证码</string>
+    <string name="sms_verification_code_sent_text"> 请查看您的短信，以便接收验证码。</string>
+    <string name="sms_verification_request_code">重新发送验证码</string>
+
+    <string name="sms_verification_pin_sent_successfully">Pin sent successfully</string>
+
+    <!--Set New Password Screen-->
+    <string name="set_new_password_title">新密码</string>
+    <string name="set_new_password_header">请输入新密码</string>
+    <string name="set_new_password_message">请输入您账号要使用的新密码。</string>
+    <string name="set_new_password_placeholder">新密码</string>
+    <string name="set_new_password_confirm_placeholder">密码确认</string>
+    <string name="set_new_password_tips">密码提示</string>
+    <string name="set_new_password_tips_content">长度必须至少 8 个字符\n至少包含一个数字\n包含大小写字母\n加入一个特殊字符</string>
+    <string name="set_new_password_error_too_short"> 请设置至少 8 个字符的密码。</string>
+    <string name="set_new_password_error_too_long"> 请设置不超过 72 个字符的密码。</string>
+    <string name="set_new_password_do_not_match">密码不相符</string>
+    <string name="set_new_password_required">密码为必填</string>
+
+
+    <!--Account Creation Screen-->
+    <string name="account_creation_title">账号创建</string>
+    <string name="account_creation_next">下一步</string>
+    <string name="account_creation_or">或</string>
+    <string name="account_creation_first_name">名字</string>
+    <string name="account_creation_last_name">姓氏</string>
+    <string name="account_creation_email">电子邮件</string>
+    <string name="account_creation_mobile_phone">手机号码</string>
+    <string name="account_creation_password">密码</string>
+    <string name="account_creation_password_confirmation">再次输入密码</string>
+    <string name="account_creation_first_name_required">名字为必填</string>
+    <string name="account_creation_last_name_required">名字为必填</string>
+    <string name="account_creation_email_required">电子邮件为必填</string>
+    <string name="account_creation_phone_required">电话号码为必填</string>
+    <string name="account_creation_password_required">密码为必填</string>
+    <string name="account_creation_invalid_email_format">无效的电子邮件格式</string>
+    <string name="account_creation_invalid_phone_format">无效的电话号码格式</string>
+    <string name="account_creation_passwords_do_not_match">密码不相符</string>
+    <string name="account_creation_password_too_short"> 密码长度必须至少 8 个字符</string>
+    <string name="account_creation_password_too_long">密码长度必须不超过 72 个字符</string>
+    <string name="account_creation_email_already_registered">此电子邮件地址已注册</string>
+    <string name="account_creation_phone_already_registered">此电话号码已注册</string>
+    <string name="account_creation_invalid_phone">无效的电话号码</string>
+    <string name="account_creation_invalid_email">无效的电子邮件地址</string>
+    <string name="account_creation_phone_hint_message">只有在忘记密码需要恢复密码时，才会使用您的电话号码</string>
+    <string name="account_creation_check_connection">请检查网络连接，然后再试一次。</string>
+
+    <!--Internet 关闭line Modal -->
+    <string name="internet_offline_title">糟糕</string>
+    <string name="internet_offline_message">当前网络连接已中断，请检查网络连接后再试一次。</string>
+    <string name="internet_offline_button">我知道了</string>
+
+    <!--Child Profile Screen -->
+    <string name="child_profile_onboarding_title">添加孩童</string>
+    <string name="child_profile_title">孩童个人资料</string>
+    <string name="child_profile_bar_button_next">下一步</string>
+    <string name="child_profile_bar_button_save">保存</string>
+    <string name="child_profile_girl">女孩</string>
+    <string name="child_profile_boy">男孩</string>
+    <string name="child_profile_first_name">宝宝的名字</string>
+    <string name="child_profile_birthday">出生日期</string>
+    <string name="child_profile_why_dates">我们询问日期的原因</string>
+    <string name="child_profile_first_name_required">宝宝的名字为必填</string>
+    <string name="child_profile_birthday_hint">我们会利用此资料来提高判断的精准度，这些信息将以完全私密及安全的方式保管。</string>
+    <string name="child_profile_cancel">取消</string>
+    <string name="child_profile_camera">拍照</string>
+    <string name="child_profile_choose_library">从图库选择</string>
+    <string name="child_profile_add_photo">添加照片</string>
+    <string name="child_profile_change_photo">更改照片</string>
+    <string name="child_profile_select_gender">宝宝的性别</string>
+
+    <string name="child_profile_birthday_cannot_be_in_future">生日不可在将来</string>
+    <string name="child_profile_dialog_fragment_title">我们询问日期的原因</string>
+    <string name="child_profile_got_it">我知道了</string>
+
+    <!--Adjust Photo Screen-->
+    <string name="adjust_photo_label">拖动并捏合来进行剪切</string>
+    <string name="adjust_photo_okButton">使用</string>
+    <string name="adjust_photo_cancelButton">取消</string>
+
+
+    <!--Bluetooth & location permission Screen-->
+    <string name="bluetooth_screen_title">蓝牙</string>
+    <string name="bluetooth_screen_message">请开启您手机上的蓝牙功能，大多数产品都需要使用蓝牙功能。</string>
+    <string name="bluetooth_screen_image">蓝牙权限图片</string>
+    <string name="bluetooth_screen_no_button_title">暂时不用</string>
+    <string name="location_screen_access">位置</string>
+    <string name="location_screen_permission_title">启用位置权限</string>
+    <string name="location_screen_permission_message">所有产品都需要蓝牙然而需要位置许可才能启用蓝牙。我们不使用或保存任何位置数据。</string>
+    <string name="location_screen_enable_title">位置必须开启</string>
+    <string name="location_screen_enable_message">大多数产品都需要蓝牙然而必须启用位置才能启用蓝牙。我们不使用或保存任何位置数据。</string>
+    <!-- Location & Bluetooth dialog -->
+    <string name="bluetooth_screen_cancel">取消</string>
+    <string name="bluetooth_screen_turn_on">打开</string>
+    <string name="bluetooth_screen_off">蓝牙 关闭</string>
+    <string name="bluetooth_screen_off_msg">蓝牙是 关闭. 你想打开它吗？大多数产品需要蓝牙</string>
+    <string name="location_screen_off">位置 关闭</string>
+    <string name="location_screen_off_msg">位置是 关闭.你想打开它吗？大多数产品需要访问位置。</string>
+    <string name="location_screen_cancel">取消</string>
+    <string name="location_screen_turn_on">打开</string>
+
+    <!--My Information Screen-->
+    <string name="my_information">我的信息</string>
+    <string name="my_information_save_button_title">保存</string>
+    <string name="my_information_first_name_text_field_placeholder">名字</string>
+    <string name="my_information_last_name_text_field_placeholder">姓氏</string>
+    <string name="my_information_email_text_field_placeholder">电子邮件</string>
+    <string name="my_information_phone_number_text_field_placeholder">电话号码</string>
+    <string name="my_information_first_name_text_field_required_message">名字为必填</string>
+    <string name="my_information_last_name_text_field_required_message">姓氏为必填</string>
+    <string name="my_information_email_text_field_required_message">电子邮件为必填</string>
+    <string name="my_information_phone_number_text_field_required_message">电话号码为必填</string>
+
+    <string name="my_information_password_text_field_placeholder">密码</string>
+    <string name="my_information_password_text_field_required_message">电话号码为必填</string>
+    <string name="my_information_password_too_short">密码长度必须至少 8 个字符</string>
+    <string name="my_information_phone_hint_message">只有在忘记密码需要恢复密码时，才会使用您的电话号码</string>
+
+    <!--Generic error dialog-->
+    <string name="password_changed_title">密码已成功更改</string>
+    <string name="password_changed_message">请使用新密码\n再次登入以继续。</string>
+    <string name="password_changed_got_it">我知道了</string>
+
+    <!--Pin validation error modal-->
+    <string name="pin_validation_invalid_code">无效的验证码</string>
+    <string name="pin_validation_invalid_code_message">您的验证码可能有误或是已过期，请再试一次或请求新的验证码。</string>
+    <string name="pin_validation_got_it">我知道了</string>
+
+    <!--Error Modal-->
+    <string name="generic_error_title">糟糕</string>
+    <string name="generic_error_message">出错了，\n请再试一次。</string>
+    <string name="generic_error_got_it">我知道了</string>
+    <string name="empty"/>
+
+    <!--配对 Activity Indicator-->
+    <string name="pairing_activity_success">成功！</string>
+
+    <!--配对 Screen-->
+    <string name="pairing_seahorse_heading1">步骤 1</string>
+    <string name="pairing_seahorse_heading2">步骤 2</string>
+    <string name="pairing_title">配对</string>
+    <string name="pairing_device_ble_note">注意：配对时，请确保您的移动设备与%s距离不超过1.8米</string>
+    <string name="pairing_rnp_heading">按 配对 按键</string>
+    <string name="pairing_seahorse_body1"> 打开智能安抚海马的背部，将电源/音量开关切换至“ 开启”</string>
+    <string name="pairing_seahorse_body2"> 按下智能安抚海马的配对按钮。配对最长可能需要 30 秒的时间。</string>
+    <string name="pairing_device_heading">按 配对 按键</string>
+    <string name="pairing_device_body">产品连接电源后，请找到电源按钮并长按约 5 秒，将它与您的设备配对。</string>
+
+    <!--Device 已连接 Screen-->
+    <string name="device_connected_title">已连接</string>
+    <string name="device_connected_body">%s 成功连接</string>
+
+    <!--Remove Device Confirmation Modal-->
+    <string name="remove_device_title">将产品从账号移除</string>
+    <string name="remove_device_body">确定要从您的账号移除此产品吗？此操作无法撤销。</string>
+    <string name="remove_device_yes">确定要从您的账号移除此产品吗？此操作无法撤销。</string>
+    <string name="remove_device_cancel">取消</string>
+
+    <!--固件更新 Modal-->
+    <string name="firmware_update_available_message">您的产品有可用的固件更新。更新需要几分钟的时间，过程中您将暂时无法使用产品。</string>
+    <string name="firmware_update_availble">开始更新</string>
+    <string name="firmware_update_available_title">固件更新</string>
+    <string name="firmware_update_required_message">您的产品有可用的固件更新。更新需要几分钟的时间，过程中您将暂时无法使用产品。更新完成后，您需要为产品重新进行配对。</string>
+    <string name="firmware_update_required">开始更新并解除配对</string>
+    <string name="firmware_update_required_title">固件更新</string>
+    <string name="firmware_update_complete_message">您的产品已完成固件更新，现在可以再次使用产品了。</string>
+    <string name="firmware_update_complete">我知道了</string>
+    <string name="firmware_update_complete_title">固件更新 完成</string>
+    <string name="firmware_update_failed_message"> 固件更新失败。请保持在距离产品 3 米内的范围再试一次。</string>
+    <string name="firmware_update_failed_title">固件更新 失败</string>
+    <string name="firmware_update_failed">再试一次</string>
+
+
+    <!-- Troubleshoot dialog -->
+    <string name="device_troubleshoot_turn_product_on">打开你的产品</string>
+    <string name="device_troubleshoot_instructions">产品连接电源和请确保它已打开。您的产品应在几秒钟内显示为检测到。如果没有，请仔细检查您的设备上是否启用了蓝牙。</string>
+    <string name="device_troubleshoot_see_faq">联系支持</string>
+    <string name="device_troubleshoot_got_it">我知道了</string>
+
+    <!-- 联系支持 dialog -->
+    <string name="contact_support">联系支持</string>
+    <string name="call"><b>联系我们</b></string>
+    <string name="contact_support_details">客服电话: 800 820 6939 周一到周五，工作时间 9:00-18:00</string>
+    <string name="call_number">8008206939</string>
+
+    <!-- Available products-->
+    <string name="premium_rock_play_sleeper">智能投影甜睡床</string>
+    <string name="device_settings_seahorse_placeholder">智能安抚海马</string>
+
+    <!-- Dashboard-->
+    <string name="playing">正在播放 :  </string>
+    <string name="music_sound">音乐与音效 :  </string>
+    <string name="projection">投影 : </string>
+    <string name="projection_light">投影与灯光 :  </string>
+    <string name="motion">动作 :  </string>
+    <string name="preset_one">预设 1</string>
+    <string name="select">选择</string>
+    <string name="on">开启</string>
+    <string name="device_off">关闭</string>
+    <string name="timer_on">定时器: 开启</string>
+    <string name="timer_off">定时器: 关闭</string>
+    <string name="dashboard_none">无</string>
+    <string name="light">灯光 :  </string>
+
+    <!--Play Services Modal-->
+    <string name="playservices_install_message">请安装Google Play服务并重新启动此应用</string>
+    <string name="playservices_device_not_supported">不支持此设备</string>
+    <string name="playservices_error">错误</string>
+    <string name="playservices_okay">了解</string>
+
+    <!--Default Device names-->
+    <string name="rock_n_play">智能甜睡床</string>
+    <string name="seahorse">智能安抚海马</string>
+    <string name="premium_rock_n_play_sleeper">智能投影甜睡床</string>
+    <string name="deluxe_soother">星空海洋灯</string>
+
+    <!--Software Update Dialog Modal-->
+    <string name="dialog_update_title">软件更新</string>
+    <string name="dialog_update_message">已有重要更新可供安装。</string>
+    <string name="dialog_update_ok">更新</string>
+
+    <!--Environment Switch Screen-->
+    <string name="environment_switch_server_url">Server URL</string>
+    <string name="environment_switch_mqtt_url">Mqtt URL</string>
+
+    <!--Extras/Utils-->
+    <string name="apostrophe_s">\’s</string>
+    <string name="hyphen"> - </string>
+    <string name="test">Test</string>
+    <string name="progressbar_please_wait">请稍候…</string>
+
+    <!-- License URLs-->
+    <string name="license_info_url">https://eula.cn.platform.mattel/manifest.csv.html</string>
+    <string name="privacy_policy_url">https://www.mattel.com/zh-cn/privacy-statement</string>
+    <string name="terms_of_service_url">https://eula.cn.platform.mattel/Mattel_Mobile_Apps_-_EULA_Android_no_virtual_currency_CN.html</string>
+
+    <string name="updating_firmware">固件更新中</string>
+    <string name="firmware_updating_message">请保持在距离产品 1.8 米内的范围，并保持应用程序打开状态，直到更新完成</string>
+
+    <string name="location_permission_granted">允许位置权限</string>
+    <string name="location_permission_denied">位置权限被拒绝</string>
+    <string name="location_access_enabled">启用位置权限</string>
+    <string name="location_access_disabled">位置权限被拒绝</string>
+    <string name="bluetooth_on">蓝牙现已开启</string>
+    <string name="location_screen_permission">位置许可</string>
+    <string name="try_again">再试一次</string>
+
+    <!--Account Settings Logout Dialog-->
+    <string name="logout_modal_title">登出</string>
+    <string name="logout_modal_message">您确定要退出吗？出于安全考量，下次登录时需要再次与产品配对。</string>
+    <string name="logout_modal_logOutButton">是的，我要登出</string>
+    <string name="logout_modal_cancelButton">取消</string>
+    <string name="firmware_update_firmware_status">%s 完成。</string>
+
+    <!--new strings-->
+    <string name="my_information_change_password_button_title">更改密码</string>
+    <string name="settings_change_password_section_password">密码</string>
+    <string name="settings_change_password_old_password_error">旧密码不匹配</string>
+    <string name="settings_change_password_old_password_hint">旧密码</string>
+    <string name="settings_change_password_error">旧密码不匹配</string>
+    <string name="settings_change_password_new_password_hint">新密码</string>
+    <string name="settings_change_password_retype_password_hint">确认新密码</string>
+
+</resources>

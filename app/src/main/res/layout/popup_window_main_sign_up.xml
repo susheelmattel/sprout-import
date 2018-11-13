@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/popup_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/margin2">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/setup"
+        style="@style/HeaderOne.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_filled"
+        android:gravity="center"
+        android:padding="@dimen/margin2"
+        android:text="@string/main_button_setup_account"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/join"
+        style="@style/HeaderOne.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:padding="@dimen/margin2"
+        android:text="@string/main_button_join_family"/>
+
+</RelativeLayout>
+

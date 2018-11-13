@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true" >
+
+    <include layout="@layout/navigation_layout" />
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/tealish2">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btnBack"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginStart="14dp"-->
+            <!--android:src="@drawable/ic_back_white"-->
+            <!--android:scaleType="center"/>-->
+
+        <!--<com.sproutling.ui.widget.ShTextView-->
+            <!--android:id="@+id/title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/input_measurement"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--style="@style/HeaderOne.9"/>-->
+
+        <!--<com.sproutling.ui.widget.ShTextView-->
+            <!--android:id="@+id/btnDone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/done"-->
+            <!--android:layout_gravity="center_vertical|end"-->
+            <!--android:layout_marginEnd="14dp"-->
+            <!--style="@style/SubtextTwo.9"/>-->
+
+    <!--</FrameLayout>-->
+
+    <com.sproutling.ui.widget.ShTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/input_measurement_description"
+        style="@style/SubtextOne.4"/>
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_marginTop="34dp"
+        android:layout_width="264dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/measurement_head_bg_normal">
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/headSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/input_measurement_head_circumference"
+            style="@style/SubtextOne.6"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_down_arrow"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/spacerView1"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"/>
+
+    <NumberPicker
+        android:id="@+id/headPicker"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="262dp"
+        android:theme="@style/AppTheme.Picker"
+        android:layout_height="116dp"/>
+
+    <LinearLayout
+        android:id="@+id/weightLayout"
+        android:layout_width="264dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/measurement_weight_bg_normal">
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/weightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/input_measurement_weight"
+            style="@style/SubtextOne.6"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_down_arrow"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/spacerView2"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"/>
+
+    <NumberPicker
+        android:id="@+id/weightPicker"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="262dp"
+        android:theme="@style/AppTheme.Picker"
+        android:layout_height="116dp"/>
+
+    <LinearLayout
+        android:id="@+id/lengthLayout"
+        android:layout_width="264dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/measurement_length_bg_normal">
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/lengthSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/input_measurement_length"
+            style="@style/SubtextOne.6"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_down_arrow"/>
+    </LinearLayout>
+
+    <NumberPicker
+        android:id="@+id/lengthPicker"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="262dp"
+        android:theme="@style/AppTheme.Picker"
+        android:layout_height="116dp"/>
+
+</LinearLayout>

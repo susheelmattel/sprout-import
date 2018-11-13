@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_setup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                tools:context="com.sproutling.ui.activity.SetupActivity">
+
+    <include android:id="@+id/navigation_layout"
+        layout="@layout/navigation_layout" />
+
+    <LinearLayout
+        android:id="@+id/step_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/navigation_layout"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/step_progress_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/marigold"/>
+
+        <View
+            android:id="@+id/step_progress_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/marigold"/>
+
+        <View
+            android:id="@+id/step_progress_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/marigold"/>
+
+        <View
+            android:id="@+id/step_progress_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/marigold"/>
+
+        <View
+            android:id="@+id/step_progress_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"/>
+
+        <View
+            android:id="@+id/step_progress_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/lightGrey"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/setup_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/step_progress_layout">
+
+    </FrameLayout>
+    <View
+        android:id="@+id/navigation_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/navigation_layout"
+        android:background="@color/grey25"/>
+
+</RelativeLayout>

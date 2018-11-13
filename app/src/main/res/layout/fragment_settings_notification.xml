@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey_FAFAFA">
+
+        <Switch
+            android:id="@+id/allow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="@string/settings_notification_notification_allow"
+            style="@style/SubtextOne.6"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/allow_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allow"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="@string/settings_notification_notification_allow_off_description"
+            style="@style/SubtextOne.4"/>
+
+        <RelativeLayout
+            android:id="@+id/all_alerts_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/allow_description"
+            android:layout_marginTop="50dp"
+            android:visibility="gone">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/red_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/settings_notification_red_alerts"
+                style="@style/HeaderTwo.6"/>
+
+            <Switch
+                android:id="@+id/red_rollover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/red_alerts"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_red_alerts_rollover"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <!--<Switch-->
+                <!--android:id="@+id/red_heart_rate"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/red_rollover"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:paddingRight="30dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:text="@string/settings_notification_red_alerts_heart_rate"-->
+                <!--style="@style/SubtextOne.6"-->
+                <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/red_alerts_divider"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@id/red_rollover"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:background="@color/greyish"/>-->
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/red_alerts_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/red_rollover"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/settings_notification_red_alerts_description"
+                style="@style/SubtextOne.4"/>
+
+            <!--<com.sproutling.ui.widget.ShTextView -->
+            <!--android:id="@+id/room_condition"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/red_alerts_description"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:text="@string/settings_notification_room"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/steelGrey"/>-->
+
+            <!--<Switch-->
+            <!--android:id="@+id/room_temperature"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/room_condition"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/settings_notification_room_temperature"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/brownishGrey"-->
+            <!--android:background="@color/white"/>-->
+
+            <!--<Switch-->
+            <!--android:id="@+id/room_humidity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/room_temperature"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/settings_notification_room_humidity"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/brownishGrey"-->
+            <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+            <!--android:id="@+id/room_divider1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@id/room_temperature"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:background="@color/greyish"/>-->
+
+            <!--<Switch-->
+            <!--android:id="@+id/room_light"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/room_humidity"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/settings_notification_room_light"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/brownishGrey"-->
+            <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+            <!--android:id="@+id/room_divider2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@id/room_humidity"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:background="@color/greyish"/>-->
+
+            <!--<Switch-->
+            <!--android:id="@+id/room_noise"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/room_light"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/settings_notification_room_noise"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/brownishGrey"-->
+            <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+            <!--android:id="@+id/room_divider3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@id/room_light"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:background="@color/greyish"/>-->
+
+            <!--<com.sproutling.ui.widget.ShTextView -->
+            <!--android:id="@+id/room_description"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/room_noise"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:text="@string/settings_notification_room_description"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/brownishGrey"/>-->
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/sleep_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/red_alerts_description"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/settings_notification_sleep"
+                style="@style/HeaderTwo.6"/>
+
+            <Switch
+                android:id="@+id/sleep_wake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sleep_alerts"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_sleep_wake"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <Switch
+                android:id="@+id/sleep_asleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sleep_wake"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_sleep_asleep"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <View
+                android:id="@+id/sleep_divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/sleep_wake"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/greyish"/>
+
+            <!--<Switch-->
+                <!--android:id="@+id/sleep_stirring"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/sleep_asleep"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:paddingRight="30dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:text="@string/settings_notification_sleep_stirring"-->
+                <!--style="@style/SubtextOne.6"-->
+                <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/sleep_divider2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@id/sleep_asleep"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:background="@color/greyish"/>-->
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/sleep_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sleep_asleep"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/settings_notification_sleep_description"
+                style="@style/SubtextOne.4"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/system_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sleep_description"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/settings_notification_system"
+                style="@style/HeaderTwo.6"/>
+
+            <!--<Switch-->
+                <!--android:id="@+id/system_wearable_fell"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/system_alerts"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:paddingRight="30dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:text="@string/settings_notification_system_wearable_fell"-->
+                <!--style="@style/SubtextOne.6"-->
+                <!--android:background="@color/white"/>-->
+
+            <Switch
+                android:id="@+id/system_offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/system_alerts"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_system_sproutling_off"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <!--<View-->
+                <!--android:id="@+id/system_divider1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@id/system_wearable_fell"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:background="@color/greyish"/>-->
+
+            <Switch
+                android:id="@+id/system_missing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/system_offline"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_system_missing"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <View
+                android:id="@+id/system_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/system_offline"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/greyish"/>
+
+            <Switch
+                android:id="@+id/system_far"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/system_missing"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_system_far"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <View
+                android:id="@+id/system_divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/system_missing"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/greyish"/>
+
+            <Switch
+                android:id="@+id/system_battery_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/system_far"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_notification_system_battery_low"
+                style="@style/SubtextOne.6"
+                android:background="@color/white"/>
+
+            <View
+                android:id="@+id/system_divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/system_far"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/greyish"/>
+
+            <!--<Switch-->
+                <!--android:id="@+id/system_battery_out"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/system_battery_low"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:paddingRight="30dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:text="@string/settings_notification_system_battery_out"-->
+                <!--style="@style/SubtextOne.6"-->
+                <!--android:background="@color/white"/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/system_divider5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@id/system_battery_low"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:background="@color/greyish"/>-->
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/system_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/system_battery_low"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp"
+                android:text="@string/settings_notification_system_description"
+                style="@style/SubtextOne.4"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

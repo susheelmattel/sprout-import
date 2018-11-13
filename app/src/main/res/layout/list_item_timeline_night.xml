@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/timeline_circle_size"
+            android:layout_height="@dimen/timeline_circle_size"
+            android:src="@drawable/timeline_circle"
+            android:id="@+id/point" />
+
+        <ImageView
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:src="#d3d3d3"
+            android:id="@+id/line"
+            android:visibility="gone"
+            android:layout_marginStart="3.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/summary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/timeline_list_item_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:elevation="0.5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_event_title">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_sleep_summary"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_night_summary"
+                android:layout_marginStart="48dp"
+                android:layout_gravity="center_vertical"
+                style="@style/HeaderTwo.4"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="10:12pm"
+                android:layout_gravity="center_vertical|end"
+                style="@style/SubtextOne.2"/>
+
+        </FrameLayout>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardCornerRadius="5dp"-->
+            <!--android:layout_marginStart="22dp"-->
+            <!--android:layout_marginEnd="2dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--app:cardElevation="0dp">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/tealish2" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/greyish" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/marigold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/marigold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/nap_time_asleep"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.2"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/nap_time_stirring"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.2"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/nap_time_awake"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.2"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/nap_wakings"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:id="@+id/time_asleep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.1"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:id="@+id/time_stirring"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.1"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:id="@+id/time_awake"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.1"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E7E7E7" />
+
+                        <com.sproutling.ui.widget.ShTextView
+                            android:id="@+id/wakings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/SubtextOne.1"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E7E7E7" />
+                </LinearLayout>
+
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Night wakings are normal for babies Cheng's age"-->
+                <!--android:layout_margin="17dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="10dp"/>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/screen_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_expand"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"/>
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/last_night_barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.sproutling.ui.widget.ShTextView
+                        android:id="@+id/night_dlg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/when_is_night_sleep"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:drawableStart="@drawable/ic_light_bulb_small"
+                        android:drawablePadding="10dp"
+                        style="@style/SubtextFive.3"/>
+                </LinearLayout>
+            </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</LinearLayout>

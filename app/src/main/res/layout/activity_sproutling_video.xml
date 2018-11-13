@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_video_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/options_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_no_sproutling"
+            style="@style/SubtextTwo.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginRight="@dimen/margin2"
+            android:background="?selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin2"
+            android:text="@string/i_dont_have_a_sproutling"/>
+
+        <include
+            android:id="@+id/options_layout"
+            layout="@layout/popup_window_main_sign_up"
+            />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/toolbar_transparent"
+        android:id="@+id/back_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/options_bottom_layout"
+        android:layout_below="@+id/back_toolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_button_white"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                style="@style/HeaderOne.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/what_is_sproutling"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                style="@style/SubtextTwo.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/watch_the_video"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

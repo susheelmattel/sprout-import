@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (c) 2017 Mattel, Inc. All rights reserved.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="20dp"
+        android:height="20dp"
+        android:viewportWidth="20.0"
+        android:viewportHeight="20.0">
+    <path
+        android:pathData="M1.8,4.2L18.2,4.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+    <path
+        android:pathData="M14.6,4.2m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+    <path
+        android:pathData="M1.8,10L18.2,10"
+        android:strokeLineCap="round"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+    <path
+        android:pathData="M5.4,10m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+    <path
+        android:pathData="M1.8,15.8L18.2,15.8"
+        android:strokeLineCap="round"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+    <path
+        android:pathData="M14.6,15.8m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0"
+        android:strokeColor="#64ffffff"
+        android:fillColor="#64ffffff"
+        android:strokeWidth="1.6"/>
+</vector>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <com.sproutling.ui.widget.ShTextView
+            style="@style/HeaderTwo.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_sign_in"/>
+
+        <ImageView
+            android:id="@+id/navigation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackground"
+            android:padding="13dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_android_back_green"/>
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.CustomShInputTextLayout
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        app:errorMsg="@string/login_email__or_mobile_phone_error"
+        >
+
+        <com.sproutling.ui.widget.CustomShEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_email_or_mobile_phone"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+    <com.sproutling.ui.widget.CustomShInputTextLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailWrapper"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent">
+
+        <com.sproutling.ui.widget.CustomShEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/emailWrapper"
+        android:layout_alignRight="@id/emailWrapper"
+        android:layout_below="@id/passwordWrapper"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_sign_in_selector"
+        android:text="@string/login_sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/forgot_password"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="@string/login_forgot_password"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_update_url"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin"
+        android:text="@string/update_url"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_style_guide"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_update_url"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin"
+        android:text="@string/style_guide"/>
+
+
+</RelativeLayout>

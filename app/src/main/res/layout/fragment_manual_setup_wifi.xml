@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey05"
+              android:orientation="vertical">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/helper_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/view_between_padding"
+        android:paddingLeft="@dimen/wifi_setup_ssid_padding"
+        android:paddingTop="@dimen/view_between_padding"
+        android:text="@string/setup_wifi_enter_network_information"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/color_sleep_dlg_title"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin"
+        android:paddingLeft="@dimen/wifi_setup_ssid_padding"
+        android:paddingRight="@dimen/wifi_setup_ssid_padding"
+        android:paddingTop="@dimen/margin">
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/et_ssidWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/et_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/ssid"/>
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/et_pwdWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_ssidWrapper"
+            android:layout_marginTop="@dimen/margin"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/setup_account_creation_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        <RelativeLayout
+            android:id="@+id/security_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pwdWrapper"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?selectableItemBackground"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_security_grey"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/setup_wifi_security"
+                android:textColor="@color/brownishGrey"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/tv_network_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_right_arrow"
+                android:text="test"
+                android:textColor="@color/brownishGrey"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_error_msg"
+        style="@style/SubtextSix.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/setup_wifi_err_msg"
+        android:textStyle="bold"/>
+</LinearLayout>

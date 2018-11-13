@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "Sproutling">
+    ]>
+<resources>
+    <string name="app_name">&appname;</string>
+
+    <string name="legal_title">Important</string>
+    <string name="legal_content">Sproutling® Wearable Baby Monitor is not a medical device.\n\n
+        What Information May Be Collected
+        \n \t \t \u2022 First and last name of parent/caregiver
+        \n \t \t \u2022 Email address
+        \n \t \t \u2022 Mobile phone number
+        \n \t \t \u2022 Baby\'s photo, gender, date of birth and original due date
+        \n \t \t \u2022 Baby\'s heart rate, motion activity and room conditions (e.g. light level, temperature)
+        \n \t \t \u2022 Technical (Connected monitor ID, Device ID, IP address, etc.) \n\n
+        Why It’s Collected
+        \n \t \t \u2022 Internal operations (e.g. analytics, including determining sleep patterns) \n\n
+        With Whom It\'s Shared
+        \n \t \t \u2022 Internal operations\’ service providers\n\n
+        Contact Us/Review or Delete Your or Your Baby\'s Collected Info
+        \n \t \t  Mattel Consumer Relations \n
+        \t \t 636 Girard Avenue\n
+        \t \t East Aurora, NY 14052
+        \n \t \t  Call: 1-877-219-8335
+         \n \t \t E-mail: service@mattel.com
+    </string>
+    <!--<string name="legal_content" > <![CDATA[Sproutling® Wearable Baby Monitor is not a medical device.</br>What Information May Be Collected<ul>  <li>First and last name of parent/caregiver</li><li>Email address</li><li>Mobile phone number</li><li>Baby\'s photo, gender, date of birth and original due date</li><li>Baby\'s heart rate, motion activity and room conditions (e.g. noise level, temperature)</li><li>Technical (Connected monitor ID, Device ID, IP address, etc.)</li></ul>Why It\'s Collected<ul><li>Internal operations (e.g. analytics, including determining sleep patterns)</li></ul>With Whom It\’s Shared<ul><li>Internal operations\' service providers</li></ul>Contact Us/Review or Delete Your or Your Baby\'s Collected Info<ul><li>Mattel</br>Consumer Relations</br>636 Girard Avenue</br>East Aurora, NY 14052</li> <li>Call: 1-877-219-8335</br> E-mail: service@mattel.com</li></ul>]]></string>-->
+    <string name="legal_button_accept">I Accept</string>
+    <string name="legal_terms" formatted="false">By tapping I Accept, you agree to our <a href="http://rebrand.ly/sproutling-terms-of-service">Terms of Service</a>  and <a href="http://rebrand.ly/sproutling-privacy-statement">Privacy Statement</a>.</string>
+    <string name="legal_tos_scheme">terms</string>
+    <string name="legal_pp_scheme">privacy</string>
+
+    <string name="tos_title_terms">Terms of Service</string>
+    <string name="tos_title_pp">Privacy Statement</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="main_message">Grow Happy Families</string>
+    <string name="main_button_log_in">Log In</string>
+    <string name="main_button_sign_up">Sign Up</string>
+    <string name="main_button_setup_account">Set up a new &appname;</string>
+    <string name="main_button_join_family">Join an existing family</string>
+
+    <string name="server_error_message_title">Uh Oh</string>
+    <string name="server_error_message_body">Something went wrong.\nPlease try again.</string>
+    <string name="server_error_message_button">Got It</string>
+
+    <string name="login_title">Welcome Back</string>
+    <string name="login_or">Or</string>
+    <string name="login_email_or_mobile_phone">E-mail or Mobile Phone #</string>
+    <string name="login_email__or_mobile_phone_error">Invalid email or phone number format</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_error">Error</string>
+    <string name="login_sign_in">Sign In</string>
+    <string name="login_forgot_password">Forgot Your password?</string>
+    <string name="login_error_message_title">Uh Oh</string>
+    <string name="login_error_message_body">Email and password do not match. Please try again.</string>
+
+    <string name="forgot_navigation_send">Send</string>
+    <string name="forgot_navigation_next">Next</string>
+    <string name="forgot_navigation_save">Save</string>
+
+    <string name="forgot_enter_phone_number_navigation_title">Forgot Password</string>
+    <string name="forgot_enter_phone_number_title">Enter Phone Number</string>
+    <string name="forgot_enter_phone_number_message">Enter the phone number you used to register. We will send you a text message with a verification code to create a new password.</string>
+    <string name="forgot_enter_phone_number_phone_hint">Mobile Phone</string>
+    <string name="forgot_enter_phone_number_phone_error">Unknown phone number. Please try again.</string>
+    <string name="forgot_enter_phone_number_notice">Standard SMS rates may apply</string>
+
+    <string name="forgot_verification_navigation_title">Verification Code</string>
+    <string name="forgot_verification_title">Enter Verification Code</string>
+    <string name="forgot_verification_message">Read the text message from &appname; with a security code to reset your password.</string>
+    <string name="forgot_verification_instruction">Enter the code sent to %s</string>
+    <string name="forgot_verification_error_expired">Verification Code is expired. Please tap on Resend Code and enter the new code sent.</string>
+    <string name="forgot_verification_error_invalid">Please check your text message for the verification code.</string>
+    <string name="forgot_verification_resend">Request new Code</string>
+
+    <string name="forgot_resent_title">Verification Code Re-sent</string>
+    <string name="forgot_resent_message">Read the new text message from &appname; with a security code to reset your password.</string>
+    <string name="forgot_resent_ok">Got It</string>
+
+    <string name="forgot_new_password_navigation_title">New Password</string>
+    <string name="forgot_new_password_title">Enter New Password</string>
+    <string name="forgot_new_password_message">Please enter a new password for your account.</string>
+    <string name="forgot_new_password_new_password_hint">New Password</string>
+    <string name="forgot_new_password_confirm_password_hint">Confirm Password</string>
+    <string name="forgot_new_password_password_not_matching">Password do not match</string>
+    <string name="forgot_new_password_tips">Password Tips</string>
+    <string name="forgot_new_password_tips_content">At least 8 characters long Contains at least one number Includes uppercase and lowercase letters Add a special character</string>
+
+    <string name="qr_scanner_title">QR Code</string>
+    <string name="qr_scanner_message">Scan a &appname;
+        QR code to accept your invitation instantly.</string>
+    <string name="qr_scanner_message_expired">QR code is expired. Please ask the parent to generate a new one.</string>
+    <string name="qr_scanner_message_wait">Please wait…</string>
+    <string name="qr_scanner_message_allow_camera">Allow &appname;
+        to access your camera to scan a &appname; QR code.</string>
+    <string name="qr_scanner_allow_text">Allow Camera Access</string>
+    <string name="qr_scanner_permission_title">Camera Permission</string>
+    <string name="qr_scanner_permission_message">Need to grant camera permission!</string>
+    <string name="qr_scanner_permission_positive">SETTINGS</string>
+    <string name="qr_scanner_permission_negative">DISMISS</string>
+
+    <string name="setup_navigation_next">Next</string>
+    <string name="setup_navigation_try_again">Try Again</string>
+    <string name="setup_navigation_join">Join</string>
+
+    <string name="setup_account_creation_title">Account Creation</string>
+    <string name="setup_account_creation_navigation_next">Next</string>
+    <string name="setup_account_creation_terms" formatted="false">By signing up, I agree to &appname;\'s %1$s and %2$s.</string>
+    <string name="setup_account_creation_tos"><u>Terms of Service</u></string>
+    <string name="setup_account_creation_tos_scheme">terms</string>
+    <string name="setup_account_creation_pp"><u>Privacy Policy</u></string>
+    <string name="setup_account_creation_pp_scheme">privacy</string>
+    <string name="setup_account_creation_or">Or</string>
+    <string name="setup_account_creation_first_name">First Name</string>
+    <string name="setup_account_creation_first_name_error">First Name is required</string>
+    <string name="setup_account_creation_last_name">Last Name</string>
+    <string name="setup_account_creation_last_name_error">Last Name is required</string>
+    <string name="setup_account_creation_email">E-mail</string>
+    <string name="setup_account_creation_email_error">E-mail is required</string>
+    <string name="setup_account_creation_email_invalid">Invalid email address</string>
+    <string name="setup_account_creation_email_used">This email address is already registered</string>
+    <string name="setup_account_creation_email_scheme">email</string>
+    <string name="setup_account_creation_phone">Mobile Phone</string>
+    <string name="setup_account_creation_phone_error">Mobile Phone is required</string>
+    <string name="setup_account_creation_phone_invalid">Invalid phone number</string>
+    <string name="setup_account_creation_phone_used">The phone number is already registered</string>
+    <string name="setup_account_creation_password">Password</string>
+    <string name="setup_account_creation_password_error">Password is required</string>
+    <string name="setup_account_creation_password_short">Password must be at least 8 characters</string>
+    <string name="setup_account_creation_password_long">Password cannot be more than 72 characters</string>
+    <string name="setup_account_creation_retype_password">Re-type Password</string>
+    <string name="setup_account_creation_retype_password_error">Password is required</string>
+    <string name="setup_account_creation_retype_password_mismatch">Passwords do not match</string>
+    <string name="setup_account_creation_error_message_title">Error</string>
+    <string name="setup_account_creation_error_message_body">There was a problem creating your account, please try again.</string>
+    <string name="setup_account_creation_error_email_title">Uh Oh</string>
+    <string name="setup_account_creation_error_email_body">This email address is already registered.</string>
+    <string name="setup_account_creation_error_email_button">Tap here to sign in</string>
+
+    <string name="setup_add_child_title">Add Child</string>
+    <string name="setup_add_child_add_photo">Add a Photo</string>
+    <string name="setup_add_child_select_gender">BABY\'S GENDER</string>
+    <string name="setup_add_child_girl">Girl</string>
+    <string name="setup_add_child_boy">Boy</string>
+    <string name="setup_add_child_baby_name_hint">Baby\'s Name</string>
+    <string name="setup_add_child_baby_name_error">Baby\'s Name is required</string>
+    <string name="setup_add_child_birthday_hint">Birthday</string>
+    <string name="setup_add_child_birthday_error">Birthday is required.</string>
+    <string name="setup_add_child_birthday_error_future">Birthday cannot be in the future</string>
+    <string name="setup_add_child_due_date_hint">Original Due Date</string>
+    <string name="setup_add_child_due_date_error">Due date is required</string>
+    <string name="setup_add_child_due_date_error_after">The original due date can be no more than 20 weeks after the birthday</string>
+    <string name="setup_add_child_due_date_error_before">The original due date can be no more than 6 weeks before the birthday</string>
+    <string name="setup_add_child_why">Why we ask for dates</string>
+    <string name="setup_add_child_skip">Skip Setup</string>
+    <string name="setup_add_child_popup_import_from_facebook">Import from Facebook</string>
+    <string name="setup_add_child_popup_take_photo">Take a photo</string>
+    <string name="setup_add_child_popup_choose_from_library">Choose from library</string>
+    <string name="setup_add_child_popup_cancel">Cancel</string>
+    <string name="setup_add_child_dialog_fragment_title">Why We Ask For Your Child\'s Original Due Date</string>
+    <string name="setup_add_child_dialog_fragment_message">Knowing if your baby was born early or late will help us to refine the accuracy of our insights.</string>
+    <string name="setup_add_child_dialog_fragment_ok">Got It</string>
+    <string name="setup_add_child_error_message_title">Uh Oh</string>
+    <string name="setup_add_child_error_message_body">There was a problem creating a child, please try again.</string>
+    <string name="setup_add_camera_permission_title">Camera Settings</string>
+    <string name="setup_add_camera_permission_error_msg">Please enable camera permission to take photo</string>
+
+    <string name="setup_setting_up_title">Smart Charger</string>
+    <string name="setup_setting_up_step_1_title">Step 1</string>
+    <string name="setup_setting_up_step_1_description">Plug in the smart charger in the room where the baby sleeps.</string>
+    <string name="setup_setting_up_step_2_title">Step 2</string>
+    <string name="setup_setting_up_step_2_description">Place the wearable on top of the smart charger.</string>
+    <string name="setup_setting_up_step_3_title">Step 3</string>
+    <string name="setup_setting_up_step_3_description">Wait for the Smart Charger to blink blue, then tap Next.</string>
+    <string name="setup_setting_up_skip">Skip Setup</string>
+
+    <string name="setup_connect_device_title">Connecting</string>
+    <string name="setup_connect_device_status_connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="setup_connect_device_description_connecting">Searching for Smart Charger…</string>
+    <string name="setup_connect_device_description_connected">Connected to Smart Charger.</string>
+    <string name="setup_connect_device_success">Success!</string>
+    <string name="setup_connect_device_skip">Skip Setup</string>
+
+    <string name="setup_wifi_title">Connect to Wi-Fi</string>
+    <string name="setup_wifi_message">Choose your Wi-Fi Network</string>
+    <string name="setup_wifi_no_network_error">Pull down to refresh or tap Other Network to enter manually.</string>
+    <string name="setup_wifi_other">Other Network</string>
+    <string name="setup_wifi_enter_network_information">Enter network information</string>
+    <string name="setup_wifi_security">Security</string>
+    <string name="setup_wifi_err_msg">Smart Charger failed to connect to Wifi. Please re-enter your settings.</string>
+
+    <string name="setup_password_title">Connect to Wi-Fi</string>
+    <string name="setup_password_instruction">Enter the password for %1$s</string>
+    <string name="setup_password_manual_settings">Manual Settings</string>
+    <string name="setup_password_connection_error_msg">Smart Charger can\'t join the network. Please re-type your password.</string>
+
+    <string name="setup_putting_on_title">Putting on the Wearable</string>
+    <string name="setup_putting_on_message">Watch the video walk-through to see the proper way to put the &appname;
+        wearable on your baby.</string>
+    <string name="setup_putting_on_steps">View step by step instructions</string>
+    <string name="setup_putting_on_ok">Got It</string>
+    <string name="setup_putting_on_1_step">Step 1</string>
+    <string name="setup_putting_on_1_title">Put on the Wearable</string>
+    <string name="setup_putting_on_1_description">Pull the end of the band through the slot to secure the sensor to the back of your baby\'s upper ankle.</string>
+    <string name="setup_putting_on_2_step">Step 2</string>
+    <string name="setup_putting_on_2_title">Check Wearable Direction</string>
+    <string name="setup_putting_on_2_description">The band is shaped like an arrow. When it\'s on correctly, it should point up toward your baby\'s heart. The smiling face should be in the same direction as your baby\'s face.</string>
+    <string name="setup_putting_on_3_step">Step 3</string>
+    <string name="setup_putting_on_3_title">Check Tightness</string>
+    <string name="setup_putting_on_3_description">Make sure the band is on snugly enough that it stays on the back of your baby\'s ankle and doesn\'t move around.</string>
+    <string name="setup_putting_on_4_step">Step 4</string>
+    <string name="setup_putting_on_4_title">Check Band Size</string>
+    <string name="setup_putting_on_4_description">The band should be large enough that no velcro touches the baby\'s leg. If the band is too small, look in the box for the larger band.</string>
+    <string name="setup_putting_on_5_step">Step 5</string>
+    <string name="setup_putting_on_5_title">Swap Bands If Needed</string>
+    <string name="setup_putting_on_5_description">If you need to swap bands, remove the sensor. Then place the new band over the top of the sensor, and fit the ring into the groove around the sensor.</string>
+
+    <string name="setup_how_to_charge_title">How to Charge Wearable</string>
+    <string name="setup_how_to_charge_content_title">Charging the Wearable</string>
+    <string name="setup_how_to_charge_content_description">Watch the video walk-through to see the proper way to charge your &appname;
+        wearable.</string>
+    <string name="setup_how_to_charge_instructions">View instructions</string>
+    <string name="setup_how_to_charge_dialog_title">Charge the Wearable</string>
+    <string name="setup_how_to_charge_dialog_description">Place the wearable on top of the smart charger to charge. The light will slowly blink white while charging. Charge the wearable at least once per day when your baby is awake.</string>
+
+    <string name="setup_hub_title">Smart Charger</string>
+    <string name="setup_hub_message">Smart Charger Not Found</string>
+    <string name="setup_hub_tips">Setup Tips</string>
+    <string name="setup_hub_tip1_what">Plug in Smart Charger</string>
+    <string name="setup_hub_tip2_what">Move Closer to Smart Charger</string>
+    <string name="setup_hub_tip3_what">Confirm Bluetooth is On</string>
+    <string name="setup_hub_tip1_how">Wait for the Smart Charger to blink blue and then tap Try Again.</string>
+    <string name="setup_hub_tip2_how">Your phone should be within 20 feet of the smart charger during setup.</string>
+    <string name="setup_hub_tip3_how">Swipe down to make sure Bluetooth is turned on for your phone.</string>
+    <string name="setup_hub_help">Need Some Help</string>
+    <string name="setup_hub_skip">Skip Setup</string>
+
+    <string name="setup_alert_title">Alerts</string>
+
+    <string name="setup_dialog_internet_offline_title">Uh Oh</string>
+    <string name="setup_dialog_internet_offline_message">The Internet connection appears to be offline. Check your connection and try again.</string>
+    <string name="setup_dialog_internet_offline_ok">Got It</string>
+
+    <string name="timeline_dialog_future_birthday_title">Uh Oh</string>
+    <string name="timeline_dialog_future_birthday_message">Your baby\'s birthday is in the future. Come back to the Timeline after your baby is born.</string>
+    <string name="timeline_dialog_future_birthday_ok">Got It</string>
+
+    <string name="avatar_use">Use</string>
+    <string name="avatar_cancel">Cancel</string>
+    <string name="avatar_view_message">Drag and Pinch to Set Crop</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_navigation_save">Save</string>
+    <string name="settings_navigation_join">Join</string>
+    <string name="settings_warning">You will not be able to receieve any alerts. Tap here to enable.</string>
+    <string name="settings_list_item_notification">Notification Alerts</string>
+    <string name="settings_list_item_account">My Account</string>
+    <string name="settings_list_item_baby">Baby Profile</string>
+    <string name="settings_list_item_caregivers">Caregivers</string>
+    <string name="settings_list_item_wifi">Wi-Fi Settings</string>
+    <string name="settings_list_item_help">Support</string>
+    <string name="settings_list_item_walkthrough">Replay App Walkthrough</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_no_device">No connected Smart Sensor available</string>
+    <string name="settings_add_device">Set Up a New Smart Sensor</string>
+
+    <string name="settings_notification_title">Notifications</string>
+    <string name="settings_notification_notification_allow">Allow Notifications</string>
+    <string name="settings_notification_notification_allow_off_description">Get push notifications for things that happen while your baby is wearing &appname;.</string>
+    <string name="settings_notification_notification_allow_on_description">Get push notifications for things that happen while your baby is wearing &appname;. Select which types of events you\'d like to be notified about below.</string>
+    <string name="settings_notification_red_alerts">Red Alerts</string>
+    <string name="settings_notification_red_alerts_rollover">Rollover</string>
+    <string name="settings_notification_red_alerts_heart_rate">Unusual Heart Rate</string>
+    <string name="settings_notification_red_alerts_description">We will only send you selected red alerts when your baby is asleep or stirring and wearing the &appname;
+        band. Remember that &appname;
+        is not a medical device and does not replace your supervision.</string>
+    <string name="settings_notification_room">Unusual Room Conditions</string>
+    <string name="settings_notification_room_temperature">Temperature</string>
+    <string name="settings_notification_room_humidity">Humidity</string>
+    <string name="settings_notification_room_light">Light Level</string>
+    <string name="settings_notification_room_noise">Noise Level</string>
+    <string name="settings_notification_room_description">We will send you selected room condition alerts when your baby is asleep or stirring and wearing the &appname;
+        band.</string>
+    <string name="settings_notification_sleep">Sleep Alerts</string>
+    <string name="settings_notification_sleep_wake">Wake Up</string>
+    <string name="settings_notification_sleep_asleep">Fall Asleep</string>
+    <string name="settings_notification_sleep_stirring">Stirring</string>
+    <string name="settings_notification_sleep_description">We will send you selected sleep alerts when your baby is wearing the &appname;
+        band and changes to asleep, stirring, or awake.</string>
+    <string name="settings_notification_system">System Alerts</string>
+    <string name="settings_notification_system_wearable_fell">Wearable Fell Off</string>
+    <string name="settings_notification_system_sproutling_off">&appname; Offline</string>
+    <string name="settings_notification_system_missing">Can\'t Find Your Wearable</string>
+    <string name="settings_notification_system_far">Wearable Too Far Away</string>
+    <string name="settings_notification_system_battery_low">Battery Low</string>
+    <string name="settings_notification_system_battery_out">Out of Battery</string>
+    <string name="settings_notification_system_description">We will send you selected system alerts whenever they occur, whether your baby is wearing the &appname;
+        band or not.</string>
+
+    <string name="settings_device_settings_title">Device Settings</string>
+    <string name="device_settings_next">Device Settings</string>
+    <string name="settings_device_settings_name_error">Device name is required</string>
+    <string name="settings_device_settings_battery_level">Battery Level</string>
+    <string name="settings_device_settings_signal_level_strong">Strong</string>
+    <string name="settings_device_settings_signal_level_okay">Okay</string>
+    <string name="settings_device_settings_signal_level_weak">Weak</string>
+    <string name="unknown">Unknown</string>
+    <string name="settings_device_settings_wifi_signal">Wi-Fi Signal</string>
+    <string name="settings_device_settings_bluetooth_signal">Bluetooth Signal</string>
+    <string name="settings_device_settings_firmware">Firmware</string>
+
+    <string name="settings_device_settings_firmware_remove">Remove This Device From My Account</string>
+    <string name="settings_device_settings_firmware_updating">Updating&#8230;</string>
+    <string name="settings_device_settings_firmware_version">%s</string>
+    <string name="settings_device_settings_wearable">Wearable Status</string>
+    <string name="settings_device_settings_smart_charger">Smart Charger Status</string>
+
+    <string name="settings_device_settings_light_alerts">Smart Charger Light Alerts</string>
+    <string name="settings_device_settings_light_alerts_far">Wearable Too Far Away</string>
+    <string name="settings_device_settings_light_alerts_offline">Sproutling Offline</string>
+    <string name="settings_device_settings_light_alerts_description">The light on the Smart Charger will flash whenever the selected alerts occur.</string>
+
+    <string name="settings_device_settings_change_wifi">Change Wi-Fi</string>
+
+    <string name="settings_account_title">My Account</string>
+    <string name="settings_account_section_account">My Account</string>
+    <string name="settings_account_first_name">First Name</string>
+    <string name="settings_account_last_name">Last Name</string>
+    <string name="settings_account_email">E-mail</string>
+    <string name="settings_account_phone">Mobile Phone</string>
+    <string name="settings_account_change_password">Change Password</string>
+    <string name="settings_account_first_name_error">First name is required</string>
+    <string name="settings_account_last_name_error">Last name is required</string>
+    <string name="settings_account_email_error">E-mail is required</string>
+    <string name="settings_account_email_invalid">Invalid E-mail address</string>
+    <string name="settings_account_email_used">This E-mail address is already registered</string>
+    <string name="settings_account_phone_error">Mobile Phone is required</string>
+    <string name="settings_account_phone_invalid">Invalid phone number</string>
+    <string name="settings_account_phone_used">The phone number is already registered</string>
+    <string name="settings_account_sign_out">Log Out</string>
+    <string name="settings_account_error_message_title">Error</string>
+    <string name="settings_account_error_message_body">There was a problem updating your account, please try again.</string>
+
+    <string name="settings_log_out_dialog_fragment_title">Log Out</string>
+    <string name="settings_log_out_dialog_fragment_message">Are you sure you want to log out?</string>
+    <string name="settings_log_out_dialog_fragment_btn_remove">Yes, log out</string>
+    <string name="settings_log_out_dialog_fragment_btn_cancel">Cancel</string>
+
+    <string name="settings_erase_account_dialog_fragment_title">Erase All Content and Settings</string>
+    <string name="settings_erase_account_dialog_fragment_message">Are you sure you want to erase all your data from this &appname;
+        and reset to factory settings?</string>
+    <string name="settings_erase_account_dialog_fragment_yes">Yes, delete</string>
+    <string name="settings_erase_account_dialog_fragment_cancel" translatable="false">Cancel</string>
+
+    <string name="settings_remove_device_dialog_fragment_title">Remove &appname;
+        From Account</string>
+    <string name="settings_remove_device_dialog_fragment_message">Are you sure you want to remove this Sprouting from your account? This action cannot be undone.</string>
+    <string name="settings_remove_device_dialog_fragment_yes">Yes, Remove</string>
+    <string name="settings_remove_device_dialog_fragment_cancel">Cancel</string>
+
+    <string name="settings_change_password_title">Change Password</string>
+    <string name="settings_change_password_section_password">Password</string>
+    <string name="settings_change_password_old_password_hint">Old Password</string>
+    <string name="settings_change_password_new_password_hint">New Password</string>
+    <string name="settings_change_password_retype_password_hint">Re-type New Password</string>
+    <string name="settings_change_password_error">Wrong Password</string>
+    <string name="settings_change_password_error_short">Password must be at least 8 characters.</string>
+    <string name="settings_change_password_error_long">Password cannot be more than 72 characters.</string>
+    <string name="settings_change_password_error_not_match">New passwords do not match</string>
+    <string name="settings_change_password_old_password_error">Old password does not match</string>
+    <string name="settings_change_password_new_password_error">Password cannot be more than 72 characters</string>
+    <string name="settings_change_password_retype_password_error">Password cannot be more than 72 characters</string>
+
+    <string name="settings_baby_title">Baby Profile</string>
+    <string name="settings_baby_girl">Girl</string>
+    <string name="settings_baby_boy">Boy</string>
+    <string name="settings_baby_baby_name_hint">Baby\'s First Name</string>
+    <string name="settings_baby_birthday_hint">Birthday</string>
+    <string name="settings_baby_due_date_hint">Original Due Date</string>
+    <string name="settings_baby_why">Why we ask for dates</string>
+    <string name="settings_baby_error_message_title">Uh oh</string>
+    <string name="settings_baby_get_error_message_body">There was a problem retrieving your child information, please try again.</string>
+    <string name="settings_baby_update_error_message_body">There was a problem updating your child information, please try again.</string>
+
+    <string name="settings_caregivers_title">Caregivers</string>
+    <string name="settings_caregivers_invite">Invite via QR Code</string>
+    <string name="settings_caregivers_info_title">Caregivers</string>
+    <string name="settings_caregivers_info_description">Share &appname; with caregivers so they can see your baby\'s status and get alerts on their smartphones.</string>
+    <string name="settings_caregivers_info_invite_text">Invite via QR Code</string>
+    <string name="settings_caregivers_qr_code_title">Your QR Code</string>
+    <string name="settings_caregivers_qr_code_message">Ask your Caregiver to scan this code using the &appname;
+        app to join your family account. For security purposes, this QR code will expire after 15 minutes.</string>
+    <string name="settings_caregivers_qr_code_generate">Change to new QR Code</string>
+    <string name="settings_caregivers_detail_title">Caregiver Information</string>
+    <string name="settings_caregivers_detail_remove">Remove Caregiver</string>
+
+    <string name="settings_wifi_title">Wi-Fi Settings</string>
+    <string name="change_wifi_network">Change Wi-Fi Network</string>
+    <string name="scan_for_wifi_networks">Scan for Wi-Fi Networks</string>
+    <string name="connecting_to_another_wifi_network">Connecting to Another Wi-Fi Network</string>
+    <string name="connecting_to_another_wifi_network_step_1"> Unplug Smart Charger and remove wearable from the top.</string>
+    <string name="connecting_to_another_wifi_network_step_2"> Leave the wearable off the Smart Charger and plug the Smart Charger back in.</string>
+    <string name="connecting_to_another_wifi_network_step_3"> When the Smart Charger shows a blinking blue light you can continue.</string>
+    <string name="settings_wifi_message">Choose your Wi-Fi Network</string>
+    <string name="settings_wifi_manual">Manual Settings</string>
+    <string name="settings_wifi_password_instruction">Enter the password for %1$s</string>
+    <string name="settings_wifi_password_hint">Password</string>
+
+    <string name="settings_help_title">Help &amp; FAQ</string>
+
+    <string name="settings_walkthrough_title">App Walkthrough</string>
+
+    <string name="expectations_title">Expectations</string>
+    <string name="expectations_header">How to get the most accurate results from Sproutling</string>
+    <string name="expectations_section_1_title">The First of Its Kind</string>
+    <string name="expectations_section_1_content">Sproutling is the first productItem of its kind for babies. We\'re just getting started and we plan to make updates as we go to make Sproutling even better.\nThe more you use Sproutling when your baby is sleeping, the more accurate your predictions will be.</string>
+    <string name="expectations_section_2_title">Getting the best Asleep or Awake results</string>
+    <string name="expectations_section_2_content">For best results, make sure your baby is:\n\n• Put to sleep on their back\n• Sleeping alone\n• In a stationary crib or sleeping space\n• With the Smart Charger in the same room</string>
+    <string name="expectations_section_3_title">What Not to Do</string>
+    <string name="expectations_section_3_content">Our sleep algorithms are based on movement, so Sproutling does NOT work well in the following scenarios at this time:\n\n• Breastfeeding\n• Co-sleeping or bed sharing\n• Baby held to sleep in arms, sling, or carrier\n• In a swing or rocker</string>
+    <string name="expectations_section_4_title">Getting the best wake up predictions</string>
+    <string name="expectations_section_4_content">We know it\'s not always possible to avoid some of those scenarios. But keeping your Timeline up-to-date makes your wake up predictions more accurate. Adjust the start or end time of a nap, delete an incorrect one, or add a nap that was missed. And those corrections help Sproutling to learn too.</string>
+    <string name="expectations_section_5_title">Coming Soon</string>
+    <string name="expectations_section_5_content">Our next big update will include some changes to make it better in some of those scenarios (but note that the American Academy of Pediatrics recommends NEVER bed sharing with baby.)</string>
+    <string name="expectations_let_us_know">Let us know how you think we\'re doing. We want to hear your feedback. Drop us a line</string>
+    <string name="expectations_text_bold_not">NOT</string>
+    <string name="expectations_text_bold_never">NEVER</string>
+    <string name="expectations_text_tealish_drop">Drop us a line</string>
+
+    <string name="caregiver_accept_invitation_popup_title">Invitation from %s</string>
+    <string name="caregiver_accept_invitation_popup_message">%s has invited you to share a &appname;
+        Baby Monitor.</string>
+    <string name="caregiver_accept_invitation_popup_btn_ok">Accept Invitation</string>
+    <string name="caregiver_accept_invitation_popup_btn_cancel">Cancel</string>
+
+    <string name="caregiver_remove_popup_title">Remove Caregiver</string>
+    <string name="caregiver_remove_popup_message">Are you sure you want to remove %1$s as a Caregiver? They\'ll no longer have access to %2$s\'s data or receive notifications.</string>
+    <string name="caregiver_remove_popup_btn_remove">Remove Caregiver</string>
+    <string name="caregiver_remove_popup_btn_cancel">Cancel</string>
+
+    <string name="sleep_dlg_title">Sleep Captured</string>
+    <string name="sleep_dlg_text">Enter the times of sleep that already happened</string>
+    <!--<string name="sleep_dlg_begin">Begin Time</string>-->
+    <!--<string name="sleep_dlg_end">End Time</string>-->
+    <string name="sleep_dlg_enter_time">Enter Time</string>
+    <string name="sleep_dlg_begin">Fell Asleep</string>
+    <string name="sleep_dlg_end">Woke Up</string>
+    <!--<string name="sleep_dlg_datetime_format">%1$s %2$d, %3$d \t \t %4$d:%5$02d%6$s</string>-->
+    <string name="sleep_dlg_save">Save</string>
+    <string name="sleep_dlg_discard">Discard</string>
+    <string name="sleep_dlg_cancel">Cancel</string>
+    <string name="sleep_dlg_edit_total_time">Total Time</string>
+    <string name="sleep_dlg_edit_time_format">%1$d:%2$02d:%3$02d</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+    <string name="set_sleep_dlg_title">Sleep Timer</string>
+    <string name="set_sleep_dlg_text">Tap Start to record sleep happening right now.</string>
+    <string name="set_sleep_dlg_start">Start</string>
+    <string name="set_sleep_dlg_stop">Stop</string>
+    <string name="set_sleep_dlg_reset_timer">Reset Timer</string>
+    <string name="set_sleep_dlg_manually">Or Enter Manually</string>
+    <string name="set_sleep_dlg_live">Or Start Live Timer</string>
+    <string name="set_sleep_dlg_enter_time">Enter Time</string>
+    <string name="set_sleep_dlg_start_message">Begin time cannot be in the future</string>
+    <string name="set_sleep_dlg_end_message1">End time cannot be in the future</string>
+    <string name="set_sleep_dlg_end_message2">End time must be after begin time</string>
+    <string name="set_sleep_dlg_end_message3">@string/edit_sleep_activity_error</string>
+    <string name="set_sleep_dlg_end_message4">Enter a nap that is 1 minute or longer</string>
+    <string name="edit_sleep_activity_error">Nap must be at least 5 minute long or less than 15 hours.</string>
+
+    <string name="timeline_dlg_night_sleep_title">When is Night Sleep</string>
+    <string name="timeline_dlg_night_sleep_text">Night sleep is all sleep that begins at about 7pm and ends at about 7am.</string>
+    <string name="timeline_dlg_timeline_title">Timeline</string>
+    <string name="timeline_dlg_timeline_text">This is where your baby\'s sleep data will appear. Check here after your baby wakes up to see how they slept while wearing &appname;.</string>
+
+    <string name="stirring_dlg_title">What is Stirring?</string>
+    <string name="stirring_dlg_text">Stirring is when your baby is in between asleep and awake. Baby might move around or make sounds and may fall back to sleep.</string>
+
+    <string name="rollover_dlg_title">Rollover Alerts</string>
+    <string name="rollover_dlg_text">Congrats, your six-month-old baby is ready to roll over. Would you like to turn off rollover alerts?</string>
+    <string name="rollover_dlg_yes">Yes, Turn Off Rollover Alerts</string>
+    <string name="rollover_dlg_cancel">Cancel</string>
+
+    <string name="turn_off_rollover_dlg_title">Turn Off Rollover Alerts</string>
+    <string name="turn_off_rollover_dlg_text">Are you sure you want to turn off rollover alerts? You can set your notification preferences later in Settings.</string>
+    <string name="turn_off_rollover_dlg_yes">Turn Off Rollover Alerts</string>
+    <string name="turn_off_rollover_dlg_cancel">Dismiss Just Once</string>
+
+    <string name="learningperiod_start_dlg_title">Learning Period</string>
+    <string name="learningperiod_start_dlg_text">For the first 7 days of use, &appname;\'s algorithms learn about your unique baby to improve the accuracy of our insights and predictions. The more you use it, the better it gets.</string>
+    <string name="learningperiod_start_dlg_begin">Begin</string>
+
+    <string name="learningperiod_finish_dlg_title">Learning Period Complete</string>
+    <string name="learningperiod_finish_dlg_text">We\'ve now learned enough about %s to unlock wake predictions.\n \n Our algorithms will continue learning and improving over time.</string>
+
+
+    <string name="got_it">Got It</string>
+
+    <string name="input_measurement">Input Measurement</string>
+    <string name="done">Done</string>
+    <string name="input_measurement_description">Enter your baby\'s head circumference, weight, and length to chart their growth over time.</string>
+    <string name="input_measurement_head_circumference">Head Circumference</string>
+    <string name="input_measurement_weight">Weight</string>
+    <string name="input_measurement_length">Length</string>
+    <string name="input_measurement_head_format">%d cm</string>
+    <string name="input_measurement_weight_format">%d lbs</string>
+    <string name="input_measurement_length_format">%d cm</string>
+
+    <!--<string name="status_babyname">Mosiah</string>-->
+    <!--<string name="status_title">Asleep</string>-->
+    <string name="status_title_awake">Awake</string>
+    <string name="status_title_initial">Loading…</string>
+    <string name="status_title_detecting">Detecting…</string>
+    <string name="status_title_stirring">Stirring</string>
+    <string name="status_title_asleep">Asleep</string>
+    <string name="status_title_learning_period">Learning Period</string>
+    <string name="status_title_unsual_haertbeat">Unsual Heartbeat</string>
+    <string name="status_title_rolled_over">Rolled Over</string>
+    <string name="status_title_full_battery">Full Battery</string>
+    <string name="status_title_wearable_ready">Wearable Ready</string>
+    <string name="status_title_wearable_charging">Wearable Charging</string>
+    <string name="status_title_wearable_charged">Full Battery</string>
+    <string name="status_title_wearable_too_far_away">Wearable Too Far Away</string>
+    <string name="status_title_wearable_not_found">Can\'t Find Your Wearable</string>
+    <string name="status_title_wearable_fell_off">Wearable Fell Off</string>
+    <string name="status_title_wearable_out_of_battery">Out Of Battery</string>
+    <string name="status_title_no_service">No Service</string>
+    <string name="status_title_sprouting_offline">&appname; Offline</string>
+    <string name="status_title_no_configured_device">No Configured Device</string>
+    <string name="status_title_updating_firmware">Updating Firmware</string>
+
+    <string name="status_title_btn">Log Sleep</string>
+
+    <string name="status_detail_lp_in_progress">Learning Period in progress</string>
+
+    <string name="status_detail_asleep_no_prediction">No prediction available</string>
+    <string name="status_detail_asleep">Predicting wake up time…</string>
+    <string name="status_detail_asleep_wake_up">%1$s is predicted to wake up %2$s</string>
+    <string name="status_detail_asleep_wake_up_time">in\n%s</string>
+    <string name="status_detail_asleep_wake_up_time_any">any minute</string>
+    <string name="status_detail_asleep_wake_up_time_in">in\n%1$s - %2$s</string>
+    <string name="status_detail_asleep_wake_up_time_between">between\n%1$s - %2$s</string>
+    <string name="status_detail_asleep_wake_up_time_at">at\n%s</string>
+    <string name="status_detail_awake_back_to_sleep">%1$s may fall back to sleep for another %2$s</string>
+
+    <string name="status_detail_initial"></string>
+    <string name="status_detail_detecting"></string>
+    <string name="status_detail_learning_period">Make sure your baby wears the &appname;</string>
+    <string name="status_detail_awake"></string>
+    <string name="status_detail_stirring">Learn more about stirring</string>
+    <string name="status_detail_unsual_haertbeat">There\'s been a significant change in your baby\'s heartbeat.</string>
+    <string name="status_detail_rollover_alert">Turn off rollover alert.</string>
+    <string name="status_detail_wearable_ready">Put the wearable on the back of your baby\'s ankle to start monitoring.</string>
+    <string name="status_detail_wearable_fell_off">Put the wearable on the back of your baby\'s ankle to resume monitoring.</string>
+    <string name="status_detail_wearable_out_of_battery">Charge the wearable before using it again.</string>
+    <string name="status_detail_wearable_charging"></string>
+    <string name="status_detail_wearable_charged">Put the wearable on the back of your baby\'s ankle to start monitoring.</string>
+    <string name="status_detail_wearable_too_far_away">Keep the wearable within 25 feet of the charger.</string>
+    <string name="status_detail_wearable_not_found">It might be too far from the charger or out of battery.</string>
+    <string name="status_detail_no_service">Check the internet connection on your phone.</string>
+    <string name="status_detail_sprouting_offline">This may be due to an unplugged charger or a lost internet connection.</string>
+    <string name="status_detail_no_configured_device">There is no device configured for this account.</string>
+    <string name="status_detail_updating_firmware">We are currently updating the firmware on your device. Make sure your Smart Charger stays plugged in, and leave the Wearable on top.</string>
+
+    <!--<string name="status_logsleep">Log Sleep</string>-->
+
+    <string name="status_notification_title_wifi">Wi-Fi</string>
+    <string name="status_notification_description_wifi">The Wi-Fi signal is weak. Move the charger closer to your Wi-Fi router.</string>
+    <string name="status_notification_title_battery">Battery</string>
+    <string name="status_notification_description_battery">The wearable is almost out of battery. Charge it before using it again.</string>
+    <string name="status_notification_title_bluetooth">Bluetooth</string>
+    <string name="status_notification_description_bluetooth">Keep the wearable within 25 feet of the charger for the best signal.</string>
+    <string name="status_notification_title_timeline">Timeline</string>
+    <string name="status_notification_description_timeline">Tap your baby\'s name above to see their sleep history.</string>
+    <string name="status_notification_title_advice_01">Advice</string>
+    <string name="status_notification_description_advice_01">We\'re learning! Make sure your baby wears &appname;
+        every day. Use the Log Sleep button to record all sleep.</string>
+    <string name="status_notification_title_advice_02">Advice</string>
+    <string name="status_notification_description_advice_02">Log all sleep during the learning period to teach &appname;
+        about your baby.</string>
+    <string name="status_notification_title_temperature">Temperature</string>
+    <string name="status_notification_description_temperature">Placeholder text for recommendation and information. the card will slip out from the bottom and give users helpful information.</string>
+    <string name="status_notification_title_expectations">Advice</string>
+    <string name="status_notification_description_expectations">Learn how our sleep algorithms work, and how to make them more accurate.\nRead more</string>
+    <string name="status_notification_description_expectations_spannable">Read more</string>
+    <string name="status_notification_title_rollover">Rollover</string>
+    <string name="status_notification_description_rollover">%1$s rolled over at %2$s</string>
+
+    <string name="back">Back</string>
+    <string name="status_dismiss">Dismiss</string>
+
+    <string name="flower_sleepAwake_title">Sleep/Awake</string>
+    <string name="flower_about_title">About the Learning Period</string>
+    <string name="flower_about_desc">&appname; needs to learn about %1$s for the first few days. Tap each circle to learn more.</string>
+    <string name="flower_sleepAwake_desc">Enter the begin and end time of each sleep session using the Sleep Log to help us learn your baby\'s schedule.</string>
+    <string name="flower_temperature_desc">We\'re capturing the normal range of temperature in the room.</string>
+    <string name="flower_humidity_desc">We\'re observing the normal humidity level in the room.</string>
+    <string name="flower_light_desc">We\'re capturing the range of light levels in the room when %s sleeps.</string>
+    <string name="flower_noise_desc">We\'re observing the regular noise level in the room where %s sleeps.</string>
+
+    <string name="flower_whatToExpect_title">What to Expect</string>
+    <string name="flower_whatToExpect_desc">The more your baby wears &appname;, the more we learn. Make sure %1$s wears &appname;
+        each time %2$s sleeps. And remember to log any missed naps.</string>
+    <string name="flower_sleepPrediction_title">Wake Prediction</string>
+    <string name="flower_sleepPrediction_desc">We are learning your baby\'s sleep patterns to predict when %2$s will wake up. Make sure you log any sleep that happens when %1$s doesn\'t wear &appname;. And check your baby\'s timeline to adjust the start and end time of naps if needed.</string>
+
+    <string name="flower_unusualHeartbeat_title">Unusual Heartbeat</string>
+    <string name="flower_unusualHeartbeat_desc">We are learning your baby\'s normal heartbeat so that we can alert you if it\'s abnormal while %2$s sleeps. Make sure %1$s wears &appname;
+        every time %2$s sleeps to help us learn faster.</string>
+    <string name="flower_duration_title">Duration</string>
+    <string name="flower_duration_desc">&appname; collects data about your baby across seven days to give you more accurate predictions about your baby\'s real-time status and %2$s sleep schedule.</string>
+    <string name="flower_improving_title">We\'re Improving</string>
+    <string name="flower_improving_desc">After the Learning Period is over, our insights will continue to improve. They will automatically adjust as your baby grows and changes.</string>
+
+    <string name="nap_text">%1$s took a nap for %2$s. Tap to see %3$s nap in detail.</string>
+
+    <string name="learning_period_text">The learning period will take around 7 days for us to learn more about your baby.</string>
+    <string name="learning_period_day_one">Learning Period Day One</string>
+
+    <string name="learning_period_started_text">&appname;
+        is learning about %1$s. The more you use &appname;, the faster we\'ll learn.</string>
+    <string name="learning_period_started">Learning Period Started</string>
+
+    <string name="learning_period_end_text">We\'ve now learned enough about %1$s to start showing wake up predictions each time %2$s falls asleep. And &appname;
+        will get more accurate over time.</string>
+    <string name="learning_period_end">Learning Period Complete</string>
+
+    <string name="heartRate_txt">%1$s\'s heart rate was unusual.</string>
+    <string name="humidity_txt">The humidity was abnormally high in %1$s\'s room.</string>
+    <string name="lightLevel_txt">The light level was abnormally high in %1$s\'s room.</string>
+    <string name="roomTemperature_txt">The room temperature was abnormally low in  %1$s\'s room.</string>
+    <string name="noiseLevel_txt">The noise level was abnormally high in %1$s\'s room.</string>
+
+    <string name="he">he</string>
+    <string name="his">his</string>
+    <string name="she">she</string>
+    <string name="her">her</string>
+    <string name="mock_data_status_logsleep">Log Sleep</string>
+    <string name="was_born">%1$s\n%2$s was born</string>
+    <string name="help_sproutling_learn_logsleep">Help &appname; learn your baby\'s sleep habits. Adjust the start and end time of naps captured by &appname;
+        or use the + button</string>
+
+    <string name="morning_nap">Morning Nap</string>
+    <string name="afternoon_nap">Afternoon Nap</string>
+    <string name="night_sleep">Night Sleep</string>
+    <string name="last_night_summary">Last Night Summary</string>
+
+    <string name="heartRate">Heart Rate</string>
+    <string name="humidity">Humidity</string>
+    <string name="lightLevel">Light Level</string>
+    <string name="roomTemperature">Room Temperature</string>
+    <string name="noiseLevel">NoiseLevel</string>
+
+    <string name="nap_time_asleep">Time Asleep</string>
+    <string name="nap_time_stirring">Time Stirring</string>
+    <string name="nap_time_awake">Time Awake</string>
+    <string name="nap_wakings">Number of Wakings</string>
+
+    <string name="dialog_delete_summary_title">Delete this %s summary from my timeline</string>
+    <string name="dialog_delete_summary_content">Are you sure you want to delete this %s summary from your timeline? This action cannot be undone.</string>
+    <string name="dialog_delete_summary_ok">Yes, Delete</string>
+    <string name="dialog_delete_summary_cancel">Cancel</string>
+
+    <string name="nap_summary_delete_type_nap">nap</string>
+    <string name="nap_summary_delete_type_sleep">sleep</string>
+    <string name="nap_summary_delete_event">Delete this %s summary from my timeline</string>
+
+    <string name="manually_adjust_nap">Manually adjust nap?</string>
+    <string name="when_is_night_sleep">When is night sleep?</string>
+    <string name="Week_Summary">%s Week Summary</string>
+    <string name="Nap_Summary">Nap Summary</string>
+    <string name="Night_Summary">Night Summary</string>
+    <string name="Night_Sleep_Summary">Night Sleep Summary</string>
+    <string name="week_sleep_text">%1$s slept for %2$s this week. Tap for more info.</string>
+    <string name="hours_minutes">%1$d hours and %2$d minutes</string>
+    <string name="hours_minute">%1$d hours and %2$d minute</string>
+    <string name="hour_minutes">%1$d hour and %2$d minutes</string>
+    <string name="hour_minute">%1$d hour and %2$d minute</string>
+    <string name="hours">%d hours</string>
+    <string name="hour">%d hour</string>
+    <string name="minutes">%d minutes</string>
+    <string name="minute">%d minute</string>
+    <string name="hour_minute_short">%1$d hr %2$d min</string>
+    <string name="hour_short">%1$d hr</string>
+    <string name="minute_short">%1$d min</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="before_yesterday">The day before yesterday</string>
+
+    <string name="location_permission">Location Permission</string>
+    <string name="location_permission_turn_on_msg">Location permission is turned off. Please enable location permission to setup the Smart Charger.</string>
+    <string name="enable">Enable</string>
+    <string name="okay">Okay</string>
+    <string name="location_access_info">Allow location access and turn on your location to continue setting up your &appname;.</string>
+    <string name="allow_access">Allow Access</string>
+    <string name="location_must_be_on">Location Must Be On</string>
+    <string name="location_must_be_on_msg">You must turn on your location in your Settings before you set up &appname;.</string>
+    <string name="location_access_info_settings">You must allow location access in Settings > Apps > &appname;
+        > Permissions before you set up &appname;.</string>
+    <string name="location_access">Location Access</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_settings">Bluetooth Settings</string>
+    <string name="bluetooth_turn_on">Turn On</string>
+    <string name="bluetooth_warning">Turn on your phone\'s Bluetooth to set up your &appname;.</string>
+    <string name="my_sproutling">My &appname;</string>
+    <string name="enter_information">Enter information</string>
+    <string name="enter_information_txt">You can tap on this button to enter %1$s\'s sleep information.</string>
+    <string name="add_a_missed_nap">Add a Missed Nap</string>
+    <string name="add_a_missed_nap_txt">Forgot to put on Sprouting and your baby fell asleep? Manually log sleep to help us provide more accurate sleep predictions.</string>
+    <string name="Got_It">Got It</string>
+
+    <string name="tooltips_welcome_title">Welcome</string>
+    <string name="tooltips_welcome_descrip">Take a quick tour to learn what you can accomplish with &appname;.</string>
+    <string name="tooltips_welcome_btn">Great, let\'s go!</string>
+    <string name="tooltips_welcome_no_thanks">No thanks</string>
+
+    <string name="tooltips_big_circle_title">Clock &amp; Heartbeat</string>
+    <string name="tooltips_big_circle_descrip">The circle is a clock, and the position of the heart indicates the current time. You can also see a representation of your baby\'s heartbeat. </string>
+    <string name="next">Next</string>
+
+    <string name="tooltips_small_circle_title">Smart Charger Control</string>
+    <string name="tooltips_small_circle_descrip">You can also tap here to turn on nightlight or music on your smart charger.</string>
+
+    <string name="tooltips_timeline_title">Timeline</string>
+    <string name="tooltips_timeline_descrip">You can tap on %1$s\'s name to see sleep tips and reports in the timeline.</string>
+
+    <string name="tooltips_sleep_prediction_title">Sleep Prediction</string>
+    <string name="tooltips_sleep_prediction_descrip">&appname; can now predict your baby\'s wake up time. The solid white line shows time slept so far, and the other line shows how much longer they are likely to sleep.</string>
+
+    <string name="cm">cm</string>
+    <string name="lbs">lbs</string>
+
+    <string name="cant_set_up">Can\'t Set Up</string>
+    <string name="device_create_err_msg">Can\'t set up this &appname; device because it is currently registered to another user.</string>
+    <string name="contact_support">Contact Support</string>
+
+    <string name="dialog_update_title">Software Update</string>
+    <string name="dialog_update_message">An important update is available and ready to be installed.</string>
+    <string name="dialog_update_ok">Update</string>
+    <string name="dialog_important_notice">Important Notice</string>
+    <string name="dialog_contact_support">Contact Support</string>
+    <string name="dialog_visit_website">Visit Website</string>
+    <string name="dialog_email_support">Email Support</string>
+    <string name="dialog_eol_learn_more">Learn More</string>
+    <string name="updating...">Updating…</string>
+    <string name="ok">OK</string>
+    <string name="firmware_update">Firmware Update</string>
+    <string name="firmware_updating_message">An important update is being installed at the moment. Thank you for your patience.</string>
+    <string name="firmware_updated_message">Your firmware is up to date now.</string>
+
+    <string name="timeline_week_summary_total_sleep">Weekly Total Sleep</string>
+
+    <string name="hub_control_title">Smart Charger Controls</string>
+    <string name="hub_control_description">Soothe your baby to sleep with light and music.</string>
+
+    <string name="hub_control_nightlight">Night Light</string>
+    <string name="hub_control_musicplay">Music Play</string>
+
+    <string name="hub_control_nightlight_off">Off</string>
+    <string name="hub_control_nightlight_charging">Charging…</string>
+
+    <string name="hub_control_choose_a_color">Choose a color</string>
+    <string name="hub_control_choose_a_song">Choose a song</string>
+
+    <string-array name="color_string_list">
+        <item>@string/blue</item>
+        <item>@string/green</item>
+        <item>@string/red</item>
+        <item>@string/white</item>
+        <item>@string/yellow</item>
+        <item>@string/pink</item>
+        <item>@string/amber</item>
+    </string-array>
+    <string-array name="music_playlist">
+        <item>@string/classical_playlist</item>
+        <item>@string/lullabies_playlist</item>
+        <item>@string/ambient_playlist</item>
+        <!--<item>@string/custom_playlist</item>-->
+    </string-array>
+    <string-array name="classical_playlist_items">
+        <item>@string/hsl_air_on_g_string</item>
+        <item>@string/hsl_brahms_lullaby</item>
+        <item>@string/hsl_clair_de_lune</item>
+        <item>@string/hsl_dance_of_the_spirits</item>
+        <item>@string/hsl_liebestraum</item>
+        <item>@string/hsl_schuberts_lullaby</item>
+    </string-array>
+    <string-array name="lullabies_playlist_items">
+        <item>@string/hsl_are_you_sleeping</item>
+        <item>@string/hsl_beautiful_dreamer</item>
+        <item>@string/hsl_brahms_lullaby</item>
+        <item>@string/hsl_hush_little_baby</item>
+        <item>@string/hsl_schuberts_lullaby</item>
+        <item>@string/hsl_twinkle_twinkle_little_star</item>
+    </string-array>
+    <string-array name="ambient_playlist_items">
+        <item>@string/hsl_ambient_a</item>
+        <item>@string/hsl_ambient_b</item>
+        <item>@string/hsl_ambient_c</item>
+        <item>@string/hsl_ambient_d</item>
+        <item>@string/hsl_ambient_e</item>
+    </string-array>
+
+    <string name="classical_playlist">Classical Playlist</string>
+    <string name="lullabies_playlist">Lullabies Playlist</string>
+    <string name="ambient_playlist">Ambient Playlist</string>
+    <string name="custom_playlist">Custom Playlist</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="white">White</string>
+    <string name="yellow">Yellow</string>
+    <string name="pink">Pink</string>
+    <string name="amber">Amber</string>
+
+    <string-array name="color_icon_list">
+        <item>@drawable/shape_item_oval_blue</item>
+        <item>@drawable/shape_item_oval_green</item>
+        <item>@drawable/shape_item_oval_red</item>
+        <item>@drawable/shape_item_oval_white</item>
+        <item>@drawable/shape_item_oval_yellow</item>
+        <item>@drawable/shape_item_oval_pink</item>
+        <item>@drawable/shape_item_oval_amber</item>
+    </string-array>
+
+    <string-array name="music_string_list">
+        <item>@string/hsl_air_on_g_string</item>
+        <item>@string/hsl_are_you_sleeping</item>
+        <item>@string/hsl_beautiful_dreamer</item>
+        <item>@string/hsl_brahms_lullaby</item>
+        <item>@string/hsl_clair_de_lune</item>
+        <item>@string/hsl_dance_of_the_spirits</item>
+        <item>@string/hsl_hush_little_baby</item>
+        <item>@string/hsl_liebestraum</item>
+        <item>@string/hsl_schuberts_lullaby</item>
+        <item>@string/hsl_twinkle_twinkle_little_star</item>
+        <item>@string/hsl_ambient_a</item>
+        <item>@string/hsl_ambient_b</item>
+        <item>@string/hsl_ambient_c</item>
+        <item>@string/hsl_ambient_d</item>
+        <item>@string/hsl_ambient_e</item>
+    </string-array>
+    <string-array name="sound_string_list">
+
+        <item>@string/hsl_white</item>
+        <item>@string/hsl_brown</item>
+        <item>@string/hsl_pink</item>
+        <item>@string/hsl_ocean</item>
+        <item>@string/hsl_rain</item>
+        <item>@string/hsl_thunder</item>
+        <item>@string/hsl_heart_slow</item>
+        <item>@string/hsl_heart_fast</item>
+    </string-array>
+
+    <string-array name="whats_new_feature_list">
+        <item>Now you can tell us if we got your baby\'s sleep status right</item>
+        <item>More intuitive hub controls design that includes timers and music playlists</item>
+    </string-array>
+
+    <string name="hsl_air_on_g_string">Air on G String</string>
+    <string name="hsl_ambient_a">Ambient A</string>
+    <string name="hsl_ambient_b">Ambient B</string>
+    <string name="hsl_ambient_c">Ambient C</string>
+    <string name="hsl_ambient_d">Ambient D</string>
+    <string name="hsl_ambient_e">Ambient E</string>
+    <string name="hsl_are_you_sleeping">Are You Sleeping?</string>
+    <string name="hsl_beautiful_dreamer">Beautiful Dreamer</string>
+    <string name="hsl_brahms_lullaby">Brahms\' Lullaby</string>
+    <string name="hsl_clair_de_lune">Clair de Lune</string>
+    <string name="hsl_dance_of_the_spirits">Dance of the Spirits</string>
+    <string name="hsl_hush_little_baby">Hush, Little Baby</string>
+    <string name="hsl_liebestraum">Liebestraum</string>
+    <string name="hsl_schuberts_lullaby">Schubert\'s Lullaby</string>
+    <string name="hsl_twinkle_twinkle_little_star">Twinkle, Twinkle, Little Star</string>
+    <string name="hsl_brown">Brown Noise</string>
+    <string name="hsl_ocean">Ocean Waves</string>
+    <string name="hsl_pink">Pink Noise</string>
+    <string name="hsl_rain">Gentle Rain</string>
+    <string name="hsl_thunder">Thunderstorm</string>
+    <string name="hsl_white">White Noise</string>
+    <string name="hsl_heart_slow">Slow Heartbeat</string>
+    <string name="hsl_heart_fast">Fast Heartbeat</string>
+    <string name="server_url">Server Url</string>
+    <string name="mqtt_url">MQTT Url</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_url">Update Server Url</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="taking_the_guesswork_out_of_sleep">Taking the guesswork out of sleep.</string>
+    <string name="i_dont_have_a_sproutling">I don\'t have a Sproutling</string>
+    <string name="what_is_sproutling">What is Sproutling?</string>
+    <string name="watch_the_video">Watch the video.</string>
+    <string name="server_url_mqtt_url" formatted="false">Server URL : %s \n MQTT URL : %s</string>
+    <string name="accept">Accept</string>
+    <string name="network_not_supported">Network Not Supported</string>
+    <string name="network_not_supported_msg">Due to security concerns, Sproutling does not support WEP networks. Please upgrade your router to support WPA2.</string>
+    <string name="invalid_ssid_characters_msg">We cannot connect to Wi-Fi networks with special characters in their names. Please change your network name or connect to another network.</string>
+    <string name="dont_see_your_network">Don\'t see your network</string>
+    <string name="learning_period">Learning Period</string>
+    <string name="the_learning_baby_monitor">The Learning Baby Monitor</string>
+    <string name="the_learning_baby_monitor_msg">Sproutling uses artificial intelligence to create sleep insights and predictions. We might be off at first, but we learn and get better over time.</string>
+    <string name="unlock_wake_prediction">Unlock Wake Prediction</string>
+    <string name="your_baby">your baby</string>
+    <string name="unlock_wake_prediction_msg">We are learning your baby\'s sleep patterns to unlock wake up predictions. Log any sleep that happens when %s doesn\'t wear Sproutling.</string>
+    <string name="the_first_7_days">The First 7 Days</string>
+    <string name="the_first_7_days_msg">The initial Learning Period lasts 7 days. During this time the algorithms are adapting to give you more accurate sleep insights. The more you use it the better.</string>
+    <string name="never_stop_learning">Never Stop Learning</string>
+    <string name="never_stop_learning_msg">Our insights continue to improve and adjust as your baby grows and changes. We also learn from all Sproutling owners for better results for you over time.</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="provide_feedback_msg">Tell us if your baby\'s sleep status is correct. The status may not change immediately, but letting us know helps us improve accuracy over time.</string>
+    <string name="close">Close</string>
+    <string name="wifi_setup_successfully">Wi-Fi Setup Successfully</string>
+    <string name="searching">Searching</string>
+    <string name="log_sleep">Log Sleep</string>
+    <string name="fell_asleep">FELL ASLEEP</string>
+    <string name="woke_up">WOKE UP</string>
+    <string name="total_time_slept">Total Time Slept</string>
+    <string name="stop">Stop</string>
+    <string name="error">Error</string>
+    <string name="time_greater_error">Selected time cannot be greater than current time.</string>
+    <string name="time_lesser_than_sleep_start_error">The selected time cannot be lesser than sleep start time.</string>
+    <string name="at">at</string>
+    <string name="setup_account_creation_mobile_phone_info">Your phone number will only be used when you need to recover your forgotten password.</string>
+    <string name="code">Code</string>
+    <string name="ssid">SSID</string>
+    <string name="device_name">Device Name</string>
+    <string name="wifi_interference">Wi-Fi Router Interference</string>
+    <string name="wifi_interference_msg">We have detected some Bluetooth interference that\'s likely caused by your Wi-Fi router being too close to your Smart Charger. In order for &appname;
+        to work accurately, please move the router at least 10 feet away from your Smart Charger.</string>
+    <string name="deepLinkScheme" translatable="false">sproutling</string>
+    <string name="deepLinkHost" translatable="false">sproutlingapp</string>
+    <string name="filter_sproutling">sproutlingFilter</string>
+    <string name="style_guide">Style Guide</string>
+    <string name="login_email_error">Error</string>
+    <string name="login_email">Email</string>
+    <string name="report_baby_current_status">Report Baby\'s Current Status</string>
+    <string name="is_babyname_status">Is %s %s ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="babyname_is_currently">%s is currently</string>
+    <string name="asleep">Asleep</string>
+    <string name="stirring">Stirring</string>
+
+    <string name="other">Other</string>
+    <string name="something_else_please_tell_us">Something else? Please tell us...</string>
+    <string name="submit">Submit</string>
+    <string name="thanks_for_your_input">Thanks for Your Input</string>
+    <string name="you_are_making_sproutling_better">You\'re making Sproutling better.</string>
+    <string name="why_we_ask_about_current_status">Why we ask about current status</string>
+    <string name="why_we_ask_about_current_status_msg">&appname; is a learning device. Your input helps us improve the accuracy of sleep status over time.</string>
+    <string name="night_light_color">Night Light Color</string>
+    <string name="select">Select</string>
+    <string name="music_play_song">Music Play Song</string>
+    <string name="playlists">Playlists</string>
+    <string name="music">Music</string>
+    <string name="sound">Sound</string>
+    <string name="play">Play</string>
+    <string name="awake">Awake</string>
+    <string name="timer_off">Timer: Off</string>
+    <string name="night_light_timer">Night Light Timer</string>
+    <string name="reset">Reset</string>
+    <string name="turn_off_in">Turn off in</string>
+    <string name="music_timer">Music Timer</string>
+    <string name="timer_display_h_m_text">Timer: %dh %dm</string>
+    <string name="timer_display_m_text">Timer: %dm</string>
+    <string name="whats_new_title">What\'s New</string>
+    <string name="internet_offline_title">Uh Oh</string>
+    <string name="dialog_contact_support_message">Email: ^1 \n Available Monday - Friday, \n 7am - 5pm EST \n\n For information on Sproutling End of Service refund, tap on Visit Website.</string>
+
+
+</resources>

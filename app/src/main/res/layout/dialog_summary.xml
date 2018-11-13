@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/margin2"
+              android:background="@drawable/dialogfragment_bg"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="@dimen/dialog_image_size"
+        android:layout_height="@dimen/dialog_image_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/learning_period_dialog"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/txtTitle"
+        style="@style/SubtextThree.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="@string/learningperiod_finish_dlg_title"/>
+
+
+    <ImageView
+        android:id="@+id/imgMainBig"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:src="@mipmap/learning_period_dialog"
+        android:visibility="gone"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/txtDescription"
+        style="@style/SubtextOne.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/learningperiod_finish_dlg_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_view_line"/>
+
+    <LinearLayout
+        android:id="@+id/linear_btnFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/btnFirst"
+            style="@style/SubtextSix.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dialog_button_padding"
+            android:text="@string/rollover_dlg_yes"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_view_line"/>
+    </LinearLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/btnSecond"
+        style="@style/SubtextFive.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dialog_button_padding"
+        android:text="@string/got_it"/>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/face_headAll_marginH"
+        android:layout_marginLeft="@dimen/face_headAll_marginH"
+        android:layout_marginRight="@dimen/face_headAll_marginH"
+        android:layout_marginTop="@dimen/face_headAll_marginH">
+
+        <RelativeLayout
+            android:id="@+id/face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_head">
+
+            <ImageView
+                android:id="@+id/eyesAwake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/face_awake_eyesMarginLeft"
+                android:layout_marginTop="@dimen/face_awake_eyesMarginTop"
+                android:scaleType="center"
+                android:src="@drawable/ic_awake_eyes"/>
+
+            <ImageView
+                android:id="@+id/eyesAsleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/face_asleep_eyesMarginLeft"
+                android:layout_marginTop="@dimen/face_asleep_eyesMarginTop"
+                android:scaleType="center"
+                android:src="@drawable/ic_asleep_eyes"/>
+
+            <ImageView
+                android:id="@+id/mouthAwake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eyesAwake"
+                android:layout_marginLeft="@dimen/face_awake_mouthMarginLeft"
+                android:layout_marginTop="@dimen/face_awake_mouthMarginTop"
+                android:src="@drawable/ic_awake_mouth"/>
+            <!--<ImageView-->
+            <!--android:id="@+id/mouthAwake"-->
+            <!--android:src="@mipmap/awake_mouth"-->
+            <!--android:layout_below="@id/eyesAwake"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="@dimen/face_awake_mouthMarginTop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+            <ImageView
+                android:id="@+id/mouthAsleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eyesAsleep"
+                android:layout_marginLeft="@dimen/face_asleep_mouthMarginLeft"
+                android:layout_marginTop="@dimen/face_asleep_mouthMarginTop"
+                android:src="@drawable/ic_asleep_mouth"/>
+            <!--<ImageView-->
+            <!--android:src="@mipmap/asleep_mouth"-->
+            <!--android:layout_below="@id/eyesAsleep"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="@dimen/face_asleep_mouthMarginTop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/face_hairMarginLeft"
+            android:src="@drawable/ic_hair"/>
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/z_animation_view"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="-40.50dp"
+        android:layout_marginLeft="-16.33dp"
+        app:lottie_fileName="sleepyZs3s.json"
+        />
+</FrameLayout>

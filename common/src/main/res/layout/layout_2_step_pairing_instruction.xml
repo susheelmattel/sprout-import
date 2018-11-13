@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/instructionTitle">
+
+        <ImageView
+            android:id="@+id/devicePairingImg"
+            android:layout_width="@dimen/pairing_img_width"
+            android:layout_height="@dimen/pairing_img_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+           />
+    </RelativeLayout>
+    <!--update the Textview style once we get the list from UI Team-->
+    <TextView
+        android:id="@+id/instructionTitle"
+        style="@style/HeaderTwo.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/instructionMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/instructionMessage"
+        style="@style/SubtextOne.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin3"
+        android:layout_marginLeft="@dimen/margin3"
+        android:layout_marginRight="@dimen/margin3"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+       />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+    <include
+        android:id="@+id/helpLayout"
+        layout="@layout/status_feedback_help_layout"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpLayout"
+        android:background="@drawable/bg_top_rounded_white">
+
+        <RelativeLayout
+            android:id="@+id/thanksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin">
+
+            <ImageView
+                android:id="@+id/imgFeedbackInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_help"/>
+
+            <ImageView
+                android:id="@+id/imgBulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin2"
+                android:src="@drawable/ic_lightbulb"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/thanks"
+                style="@style/SubtextOne.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBulb"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/thanks_for_your_input"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/thanksMsg"
+                style="@style/SubtextThree.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thanks"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/you_are_making_sproutling_better"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/gotIt"
+                style="@style/SubtextFive.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thanksMsg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="?selectableItemBackground"
+                android:padding="@dimen/margin"
+                android:text="@string/got_it"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.AnimationProgress
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

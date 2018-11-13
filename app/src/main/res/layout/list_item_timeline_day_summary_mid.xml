@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar_timeline"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <com.sproutling.ui.widget.ShTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/SubtextOne.4"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:id="@+id/text_Day" />
+
+    <ImageView
+        android:layout_width="1.5dp"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:id="@+id/line"
+        android:layout_marginStart="3.5dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignBottom="@+id/recyclerView_Day"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/text_Day"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/recyclerView_Day"/>
+
+</RelativeLayout>

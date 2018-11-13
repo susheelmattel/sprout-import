@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/sign_up_layout_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/sign_up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.sproutling.ui.widget.CustomShInputTextLayout
+                    android:id="@+id/firstNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    app:errorMsg="@string/setup_account_creation_first_name_error">
+
+                    <com.sproutling.ui.widget.CustomShEditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/setup_account_creation_first_name"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+                </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+                <com.sproutling.ui.widget.CustomShInputTextLayout
+                    android:id="@+id/lastNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    app:errorMsg="@string/setup_account_creation_last_name_error">
+
+                    <com.sproutling.ui.widget.CustomShEditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/setup_account_creation_last_name"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+                </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            </LinearLayout>
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/emailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_layout"
+                android:layout_marginTop="@dimen/margin"
+                app:errorMsg="@string/setup_account_creation_email_error">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_account_creation_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/phoneWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailWrapper"
+                android:layout_marginTop="@dimen/margin"
+                app:errorMsg="@string/setup_account_creation_phone_error"
+                app:infoMsg="@string/setup_account_creation_mobile_phone_info">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_account_creation_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/passwordWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneWrapper"
+                android:layout_marginTop="@dimen/margin"
+                app:errorMsg="@string/setup_account_creation_password_error"
+                app:infoMsg="@string/setup_account_creation_password_short"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setup_account_creation_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

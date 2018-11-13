@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey05"
+                android:paddingBottom="@dimen/margin2"
+                android:paddingTop="@dimen/margin2">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_dont_see_ur_network"
+        style="@style/SubtextFive.4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/margin"
+        android:text="@string/dont_see_your_network"/>
+
+</RelativeLayout>

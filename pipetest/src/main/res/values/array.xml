@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_array">
+        <item>UNKNOWN</item>
+        <item>LEARNING_PERIOD</item>
+        <item>AWAKE</item>
+        <item>STIRRING</item>
+        <item>ASLEEP</item>
+        <item>HEART_RATE</item>
+        <item>HEART_RATE_UNUSUAL</item>
+        <item>ROLLED_OVER</item>
+        <item>WEARABLE_READY</item>
+        <item>WEARABLE_BATTERY</item>
+        <item>WEARABLE_CHARGING</item>
+        <item>WEARABLE_CHARGED</item>
+        <item>WEARABLE_TOO_FAR_AWAY</item>
+        <item>WEARABLE_NOT_FOUND</item>
+        <item>WEARABLE_FELL_OFF</item>
+        <item>HUB_OFFLINE</item>
+        <item>NO_SERVICE</item>
+    </string-array>
+</resources>

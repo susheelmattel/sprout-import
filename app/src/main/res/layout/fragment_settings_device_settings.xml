@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey_FAFAFA">
+
+        <ImageView
+            android:id="@+id/device_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:src="@mipmap/device_profile_photo"/>
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/device_nameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/device_image"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3"
+            app:errorMsg="@string/settings_device_settings_name_error">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/device_name"
+                android:inputType="text"
+                />
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/light_alerts"
+            style="@style/HeaderTwo.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_nameWrapper"
+            android:layout_marginBottom="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin3"
+            android:layout_marginTop="@dimen/margin4"
+            android:text="@string/settings_device_settings_light_alerts"/>
+
+        <RelativeLayout
+            android:id="@+id/light_alerts_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_alerts"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3">
+
+            <Switch
+                android:id="@+id/light_alerts_far"
+                style="@style/SubtextThree.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin1"
+                android:paddingTop="@dimen/margin1"
+                android:text="@string/settings_device_settings_light_alerts_far"/>
+
+            <View
+                android:id="@+id/light_alerts_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/light_alerts_far"
+                android:background="@color/greyish"/>
+
+            <Switch
+                android:id="@+id/light_alerts_offline"
+                style="@style/SubtextThree.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/light_alerts_divider"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin1"
+                android:paddingTop="@dimen/margin1"
+                android:text="@string/settings_device_settings_light_alerts_offline"/>
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/light_alerts_description"
+            style="@style/SubtextOne.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_alerts_layout"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3"
+            android:text="@string/settings_device_settings_light_alerts_description"/>
+
+        <RelativeLayout
+            android:id="@+id/change_wifi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_alerts_description"
+            android:layout_marginTop="@dimen/margin4"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3">
+
+            <ImageView
+                android:id="@+id/change_wifi_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_right_arrow"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/change_wifi_name"
+                style="@style/SubtextThree.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/change_wifi_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/margin1"
+                android:paddingTop="@dimen/margin1"
+                android:text="@string/settings_device_settings_change_wifi"/>
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_wearable"
+            style="@style/HeaderTwo.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change_wifi_layout"
+            android:layout_marginBottom="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin3"
+            android:layout_marginTop="@dimen/margin4"
+            android:text="@string/settings_device_settings_wearable"/>
+
+        <RelativeLayout
+            android:id="@+id/wearable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wearable"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3">
+
+            <RelativeLayout
+                android:id="@+id/battery_level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/battery_level"
+                    style="@style/SubtextThree.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin1"
+                    android:paddingTop="@dimen/margin1"
+                    android:text="@string/settings_device_settings_battery_level"/>
+
+                <com.sproutling.ui.widget.BatteryDisplay
+                    android:id="@+id/battery_level_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:batteryStyle="grey"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/battery_level_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/battery_level_layout"
+                android:background="@color/greyish"/>
+
+            <RelativeLayout
+                android:id="@+id/bluetooth_signal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battery_level_divider">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/bluetooth_signal"
+                    style="@style/SubtextThree.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/margin1"
+                    android:paddingTop="@dimen/margin1"
+                    android:text="@string/settings_device_settings_bluetooth_signal"/>
+
+
+                <!--<com.sproutling.ui.widget.ShTextView-->
+                <!--android:id="@+id/bluetooth_signal_status"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="@string/unknown"-->
+                <!--android:textColor="@color/greyish"-->
+                <!--android:textSize="14sp"-->
+                <!--android:visibility="gone"/>-->
+
+                <ImageView
+                    android:id="@+id/img_ble_strength"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bluetooth_signal_disconnected"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/bluetooth_signal_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bluetooth_signal_layout"
+                android:background="@color/greyish"/>
+
+            <RelativeLayout
+                android:id="@+id/firmware_wearable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bluetooth_signal_divider"
+                android:paddingBottom="@dimen/margin1"
+                android:paddingTop="@dimen/margin1">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/firmware_wearable"
+                    style="@style/SubtextThree.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_device_settings_firmware"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/firmware_wearable_status"
+                    style="@style/SubtextSeven.6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/unknown"/>
+
+                <ProgressBar
+                    android:id="@+id/firmware_wearable_progressbar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/firmware_wearable_status"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/tv_smart_charger"
+            style="@style/HeaderTwo.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wearable_layout"
+            android:layout_marginBottom="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin3"
+            android:layout_marginTop="@dimen/margin4"
+            android:text="@string/settings_device_settings_smart_charger"/>
+
+        <RelativeLayout
+            android:id="@+id/smart_charger_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_smart_charger"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin3"
+            android:paddingRight="@dimen/margin3">
+
+            <RelativeLayout
+                android:id="@+id/wifi_signal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/wifi_signal"
+                    style="@style/SubtextThree.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/margin1"
+                    android:paddingTop="@dimen/margin1"
+                    android:text="@string/settings_device_settings_wifi_signal"/>
+
+
+                <!--<com.sproutling.ui.widget.ShTextView-->
+                <!--android:id="@+id/wifi_signal_status"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="@string/unknown"-->
+                <!--android:textColor="@color/greyish"-->
+                <!--android:textSize="14sp"-->
+                <!--android:visibility="gone"/>-->
+
+                <ImageView
+                    android:id="@+id/img_wifi_strength"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_wifi_signal_okay"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/wifi_signal_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/wifi_signal_layout"
+                android:background="@color/greyish"/>
+
+
+            <RelativeLayout
+                android:id="@+id/firmware_charger_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wifi_signal_divider">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/firmware_charger"
+                    style="@style/SubtextThree.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin1"
+                    android:paddingTop="@dimen/margin1"
+                    android:text="@string/settings_device_settings_firmware"
+                    />
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/firmware_charger_status"
+                    style="@style/SubtextSeven.6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/unknown"/>
+
+                <ProgressBar
+                    android:id="@+id/firmware_charger_progressbar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/firmware_charger_status"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/remove"
+            style="@style/SubtextSix.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smart_charger_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin3"
+            android:layout_marginTop="@dimen/margin4"
+            android:padding="5dp"
+            android:text="@string/settings_device_settings_firmware_remove"/>
+
+    </RelativeLayout>
+</ScrollView>

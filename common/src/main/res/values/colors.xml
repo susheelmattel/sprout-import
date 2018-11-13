@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">?attr/colorPrimary</color>
+    <color name="colorPrimaryDark">?attr/colorPrimaryDark</color>
+    <color name="colorAccent">?attr/colorAccent</color>
+    <color name="disableColor">?attr/btn_disabledColor</color>
+    <color name="greyish">#b5b5b5</color>
+    <color name="brownishGrey">#6e6e6e</color>
+    <color name="my_status_bar_color">#19000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#2e2e2e</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#f05028</color>
+    <color name="copper">#cb4129</color>
+
+
+    <color name="color_sleep_dlg_time_area_text">#6E6E6E</color>
+    <color name="divider">#EAEAEA</color>
+    <color name="color_growth_25th">#7F6E6E6E</color>
+    <color name="peacock">#31B5AF</color>
+    <color name="dark_dolphin">#4F4F4F</color>
+    <color name="dolphin">#6e6e6e</color>
+    <color name="dark_poppy">#CF4630</color>
+    <color name="snow">#ffffff</color>
+    <color name="fog">#A9A9A9</color>
+    <color name="canary">#FFC300</color>
+
+
+    <color name="white_oval">#FFFFFF</color>
+    <color name="yellow_oval">#FFFF00</color>
+
+    <color name="icon_color">#6E6E6E</color>
+    <color name="blue_btn">#3078C2</color>
+    <color name="blue_btn_1">#4286f4</color>
+    <color name="dashboard_blue">#1b88db</color>
+    <color name="grey">#6e6e6e</color>
+    <color name="dashboard_lighgrey">#a9a9a9</color>
+
+</resources>

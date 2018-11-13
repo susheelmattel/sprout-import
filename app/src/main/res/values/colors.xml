@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/tealish2</color>
+    <color name="colorPrimaryDark">@color/tealish_dark</color>
+    <color name="colorAccent">@color/tealish_dark</color>
+    <color name="tealish">#31b5af</color>
+    <color name="tealish2">@color/peacock</color>
+    <color name="tealish_dark">#28978F</color>
+    <color name="tealish3">#96d4cf</color>
+    <color name="lightGrey">#e3e3e3</color>
+    <color name="warmGrey">#868686</color>
+    <color name="steelGrey">#808184</color>
+    <color name="greyish">#b5b5b5</color>
+    <color name="greyishBrown">#444444</color>
+    <color name="brownishGrey">#6e6e6e</color>
+    <color name="white">#ffffff</color>
+    <color name="marigold">#ffc300</color>
+    <color name="black">#2e2e2e</color>
+    <color name="black46">#2e2e2e</color>
+    <color name="black80">#cc000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#f05028</color>
+    <color name="copper">#cb4129</color>
+    <color name="terraCotta">#d24a2f</color>
+    <color name="dullOrange">#dab228</color>
+    <color name="shade">#B0000000</color>
+    <color name="vermillion">#e31212</color>
+    <color name="tealish4">#2DA9A0</color>
+
+    <color name="statusgreen">@color/peacock</color>
+    <color name="statusred">#F05028</color>
+    <color name="statusyellow">#DAB228</color>
+
+
+    <color name="color_sleep_dlg_transparent_bg">#BF000000</color>
+    <color name="color_sleep_dlg_title">#808184</color>
+    <color name="color_sleep_dlg_text">#767676</color>
+    <color name="color_sleep_dlg_time_area_text">#6E6E6E</color>
+    <color name="color_sleep_dlg_time_area_boarder">#A9A9A9</color>
+    <color name="color_sleep_dlg_time_area_boarder_show">#1FA096</color>
+    <color name="color_sleep_dlg_save_bg">#F3F3F3</color>
+    <color name="color_sleep_dlg_save_text_enabled">#31B5AF</color>
+    <color name="color_sleep_dlg_save_text_disabled">#6631B5AF</color>
+    <color name="color_dlg_got_it_green_text">@color/peacock</color>
+    <color name="color_timeline_asleep">#1EA096</color>
+    <color name="color_timeline_awake">#ECD076</color>
+    <color name="color_timeline_chart_grey">#6A6A6A</color>
+    <color name="color_picker_background">#66F1F1F1</color>
+    <color name="divider">#EAEAEA</color>
+    <color name="color_growth_50th">#DDBA3D</color>
+    <color name="color_growth_2nd">#BF6E6E6E</color>
+    <color name="color_growth_25th">#7F6E6E6E</color>
+    <color name="color_grey_FBFBFB">#FBFBFB</color>
+    <color name="color_grey_9F9F9F">#9F9F9F</color>
+    <color name="color_grey_FAFAFA">#FAFAFA</color>
+
+    <color name="color_area_text">#979797</color>
+    <color name="color_view_line">#E5E6E7</color>
+
+    <color name="peacock">#31B5AF</color>
+    <color name="dark_dolphin">#4F4F4F</color>
+    <color name="dolphin">#6e6e6e</color>
+    <color name="dark_poppy">#CF4630</color>
+    <color name="snow">#ffffff</color>
+    <color name="fog">#A9A9A9</color>
+    <color name="canary">#FFC300</color>
+    <color name="orange">#FFC300</color>
+
+
+    <color name="blue_oval">#5F7EFF</color>
+    <color name="green_oval">#30B3AD</color>
+    <color name="red_oval">#FF0000</color>
+    <color name="white_oval">#FFFFFF</color>
+    <color name="yellow_oval">#FFFF00</color>
+    <color name="pink_oval">#FF7EC4</color>
+    <color name="amber_oval">#FFC200</color>
+
+    <color name="white_menu">#FCFCFC</color>
+    <color name="chat_bubble_background">#d5eeec</color>
+    <color name="admin_chat_bubble_background">#f4f4f4</color>
+    <color name="text_secondary_color">#b7b7b7</color>
+    <color name="status_green_start">#34BFB8</color>
+    <color name="status_green_end">#31B5AE</color>
+    <color name="status_yellow_start">@color/orange</color>
+    <color name="status_yellow_end">#E8B200</color>
+    <color name="status_red_start">#F06441</color>
+    <color name="status_red_end">@color/red</color>
+    <color name="icon_color">@color/fog</color>
+
+</resources>

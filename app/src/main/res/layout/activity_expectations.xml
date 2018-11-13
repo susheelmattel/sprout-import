@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 Fuhu, Inc. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/navigation_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_header"
+                style="@style/HeaderTwo.22" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_1_title"
+                style="@style/HeaderTwo.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_1_content"
+                style="@style/SubtextOne.7" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/expectations_band"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_2_title"
+                style="@style/HeaderTwo.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_2_content"
+                style="@style/SubtextOne.7" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/expectations_sleeping_baby"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_3_title"
+                style="@style/HeaderTwo.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/section_3_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_3_content"
+                style="@style/SubtextOne.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_4_title"
+                style="@style/HeaderTwo.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_4_content"
+                style="@style/SubtextOne.7" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/expectations_mom"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_5_title"
+                style="@style/HeaderTwo.7" />
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/section_5_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/expectations_section_5_content"
+                style="@style/SubtextOne.7" />
+
+            <!--<com.sproutling.ui.widget.ShTextView-->
+                <!--android:id="@+id/let_us_know"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:text="@string/expectations_let_us_know"-->
+                <!--style="@style/SubtextOne.7" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

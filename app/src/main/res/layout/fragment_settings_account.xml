@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_grey_FAFAFA">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/section_account"
+        style="@style/HeaderTwo.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="20dp"
+        android:text="@string/settings_account_section_account"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_account"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="@dimen/margin1"
+        >
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/first_nameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                app:errorMsg="@string/settings_account_first_name_error">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_account_first_name"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.ui.widget.CustomShInputTextLayout
+                android:id="@+id/last_nameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.5"
+                app:errorMsg="@string/settings_account_last_name_error">
+
+                <com.sproutling.ui.widget.CustomShEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_account_last_name"/>
+            </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        </LinearLayout>
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/emailWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_layout"
+            android:layout_marginTop="10dp"
+            app:errorMsg="@string/settings_account_email_error">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settings_account_email"
+                android:inputType="textEmailAddress"/>
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        <com.sproutling.ui.widget.CustomShInputTextLayout
+            android:id="@+id/phoneWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailWrapper"
+            android:layout_marginTop="10dp"
+            app:errorMsg="@string/settings_account_phone_error">
+
+            <com.sproutling.ui.widget.CustomShEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settings_account_phone"
+                android:inputType="phone"/>
+        </com.sproutling.ui.widget.CustomShInputTextLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneWrapper"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/password"
+                style="@style/SubtextOne.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_password_grey"
+                android:gravity="center_vertical"
+                android:text="@string/settings_account_change_password"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/password"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/password"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_right_arrow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/sign_out"
+        style="@style/SubtextFive.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/settings_account_sign_out"/>
+</RelativeLayout>

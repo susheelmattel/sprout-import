@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_projection_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dashboard_clickable_text_padding"
+    android:paddingTop="@dimen/dashboard_clickable_text_padding">
+
+    <ImageView
+        android:id="@+id/projection_image"
+        android:layout_width="@dimen/dashboard_image_width"
+        android:layout_height="@dimen/dashboard_image_width"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_alert_icon" />
+
+    <TextView
+        android:id="@+id/projection"
+        style="@style/SubtextOne.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dashboard_text_start_margin"
+        android:layout_toEndOf="@id/projection_image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/projection"
+        android:textSize="@dimen/product_card_text_size" />
+
+    <TextView
+        android:id="@+id/projection_on"
+        style="@style/SubtextOne.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dashboard_text_start_margin"
+        android:layout_toEndOf="@id/projection"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/on"
+        android:textSize="@dimen/product_card_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/projection_timer"
+        style="@style/SubtextOne.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:paddingEnd="@dimen/dashboard_clickable_text_padding"
+        android:singleLine="true"
+        android:text="@string/timer_off"
+        android:textSize="@dimen/product_card_text_size" />
+</RelativeLayout>

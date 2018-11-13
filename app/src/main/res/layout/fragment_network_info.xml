@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey05"
+    android:orientation="vertical">
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/helper_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/view_between_padding"
+        android:paddingLeft="@dimen/wifi_setup_ssid_padding"
+        android:paddingTop="@dimen/view_between_padding"
+        android:text="@string/setup_wifi_enter_network_information"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/color_sleep_dlg_title"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_vw_network_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

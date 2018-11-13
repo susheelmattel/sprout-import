@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        sans-serif-thin      // roboto thin (android 4.2)
+        sans-serif-light     // roboto light
+        sans-serif           // roboto regular
+        sans-serif-condensed // roboto condensed
+        sans-serif-medium    // roboto medium (android 5.0)
+    -->
+
+    <!-- roboto fonts name for android:fontFamily setting-->
+    <string name="font_RobotoThin" translatable="false">sans-serif-thin</string>
+    <string name="font_RobotoLight" translatable="false">sans-serif-light</string>
+    <string name="font_RobotoRegular" translatable="false">sans-serif</string>
+    <string name="font_RobotoCondensed" translatable="false">sans-serif-condensed</string>
+    <string name="font_RobotoMedium" translatable="false">sans-serif-medium</string>
+</resources>

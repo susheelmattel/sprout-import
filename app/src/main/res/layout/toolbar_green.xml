@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ToolbarTheme"
+    >
+    <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/toolbar_title"
+            style="@style/HeaderOne.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin2"
+            android:layout_toLeftOf="@+id/toolbar_menu_item"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Pandiarajan "
+            />
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/toolbar_menu_item"
+            style="@style/SubtextTwo.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/margin"
+            android:text="@string/save"
+            />¬
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

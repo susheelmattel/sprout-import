@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2017 Mattel, Inc. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.sproutling.ui.widget.VideoImageView
+        android:id="@+id/video_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin4"
+        android:src="@mipmap/howtocharge_video_thumbnail"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/title"
+        style="@style/SubtextThree.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin4"
+        android:padding="1dp"
+        android:text="@string/setup_how_to_charge_content_title"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/message"
+        style="@style/SubtextOne.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/setup_how_to_charge_content_description"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/instructions"
+        style="@style/SubtextFive.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin4"
+        android:paddingBottom="@dimen/margin3"
+        android:text="@string/setup_how_to_charge_instructions"/>
+</RelativeLayout>

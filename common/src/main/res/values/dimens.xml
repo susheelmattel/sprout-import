@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="pager_dot_radius">10dp</dimen>
+    <dimen name="pager_dot_margin">5dp</dimen>
+    <dimen name="button_corner_radius">3dp</dimen>
+
+    <dimen name="batteryChargingW">144dp</dimen>
+    <dimen name="batteryChargingH">68dp</dimen>
+    <dimen name="batteryChargingFixMargin">7dp</dimen>
+    <dimen name="batteryChargingIconW">16dp</dimen>
+    <dimen name="batteryChargingIconH">7dp</dimen>
+    <dimen name="batteryChargingIconFixMargin">1dp</dimen>
+    <dimen name="batteryCornerSize">4dp</dimen>
+
+
+    <!-- Coachmark margin-->
+
+    <!-- BabyFragment margin-->
+
+
+    <dimen name="legal_text_space">5dp</dimen>
+
+    <dimen name="err_info_msg_text_size">10sp</dimen>
+    <dimen name="dialog_button_padding">15dp</dimen>
+    <dimen name="dialog_image_size">50dp</dimen>
+    <dimen name="pairing_img_height">255dp</dimen>
+    <dimen name="pairing_img_width">220dp</dimen>
+
+    <!--CW Dashboard-->
+    <dimen name="dashboard_image_width">20dp</dimen>
+    <dimen name="dashboard_text_start_margin">8dp</dimen>
+    <dimen name="dashboard_clickable_text_padding">16dp</dimen>
+    <dimen name="product_card_text_size">14sp</dimen>
+    <dimen name="product_card_text_size_12">12sp</dimen>
+    <dimen name="padding_dashboard_txt_4">4dp</dimen>
+    <dimen name="dashboard_progressbar_width">20dp</dimen>
+    <dimen name="custom_toast__text_padding">20dp</dimen>
+    <dimen name="custom_toast__layout_padding">8dp</dimen>
+
+</resources>

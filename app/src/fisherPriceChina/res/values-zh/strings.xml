@@ -1,0 +1,12 @@
+
+<!DOCTYPE resources [
+    <!ENTITY appname "费雪甜睡圈">
+    ]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="settings_caregivers_qr_code_message">请您的看护人扫描这个二维码，使用&appname;APP加入您的家庭账户。为保障安全，这个二维码将在15分钟后失效</string>
+    <string name="location_must_be_on_msg">You must turn on your location in your Settings before you set up &appname;.</string>
+    <string name="location_access_info_settings">You must allow location access in Settings > Apps > &appname; > Permissions before you set up &appname;.</string>
+    <string name="my_sproutling">我的&appname;</string>
+
+</resources>

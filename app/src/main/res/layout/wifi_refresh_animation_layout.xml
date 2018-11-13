@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:paddingBottom="10dp"
+             android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/wifi_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/wifi_top"/>
+
+    <ImageView
+        android:id="@+id/wifi_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/wifi_middle"/>
+
+    <ImageView
+        android:id="@+id/wifi_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/wifi_bottom"/>
+
+</FrameLayout>

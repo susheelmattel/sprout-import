@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/back_toolbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@color/white"
+                                   android:minHeight="?attr/actionBarSize"
+                                   app:contentInsetLeft="0dp"
+                                   app:contentInsetStart="0dp"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_height="match_parent">-->
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/navigation_title"
+        style="@style/HeaderTwo.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:text="Pandiarajan Subramani umadevi shivasubrama"
+        />
+
+    <!--<com.sproutling.ui.widget.ShTextView-->
+    <!--android:id="@+id/navigation_action"-->
+    <!--style="@style/SubtextFive.9"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="?selectableItemBackground"-->
+    <!--android:padding="@dimen/margin"-->
+    <!--android:visibility="gone"-->
+    <!--android:textColor="@color/action_button_tealish"-->
+    <!--android:text="test"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+</android.support.v7.widget.Toolbar>
+    <!--</android.support.design.widget.AppBarLayout>-->

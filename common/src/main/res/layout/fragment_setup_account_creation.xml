@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/sign_up_layout_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/sign_up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginRight="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin3">
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.sproutling.common.ui.widget.CustomShInputTextLayout
+                    android:id="@+id/firstNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    app:errorMsg="@string/my_information_first_name_text_field_required_message">
+
+                    <com.sproutling.common.ui.widget.CustomShEditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/my_information_first_name_text_field_placeholder"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+                </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+                <com.sproutling.common.ui.widget.CustomShInputTextLayout
+                    android:id="@+id/lastNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    app:errorMsg="@string/my_information_last_name_text_field_required_message">
+
+                    <com.sproutling.common.ui.widget.CustomShEditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/my_information_last_name_text_field_placeholder"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+                </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+            </LinearLayout>
+
+            <com.sproutling.common.ui.widget.CustomShInputTextLayout
+                android:id="@+id/emailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_layout"
+                android:layout_marginTop="@dimen/margin3"
+                app:errorMsg="@string/my_information_email_text_field_required_message">
+
+                <com.sproutling.common.ui.widget.CustomShEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/my_information_email_text_field_placeholder"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.common.ui.widget.CustomShInputTextLayout
+                android:id="@+id/phoneWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailWrapper"
+                android:layout_marginTop="@dimen/margin3"
+                app:errorMsg="@string/my_information_phone_number_text_field_required_message"
+                app:infoMsg="@string/my_information_phone_hint_message">
+
+                <com.sproutling.common.ui.widget.CustomShEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/my_information_phone_number_text_field_placeholder"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+            <com.sproutling.common.ui.widget.CustomShInputTextLayout
+                android:id="@+id/passwordWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneWrapper"
+                android:layout_marginTop="@dimen/margin3"
+                app:errorMsg="@string/my_information_password_text_field_required_message"
+                app:passwordToggleEnabled="true"
+                android:visibility="gone"
+                app:infoMsg="@string/my_information_password_too_short"
+                >
+
+                <com.sproutling.common.ui.widget.CustomShEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/my_information_password_text_field_placeholder"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </com.sproutling.common.ui.widget.CustomShInputTextLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneWrapper"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:id="@+id/changePasswordLayout"
+                android:background="@color/white"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/change_password"
+                    style="@style/SubtextOne.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_password_grey"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_information_change_password_button_title"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/change_password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/change_password"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_right_arrow"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

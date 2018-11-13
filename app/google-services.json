@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "937674784332",
+    "firebase_url": "https://app-android-4dfb0.firebaseio.com",
+    "project_id": "app-android-4dfb0",
+    "storage_bucket": "app-android-4dfb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937674784332:android:c7b71f3f58636358",
+        "android_client_info": {
+          "package_name": "com.sproutling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937674784332-fuk16nvilu227duc5t2fg1gd6epbrssh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sproutling",
+            "certificate_hash": "f7b6765a0383f61fe5efc970df7700538afbf648"
+          }
+        },
+        {
+          "client_id": "937674784332-8au7mqb0bq8hi1ueas9vnv5g13u23tfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACl1MwIdP1fDQ8zCdoz0MC7nsyRd77K9Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937674784332-8au7mqb0bq8hi1ueas9vnv5g13u23tfe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937674784332:android:3fdee76463e1413e",
+        "android_client_info": {
+          "package_name": "com.sproutling.fp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937674784332-j0nek4bcptrqqaplbpjqqglfq980331e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sproutling.fp",
+            "certificate_hash": "f7b6765a0383f61fe5efc970df7700538afbf648"
+          }
+        },
+        {
+          "client_id": "937674784332-8au7mqb0bq8hi1ueas9vnv5g13u23tfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACl1MwIdP1fDQ8zCdoz0MC7nsyRd77K9Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937674784332-8au7mqb0bq8hi1ueas9vnv5g13u23tfe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937674784332:android:fee37709d1f1229d",
+        "android_client_info": {
+          "package_name": "com.fisherprice.sproutling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937674784332-8au7mqb0bq8hi1ueas9vnv5g13u23tfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACl1MwIdP1fDQ8zCdoz0MC7nsyRd77K9Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

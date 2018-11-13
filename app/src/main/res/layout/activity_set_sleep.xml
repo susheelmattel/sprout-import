@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="342dp"
+        android:layout_height="448dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sleep_dlg_bg">
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_sleep_dlg_title"
+            style="@style/SubtextThree.10"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <ImageView
+            android:id="@+id/imgTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/sleep_timer_sleep_log_dialog"
+            android:layout_marginTop="@dimen/margin1"
+            android:layout_gravity="center"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/sleepTimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_marginRight="@dimen/margin2"
+            android:text="@string/set_sleep_dlg_text"
+            style="@style/SubtextOne.6"
+            android:layout_gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/beginTimeLayout"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="322dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/begin_time_selector"
+            android:visibility="gone">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtextOne.6"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="38dp"
+                android:text="@string/sleep_dlg_begin" />
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/beginTimeText"
+                style="@style/SubtextOne.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp"
+                android:text="@string/sleep_dlg_enter_time" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_down_arrow"/>
+
+                <ImageView android:id="@+id/checkGreenStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/txtBeginMessage"
+            style="@style/SubtextSix.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/endTimeLayout"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_marginTop="19dp"
+            android:layout_width="322dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/end_time_selector"
+            android:visibility="visible">
+
+            <com.sproutling.ui.widget.ShTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtextOne.6"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="38dp"
+                android:text="@string/sleep_dlg_end"/>
+          
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/endTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtextOne.6"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp"
+                android:text="@string/sleep_dlg_enter_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_down_arrow"/>
+
+                <ImageView android:id="@+id/checkGreenEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/txtEndMessage"
+            style="@style/SubtextSix.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/totalTimeContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/totalTimeTitle"
+                    style="@style/SubtextOne.8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sleep_dlg_edit_total_time"
+                    android:visibility="invisible"/>
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/totalTimeText"
+                    style="@style/SubtextOne.32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sleep_dlg_edit_time_format" />
+
+                <com.sproutling.ui.widget.ShTextView
+                    android:id="@+id/btnResetTimer"
+                    style="@style/SubtextFive.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_sleep_dlg_reset_timer"
+                    android:textColor="@color/statusgreen"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:drawableLeft ="@mipmap/congrats_timer"/>
+
+            </LinearLayout>
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/btnStartStop"
+                style="@style/SubtextTwo.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_oval_green"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/set_sleep_dlg_start"/>
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/btnEnterManually"
+                style="@style/SubtextFive.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/set_sleep_dlg_manually"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:drawableLeft ="@mipmap/logsleep_manual"/>
+
+        </LinearLayout>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/btnSave"
+            style="@style/SubtextFive.7"
+            android:text="@string/sleep_dlg_save"
+            android:textColor="@color/sleep_dlg_save_color"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sleep_dlg_save_button_bg"/>
+
+        <View
+            android:background="@color/color_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:id="@+id/btnCancel"
+            android:text="@string/sleep_dlg_cancel"
+            android:gravity="center"
+            style="@style/SubtextFive.7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sleep_dlg_cancel_button_bg"/>
+    </LinearLayout>
+</RelativeLayout>

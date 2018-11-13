@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:layout_above="@+id/tv_location_ble_access"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin3"
+        android:src="@drawable/ic_location_onboarding"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_location_ble_access"
+        style="@style/SubtextThree.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_location_ble_info"
+        android:layout_marginTop="@dimen/margin2"
+        android:gravity="center_horizontal"
+        android:text="@string/location_access"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_location_ble_info"
+        style="@style/SubtextOne.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_settings"
+        android:layout_marginBottom="@dimen/margin4"
+        android:layout_marginLeft="@dimen/margin4"
+        android:layout_marginRight="@dimen/margin4"
+        android:layout_marginTop="@dimen/margin2"
+        android:gravity="center_horizontal"
+        android:text="@string/location_access_info_settings"/>
+
+
+    <Button
+        android:id="@+id/btn_settings"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_skip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:paddingLeft="@dimen/margin3"
+        android:paddingRight="@dimen/margin3"
+        android:text="@string/location_settings"
+        android:textAllCaps="false"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/tv_skip"
+        style="@style/SubtextOne.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:padding="5dp"
+        android:text="@string/setup_connect_device_skip"/>
+</RelativeLayout>

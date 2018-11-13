@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:background="@color/statusgreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragFlower"
+        android:tag="fragFlower"
+        android:name="com.sproutling.ui.fragment.status.FlowerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_flower"
+    />
+
+</FrameLayout>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="match_parent">-->
+
+    <!--<com.sproutling.ui.widget.ShTextView -->
+        <!--android:id="@+id/txtBack"-->
+        <!--android:drawableLeft="@drawable/back_icon_states"-->
+        <!--android:text="@string/back"-->
+        <!--android:elegantTextHeight="true"-->
+        <!--android:textSize="@dimen/textM"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_marginLeft="@dimen/margin2"-->
+        <!--android:drawablePadding="@dimen/margin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/flowerContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
+
+            <!--<com.sproutling.ui.widget.StatusView-->
+                <!--android:id="@+id/statusView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/statusView_learning_height"-->
+                <!--/>-->
+
+    <!--</FrameLayout>-->
+    <!--<com.sproutling.ui.widget.FlowerDescView-->
+        <!--android:id="@+id/flowerDescView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/flowerContainer"-->
+        <!--android:paddingLeft="@dimen/contentPaddingHorizontal"-->
+        <!--android:paddingRight="@dimen/contentPaddingHorizontal"-->
+    <!--/>-->
+
+<!--</RelativeLayout>-->

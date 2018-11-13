@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_setting_up_2"/>
+
+    <RelativeLayout
+        android:id="@+id/dots_animation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/image"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@mipmap/green_circle"/>
+
+        <ImageView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dot1"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@mipmap/green_circle"/>
+
+        <ImageView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dot2"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@mipmap/green_circle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/success_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/image"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"/>
+
+        <com.sproutling.ui.widget.ShTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/setup_connect_device_success"
+            style="@style/SubtextThree.10"/>
+    </RelativeLayout>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image"
+        android:layout_marginTop="20dp"
+        android:text="@string/searching"
+        style="@style/SubtextThree.10"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status"
+        android:layout_marginTop="10dp"
+        android:text="@string/setup_connect_device_description_connecting"
+        style="@style/SubtextFour.8"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="@string/setup_connect_device_skip"
+        style="@style/SubtextOne.2"/>
+</RelativeLayout>

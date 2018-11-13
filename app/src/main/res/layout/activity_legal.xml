@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/navigation_layout"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/navigation_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin4"
+        android:src="@drawable/ic_privacy_certified_globe"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accept"
+        android:layout_below="@+id/image"
+        android:layout_marginBottom="@dimen/margin2"
+        android:layout_marginLeft="@dimen/margin2"
+        android:layout_marginRight="@dimen/margin2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!--<WebView-->
+            <!--android:id="@+id/wv_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+            <com.sproutling.ui.widget.ShTextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/legal_text_space"
+                android:text="@string/legal_content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/accept"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin2"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/legal_button_accept"
+        android:textAllCaps="false"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/terms"
+        style="@style/SubtextOne.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/legal_terms"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/success"
+        style="@style/SubtextOne.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin5"
+        android:drawableLeft="@drawable/ic_check_blue"
+        android:drawablePadding="@dimen/margin"
+        android:text="@string/pairing_activity_success"/>
+
+    <ImageView
+        android:id="@+id/deviceImg"
+        android:layout_width="@dimen/pairing_img_width"
+        android:layout_height="@dimen/pairing_img_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin10"
+        android:src="@drawable/ic_ask_date"/>
+    <!--update the Textview style once we get the list from UI Team-->
+    <TextView
+        android:id="@+id/connectionTitle"
+        style="@style/HeaderTwo.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deviceImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/device_connected_title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/connectionMessage"
+        style="@style/SubtextOne.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectionTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin3"
+        android:layout_marginRight="@dimen/margin3"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="@string/test"/>
+
+    <TextView
+        android:id="@+id/connectionNote"
+        style="@style/BottomTextNoteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin3"
+        android:layout_marginRight="@dimen/margin3"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="@string/test"
+      />
+</RelativeLayout>

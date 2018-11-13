@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/colorName"
+        android:layout_width="@dimen/nightLight_color_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin2"
+        android:drawableLeft="@drawable/shape_item_oval_red"
+        android:drawablePadding="@dimen/margin"
+        android:text="@string/cancel"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/popup_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin2"
+                android:background="@drawable/dialogfragment_bg">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dialog_image_size"
+        android:layout_height="@dimen/dialog_image_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_caregiver_3_color"/>
+
+    <com.sproutling.ui.widget.ShTextView
+
+        android:id="@+id/title"
+        style="@style/SubtextThree.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/caregiver_accept_invitation_popup_title"/>
+
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/message"
+        style="@style/SubtextOne.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin2"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/caregiver_accept_invitation_popup_message"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ok"
+        android:background="@color/grey15"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/ok"
+        style="@style/SubtextFive.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:gravity="center"
+        android:padding="@dimen/dialog_button_padding"
+        android:text="@string/caregiver_accept_invitation_popup_btn_ok"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ok"
+        android:background="@color/grey15"/>
+
+    <com.sproutling.ui.widget.ShTextView
+        android:id="@+id/cancel"
+        style="@style/SubtextFive.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:gravity="center"
+        android:padding="@dimen/dialog_button_padding"
+        android:text="@string/caregiver_accept_invitation_popup_btn_cancel"/>
+</RelativeLayout>

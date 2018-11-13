@@ -1,0 +1,23 @@
+<resources>
+
+
+    <!-- Coachmark margin-->
+
+
+    <dimen name="dismiss_marginTop">2dp</dimen>
+
+    <dimen name="big_circle_marginTop">185dp</dimen>
+    <dimen name="big_circle_arrow_marginTop">130dp</dimen>
+
+    <dimen name="sleep_prediction_marginTop">200dp</dimen>
+    <dimen name="sleep_prediction_arrow_marginTop">133dp</dimen>
+
+
+    <!-- BabyFragment margin-->
+    <dimen name="gender_margin_left">40dp</dimen>
+    <dimen name="gender_margin_right">40dp</dimen>
+    <dimen name="gender_group_margin_left">10dp</dimen>
+    <dimen name="gender_boy_margin_left">5dp</dimen>
+
+    <dimen name="batteryChargingIconFixMargin">0.5dp</dimen>
+</resources>

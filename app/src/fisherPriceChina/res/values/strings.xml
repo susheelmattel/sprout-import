@@ -1,0 +1,53 @@
+
+<!DOCTYPE resources [
+    <!ENTITY appname "SweetSleep">
+    ]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="main_button_setup_account">Set up a new &appname;</string>
+    <string name="forgot_verification_message">Read the text message from &appname;  with a security code to reset your password.</string>
+    <string name="forgot_resent_message">Read the new text message from &appname; with a security code to reset your password.</string>
+    <string name="qr_scanner_message">Scan a &appname; QR code to accept your invitation instantly.</string>
+    <string name="qr_scanner_message_allow_camera">Allow &appname; to access your camera to scan a &appname; QR code.</string>
+    <string name="setup_account_creation_terms" formatted="false">
+        By signing up, I agree to &appname;’s %1$s and %2$s.
+    </string>
+    <string name="setup_setting_up_title">Setting Up &appname;</string>
+    <string name="settings_notification_notification_allow_off_description">Get push notifications for things that happen while your baby is wearing &appname;.</string>
+    <string name="settings_notification_notification_allow_on_description">Get push notifications for things that happen while your baby is wearing &appname;. Select which types of events you’d like to be notified about below.</string>
+    <string name="settings_notification_red_alerts_description">We will only send you selected red alerts when your baby is asleep or stirring and wearing the &appname; band. Remember that &appname; is not a medical device and does not replace your supervision.</string>
+    <string name="settings_notification_room_description">We will send you selected room condition alerts when your baby is asleep or stirring and wearing the &appname; band.</string>
+    <string name="settings_notification_sleep_description">We will send you selected sleep alerts when your baby is wearing the &appname; band and changes to asleep, stirring, or awake.</string>
+    <string name="settings_notification_system_sproutling_off">&appname; Offline</string>
+    <string name="settings_notification_system_description">We will send you selected system alerts whenever they occur, whether your baby is wearing the &appname; band or not.</string>
+    <string name="settings_erase_account_dialog_fragment_message">Are you sure you want to erase all your data from this &appname; and reset to factory settings?</string>
+    <string name="settings_remove_device_dialog_fragment_title">Remove &appname; From Account</string>
+    <string name="settings_caregivers_info_description">Share &appname; with caregivers so they can see your baby\'s status and get alerts on their smartphones.</string>
+    <string name="settings_caregivers_qr_code_message">Ask your Caregiver to scan this code using the &appname; app to join your family account. For security purposes, this QR code will expire after 15 minutes.</string>
+    <string name="caregiver_accept_invitation_popup_message">%s has invited you to share a &appname; Baby Monitor.</string>
+    <string name="timeline_dlg_timeline_text">This is where your baby\'s sleep data will appear. Check here after your baby wakes up to see how they slept while wearing &appname;.</string>
+    <string name="learningperiod_start_dlg_text">Every baby is different. For the first 7 days you use &appname;, we\'ll learn about your unique baby to improve the accuracy of our insights and predictions.</string>
+    <string name="learningperiod_finish_dlg_descip2_1">Only log %s\'s sleep if he doesn\'t wear &appname;.</string>
+    <string name="learningperiod_finish_dlg_descip2_2">Only log %s\'s sleep if she doesn\'t wear &appname;.</string>
+    <string name="learningperiod_finish_dlg_descip3">The more you use &appname;, the smarter it gets.</string>
+    <string name="status_title_sprouting_offline">&appname; Offline</string>
+    <string name="status_detail_learning_period">Make sure your baby wears the &appname;</string>
+    <string name="status_notification_description_advice_01">We\'re learning! Make sure your baby wears &appname; every day. Use the Log Sleep button to record all sleep.</string>
+    <string name="status_notification_description_advice_02">Log all sleep during the learning period to teach &appname; about your baby.</string>
+    <string name="flower_about_desc">&appname; needs to learn about %1$s for the first few days. Tap each circle to learn more.</string>
+    <string name="flower_whatToExpect_desc">The more your baby wears &appname;,the more we learn, so make sure %1$s wears &appname; each time %2$s sleeps. And remember to log all sleep, even if %1$s naps on-the-go.</string>
+    <string name="flower_sleepPrediction_desc">We are learning your baby’s sleep patterns to predict when %2$s will wake up. Make sure you record all of your baby’s sleep using the Log Sleep button on the home screen. Log every nap, even when %1$s wears &appname;.</string>
+    <string name="flower_unusualHeartbeat_desc">We are learning your baby’s normal heartbeat so that we can alert you if it’s abnormal while %2$s sleeps. Make sure %1$s wears &appname; every time %2$s sleeps to help us learn faster.</string>
+    <string name="flower_duration_desc">&appname; collects data about your baby across seven days to give you more accurate predictions about your baby’s real-time status and %2$s sleep schedule.</string>
+    <string name="learning_period_started_text">&appname; is learning about %1$s. The more you use &appname;, the faster we\'ll learn.</string>
+    <string name="learning_period_end_text">We\'ve now learned enough about %1$s to start showing wake up predictions each time %2$s falls asleep. And &appname; will get more accurate over time.</string>
+    <string name="help_sproutling_learn_logsleep">Help &appname; learn your baby\'s sleep habits. Use the + button below to log the time your baby falls asleep and wakes up.</string>
+    <string name="location_access_info">Allow location access and turn on your location to continue setting up your &appname;.</string>
+    <string name="location_must_be_on_msg">You must turn on your location in your Settings before you set up &appname;.</string>
+    <string name="location_access_info_settings">You must allow location access in Settings > Apps > &appname; > Permissions before you set up &appname;.</string>
+    <string name="bluetooth_warning">Turn on your phone\'s Bluetooth to set up your &appname;.</string>
+    <string name="my_sproutling">My &appname;</string>
+    <string name="tooltips_welcome_descrip">Take a quick tour to learn what you can accomplish with &appname;.</string>
+    <string name="tooltips_sleep_prediction_descrip">&appname; can now predict your baby\’s wake up time. The solid white line shows time slept so far, and the other line shows how much longer they are likely to sleep.</string>
+    <string name="device_create_err_msg">Can\'t set up this &appname; device because it is currently registered to another user.</string>
+</resources>

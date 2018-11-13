@@ -1,0 +1,74 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">@dimen/margin2</dimen>
+    <dimen name="text_margin">@dimen/margin2</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/margin2</dimen>
+    <dimen name="activity_vertical_margin">@dimen/margin2</dimen>
+
+    <dimen name="status_top_radius">10dp</dimen>
+    <dimen name="pager_dot_radius">10dp</dimen>
+    <dimen name="view_between_padding">10dp</dimen>
+    <dimen name="pager_dot_margin">5dp</dimen>
+    <dimen name="wifi_setup_ssid_padding">32dp</dimen>
+    <dimen name="button_corner_radius">3dp</dimen>
+    <dimen name="account_edit_text_height">48dp</dimen>
+
+    <dimen name="child_btn_drawable_padding">6dp</dimen>
+
+    <dimen name="timeline_circle_size">9dp</dimen>
+    <dimen name="timeline_circle_marginStart">7.5dp</dimen>
+
+    <dimen name="batteryStatusViewW">178dp</dimen>
+    <dimen name="batteryStatusViewH">88dp</dimen>
+    <dimen name="batteryChargingW">144dp</dimen>
+    <dimen name="batteryChargingH">68dp</dimen>
+    <dimen name="batteryChargingFixMargin">7dp</dimen>
+    <dimen name="batteryChargingIconW">18dp</dimen>
+    <dimen name="batteryChargingIconH">8dp</dimen>
+    <dimen name="batteryChargingIconFixMargin">0.5dp</dimen>
+    <dimen name="batteryCornerSize">4dp</dimen>
+
+
+    <!-- Coachmark margin-->
+
+    <dimen name="dismiss_marginTop">12dp</dimen>
+
+    <dimen name="status_screen_topline_height">48dp</dimen>
+
+    <dimen name="big_circle_marginTop">205dp</dimen>
+    <dimen name="big_circle_arrow_marginTop">150dp</dimen>
+
+    <dimen name="sleep_prediction_marginTop">220dp</dimen>
+    <dimen name="sleep_prediction_arrow_marginTop">153dp</dimen>
+
+    <!-- BabyFragment margin-->
+    <dimen name="gender_margin_left">50dp</dimen>
+    <dimen name="gender_margin_right">50dp</dimen>
+    <dimen name="gender_group_margin_left">20dp</dimen>
+    <dimen name="gender_boy_margin_left">15dp</dimen>
+
+
+    <dimen name="legal_text_space">5dp</dimen>
+    <dimen name="setting_up_img_width">244dp</dimen>
+    <dimen name="setting_up_img_height">196dp</dimen>
+    <dimen name="putting_on_img_height">204dp</dimen>
+    <dimen name="putting_on_img_width">180dp</dimen>
+
+    <dimen name="round_button_radius">75dp</dimen>
+    <dimen name="err_info_msg_text_size">10sp</dimen>
+    <dimen name="wheel_view_selected_size">24sp</dimen>
+    <dimen name="dialog_button_padding">15dp</dimen>
+    <dimen name="dialog_image_size">50dp</dimen>
+    <dimen name="status_view_peek_height">60dp</dimen>
+    <dimen name="hub_control_icon_size">15dp</dimen>
+    <dimen name="bottomsheet_wheelView">140dp</dimen>
+    <dimen name="nightLight_color_width">100dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="dialog_title_marginTop">20dp</dimen>
+    <dimen name="lp_image_width">258dp</dimen>
+    <dimen name="lp_image_height">150dp</dimen>
+    <dimen name="lp_description_text_marginTop">7dp</dimen>
+
+</resources>

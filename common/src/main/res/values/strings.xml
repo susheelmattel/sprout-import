@@ -1,0 +1,382 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <!--First Launch-->
+    <string name="first_launch_title">Nursery of the Future</string>
+    <string name="first_launch_login">Have an account?</string>
+    <string name="first_launch_sign_in">Sign In</string>
+    <string name="first_launch_sign_up">Sign Up</string>
+
+    <!--Legal-->
+    <string name="legal_important">Important</string>
+    <string name="legal_agree_button">I Accept</string>
+    <string name="legal_terms" formatted="false">By tapping I Accept, you agree to our <a href="https://eula.cn.platform.mattel/Mattel_Mobile_Apps_-_End_User_License_Agreement_EULA.html">End-User License Agreement</a> and <a href="https://www.mattel.com/en-us/privacy-statement">Privacy Statement</a>.</string>
+    <string name="legal_agree_message_01">By tapping I Accept, you agree to our</string>
+    <string name="legal_agree_message_02">End-User License Agreement</string>
+    <string name="legal_agree_message_03">and</string>
+    <string name="legal_agree_message_04">Privacy Statement</string>
+
+    <string name="legal_content">This summary highlights key parts of the <a href="https://www.mattel.com/en-us/privacy-statement">MATTEL GENERAL PRIVACY STATEMENT</a>, which governs. Look for key terms (italicized and underlined <i><u>like this</u></i>) in the <a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">DEFINITIONS </a>section \n\n
+        <b> What Information May Be Collected</b>
+        \n \t \t \u2022  <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">Automatically collected info</a></i>, like <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">device info</a></i> and network info
+        \n \t \t \u2022 <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">Approximate, network-based location</a></i>
+        \n \t \t \u2022 <a href="https://www.mattel.com/en-us/about-cookies-and-technologies">ABOUT COOKIES &amp; TECH:</a> We, our <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">3rd-party partners</a></i> &amp; <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">3rd-party tech partners get some automatically collected info</a></i> &amp;
+        other <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">info </a></i>using tech like cookies, web beacons, or others. Read more at the <a href="http://corporate.mattel.com/pdfs/third-party-partners.pdf">MOBILE 3RD-PARTY TECH LIST.</a>
+
+        \n\n
+        <b>Why It’s Collected</b>
+        \n \t \t \u2022 Support internal operations (provide and improve products and services, analytics).
+        \n \t \t \u2022 Fulfill requests, including in-app purchases.
+        \n \t \t \u2022 Understand consumers.
+        \n \t \t \u2022 Optimize functionality.
+        \n \t \t \u2022 Manage content and ads.
+        \n \t \t \u2022 For some apps, personalization.
+
+        \n\n
+        <b>With Whom It\'s Shared</b>
+        \n \t \t \u2022 Within the <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">Mattel family of companies</a></i>, and with our <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">3rd-party partners</a></i> and <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">3rd-party technology partners</a></i> to support internal operations.
+        \n \t \t \u2022 With <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">3rd parties</a></i> for marketing purposes.
+        \n \t \t \u2022 For <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">user-generated content,</a></i> if available, with family, friends, or the public as you choose. See app details for info.
+        \n \t \t \u2022 As necessary, required, or permitted by law.
+
+        \n\n
+        <b>Contact Us/Review or Delete Your or Your Baby\'s Collected Info</b>
+        \n \t \t \u2022 Visit <a href="https://www.mattel.com/en-us/privacy-statement#anchor-Contact-Us-With-Your-Questions">CONTACT US</a>
+        \n \t \t \u2022 Parents: Use the <a href="http://corporate.mattel.com/ParentalAccessForm.pdf">PARENTAL ACCESS FORM</a> to learn about your <i><a href="https://www.mattel.com/en-us/privacy-statement#anchor-1">kid’s personal info</a></i> or start process to make choices about it.
+        \n \t \t \u2022 To make choices about information or communications, please visit <a href="https://www.mattel.com/en-us/privacy-statement#anchor-10">YOUR CHOICES AND CONTROLS.</a>
+
+        \n\n
+        <b>Other Important Info</b>
+        \n \t \t \u2022 Data may be transferred to another country
+        \n \t \t \u2022 You can learn about <a href="https://www.mattel.com/en-us/privacy-statement#anchor-17">YOUR EUROPEAN PRIVACY RIGHTS</a>
+        \n \t \t \u2022 The full <a href="https://www.mattel.com/en-us/privacy-statement">MATTEL GENERAL PRIVACY STATEMENT</a> governs.
+
+        \n\n
+        © 2018 Mattel.
+    </string>
+
+
+    <!--Login-->
+    <string name="login_title">Sign In</string>
+    <string name="login_sign_in_button">Sign In</string>
+    <string name="login_facebook_button">Login with Facebook</string>
+    <string name="login_or">Or</string>
+    <string name="login_forgot_password_button">Forgot Your password?</string>
+    <string name="login_update_url">Update Url</string>
+    <string name="login_invalid_email_address">Invalid email address</string>
+    <!--<string name="login_email_placeholder">Email or Mobile Phone #</string>-->
+    <!--[START]Temporary placeholders; remove these and uncomment the above strings -->
+    <string name="login_email_placeholder">Email </string>
+    <string name="login_password_placeholder">Password</string>
+
+    <string name="login_save">Save</string>
+    <string name="login_cancel">Cancel</string>
+
+    <!--Login Error Modal-->
+    <string name="login_error_title">Uh Oh</string>
+    <string name="login_error_message">Email and password do not match. Please try again.</string>
+    <string name="login_error_try_again">Try Again.</string>
+
+    <!--Username Error Modal-->
+    <string name="username_error_invalid_email_phone_number">Invalid email or phone number</string>
+    <string name="username_error_invalid_try_again">Invalid email or phone number. Please try again.</string>
+
+
+    <!--Forgot password screen-->
+    <string name="forgot_password_title">Reset Password</string>
+    <!--
+    <string name="forgot_password_message">Enter the phone number or email you used for this account.</string>
+    <string name="forgot_password_email_placeholder">Email or Mobile Phone #</string>
+    <string name="forgot_password_sms_warning">Standard SMS rates may apply</string>
+    -->
+    <!--[START]Temporary placeholders; remove these and uncomment the above strings-->
+    <string name="forgot_password_message">Enter the email you used for this account.</string>
+    <string name="forgot_password_email_placeholder">Email</string>
+    <string name="forgot_password_sms_warning"></string>
+    <!--[END]Temporary placeholders;-->
+    <string name="forgot_enter_phone_number_message">We will send you a verification code to create a new password.</string>
+    <string name="forgot_password_phone_placeholder">Mobile Phone</string>
+    <string name="forgot_invalid_email_format">Invalid email address format</string>
+    <string name="forgot_password_send">Send</string>
+    <string name="forgot_phone_number_error">Unknown phone number. Please try again.</string>
+    <string name="forgot_password_email_error">Unknown Email. Please try again.</string>
+
+    <string name="forgot_password_next">Next</string>
+
+
+    <!--SMS Verification Screen-->
+    <string name="sms_verification_code">Verification Code</string>
+    <string name="sms_verification_header">Enter Verification Code</string>
+    <string name="sms_verification_message_phone">Open the text message from %s with a security code to reset your password.</string>
+    <string name="sms_verification_message_email">Open the email from %s with a security code to reset your password.</string>
+    <string name="sms_verification_next">Next</string>
+    <string name="sms_verification_phone_instruction">Enter the code sent to %s</string>
+    <string name="sms_verification_code_hint">Code</string>
+    <string name="sms_verification_code_sent_text">Please check your text message for the verification code.</string>
+    <string name="sms_verification_request_code">Request new code</string>
+
+    <string name="sms_verification_pin_sent_successfully">Pin sent successfully</string>
+
+    <!--Set New Password Screen-->
+    <string name="set_new_password_title">New Password</string>
+    <string name="set_new_password_header">Enter New Password</string>
+    <string name="set_new_password_message">Please create a new password for your account</string>
+    <string name="set_new_password_placeholder">New Password</string>
+    <string name="set_new_password_confirm_placeholder">Confirm Password</string>
+    <string name="set_new_password_tips">Password Tips</string>
+    <string name="set_new_password_tips_content">At least 8 characters long \n Contains at least one number \n Includes uppercase and lowercase letters \n Add a special character</string>
+    <string name="set_new_password_error_too_short">Please create a password that\'s at least 8 characters.</string>
+    <string name="set_new_password_error_too_long">Please create a password that\'s less than 72 characters.</string>
+    <string name="set_new_password_do_not_match">Password don\'t match</string>
+    <string name="set_new_password_required">Password is required</string>
+
+
+    <!--Account Creation Screen-->
+    <string name="account_creation_title">Account Creation</string>
+    <string name="account_creation_next">Next</string>
+    <string name="account_creation_or">Or</string>
+    <string name="account_creation_first_name">First Name</string>
+    <string name="account_creation_last_name">Last Name</string>
+    <string name="account_creation_email">E-mail</string>
+    <string name="account_creation_mobile_phone">Mobile Phone</string>
+    <string name="account_creation_password">Password</string>
+    <string name="account_creation_password_confirmation">Re-type Password</string>
+    <string name="account_creation_first_name_required">First Name is required</string>
+    <string name="account_creation_last_name_required">Last Name is required</string>
+    <string name="account_creation_email_required">E-mail is required</string>
+    <string name="account_creation_phone_required">Phone is required</string>
+    <string name="account_creation_password_required">Password is required</string>
+    <string name="account_creation_invalid_email_format">Invalid email address format</string>
+    <string name="account_creation_invalid_phone_format">Invalid number format</string>
+    <string name="account_creation_passwords_do_not_match">Passwords do not match</string>
+    <string name="account_creation_password_too_short">Password must be at least 8 characters</string>
+    <string name="account_creation_password_too_long">Password cannot be more than 72 characters</string>
+    <string name="account_creation_email_already_registered">The email address is already registered</string>
+    <string name="account_creation_phone_already_registered">The phone number is already registered</string>
+    <string name="account_creation_invalid_phone">Invalid phone number</string>
+    <string name="account_creation_invalid_email">Invalid email address</string>
+    <string name="account_creation_invalid_format">Invalid email or phone number format</string>
+    <string name="account_creation_phone_hint_message">Your phone number will only be used when you need to recover your forgotten password.</string>
+    <string name="account_creation_check_connection"> Check your connection and try again.</string>
+
+    <!--Internet Offline Modal -->
+    <string name="internet_offline_title">Uh Oh</string>
+    <string name="internet_offline_message">The Internet connection appears to be offline. Check your connection and try again.</string>
+    <string name="internet_offline_button">Got It</string>
+
+    <!--Child Profile Screen -->
+    <string name="child_profile_onboarding_title">Add Child</string>
+    <string name="child_profile_title">Child Profile</string>
+    <string name="child_profile_bar_button_next">Next</string>
+    <string name="child_profile_bar_button_save">Save</string>
+    <string name="child_profile_girl">Girl</string>
+    <string name="child_profile_boy">Boy</string>
+    <string name="child_profile_first_name">Baby\'s First Name</string>
+    <string name="child_profile_birthday">Birthday</string>
+    <string name="child_profile_why_dates">Why we ask for dates</string>
+    <string name="child_profile_first_name_required">Baby\'s First Name is required</string>
+    <string name="child_profile_birthday_hint">We use this information to refine the accuracy of our insights. It will be kept completely private and secure</string>
+    <string name="child_profile_cancel">Cancel</string>
+    <string name="child_profile_camera">Take a photo</string>
+    <string name="child_profile_choose_library">Choose from library</string>
+    <string name="child_profile_add_photo">Add Photo</string>
+    <string name="child_profile_change_photo">Change Photo</string>
+    <string name="child_profile_select_gender">BABY\'S GENDER</string>
+
+    <string name="child_profile_birthday_cannot_be_in_future">Birthday cannot be in the future</string>
+    <string name="child_profile_dialog_fragment_title">Why We Ask For Your Child\'s Original Due Date</string>
+    <string name="child_profile_got_it">Got it</string>
+
+    <!--Adjust Photo Screen-->
+    <string name="adjust_photo_label">Drag and Pinch to Set Crop</string>
+    <string name="adjust_photo_okButton">Use</string>
+    <string name="adjust_photo_cancelButton">Cancel</string>
+
+
+    <!--Bluetooth & location permission Screen-->
+    <string name="bluetooth_screen_title">Bluetooth</string>
+    <string name="bluetooth_screen_message">Turn on your phone’s bluetooth. Most products require bluetooth.</string>
+    <string name="bluetooth_screen_image">Bluetooth permission image</string>
+    <string name="bluetooth_screen_no_button_title">Not Now</string>
+    <string name="location_screen_access">Location</string>
+    <string name="location_screen_permission_title">Enable Location Access</string>
+    <string name="location_screen_permission_message">Location permission is needed to enable bluetooth, which all products require. We don’t use or save any location data.</string>
+    <string name="location_screen_enable_title">Location Must Be On</string>
+    <string name="location_screen_enable_message">Location must be on to enable bluetooth, which most products require. We don’t use or save any location data.</string>
+    <!-- Location & Bluetooth dialog -->
+    <string name="bluetooth_screen_cancel">Cancel</string>
+    <string name="bluetooth_screen_turn_on">Turn on</string>
+    <string name="bluetooth_screen_off">Bluetooth Off</string>
+    <string name="bluetooth_screen_off_msg">Bluetooth is off. Would you like to turn it on ? Most products require bluetooth.</string>
+    <string name="location_screen_off">Location Off</string>
+    <string name="location_screen_off_msg">Location is off. Would you like to turn it on ? Most products require location access.</string>
+    <string name="location_screen_cancel">Cancel</string>
+    <string name="location_screen_turn_on">Turn on</string>
+    <string name="location_screen_enable">Enable</string>
+
+    <!--My Information Screen-->
+    <string name="my_information">My Information</string>
+    <string name="my_information_save_button_title">Save</string>
+    <string name="my_information_first_name_text_field_placeholder">First Name</string>
+    <string name="my_information_last_name_text_field_placeholder">Last Name</string>
+    <string name="my_information_email_text_field_placeholder">E-mail</string>
+    <string name="my_information_phone_number_text_field_placeholder">Phone Number</string>
+    <string name="my_information_first_name_text_field_required_message">First Name is required</string>
+    <string name="my_information_last_name_text_field_required_message">Last Name is required</string>
+    <string name="my_information_email_text_field_required_message">E-mail is required</string>
+    <string name="my_information_phone_number_text_field_required_message">Phone is required</string>
+
+    <string name="my_information_password_text_field_placeholder">Password</string>
+    <string name="my_information_password_text_field_required_message">Phone is required</string>
+    <string name="my_information_password_too_short">Password must be at least 8 characters</string>
+    <string name="my_information_phone_hint_message">Your phone number will only be used when you need to recover your forgotten password.</string>
+
+    <!--Generic error dialog-->
+    <string name="password_changed_title">Password Successfully Changed</string>
+    <string name="password_changed_message">Please log in again with your\nnew password to continue.</string>
+    <string name="password_changed_got_it">Got it</string>
+
+    <!--Pin validation error modal-->
+    <string name="pin_validation_invalid_code">Invalid Verification Code</string>
+    <string name="pin_validation_invalid_code_message">Your verification code might be incorrect or expired. Please try again or request a new code.</string>
+    <string name="pin_validation_got_it">Got it</string>
+
+    <!--Error Modal-->
+    <string name="generic_error_title">Uh Oh</string>
+    <string name="generic_error_message">Something went wrong.\nPlease try again.</string>
+    <string name="generic_error_got_it">Got it</string>
+    <string name="empty"/>
+
+    <!--Pairing Activity Indicator-->
+    <string name="pairing_activity_success">Success!</string>
+
+    <!--Pairing Screen-->
+    <string name="pairing_seahorse_heading1">Step 1</string>
+    <string name="pairing_seahorse_heading2">Step 2</string>
+    <string name="pairing_title">Pairing</string>
+    <string name="pair_again">Pair Again</string>
+    <string name="pairing_device_ble_note">Note: Make sure your mobile device is within 6 feet of %s when pairing</string>
+    <string name="pairing_rnp_heading">Press Pairing Button</string>
+    <string name="pairing_seahorse_body1">Open the back of the seahorse and slide the power/volume switch to ON</string>
+    <string name="pairing_seahorse_body2">Press the pairing button on the seahorse. Pairing might take up to 30 seconds.</string>
+    <string name="pairing_device_heading">Press Pairing Button</string>
+    <string name="pairing_device_body">Hold the power button for about five seconds to pair again with your device.</string>
+
+    <!--Device Connected Screen-->
+    <string name="device_connected_title">Connected</string>
+    <string name="device_connected_body">%s successfully connected</string>
+
+    <!--Remove Device Confirmation Modal-->
+    <string name="remove_device_title">Remove Product From Account</string>
+    <string name="remove_device_body">Are you sure you want to remove this product from your account? This action cannot be undone.</string>
+    <string name="remove_device_yes">Yes, Remove</string>
+    <string name="remove_device_cancel">Cancel</string>
+
+    <!--Firmware Update Modal-->
+    <string name="firmware_update_available_message">Firmware update is available for your product. You won\'t be able to use your product during the update, which may take several minutes.</string>
+    <string name="firmware_update_availble">Start Update</string>
+    <string name="firmware_update_available_title">Firmware Update</string>
+    <string name="firmware_update_required_message">Firmware update is required for your product. You won\'t be able to use your product during the update, which may take several minutes.</string>
+    <string name="firmware_update_required">Start Update and Unpair</string>
+    <string name="firmware_update_required_title">Firmware Update</string>
+    <string name="firmware_update_complete_message">Firmware update has finished for your product. You can now use your product again.</string>
+    <string name="firmware_update_complete"> Got It</string>
+    <string name="firmware_update_complete_title">Firmware Update Complete</string>
+    <string name="firmware_update_failed_message">Firmware update has failed. Please try again while staying within 10 feet of the product during the update.</string>
+    <string name="firmware_update_failed_title">Firmware Update Failed</string>
+    <string name="firmware_update_failed">Try Again</string>
+    <string name="firmware_update_firmware_status">%s complete.</string>
+
+
+    <!-- Troubleshoot dialog -->
+    <string name="device_troubleshoot_turn_product_on">Turn Your Product On</string>
+    <string name="device_troubleshoot_instructions">Plug in your product / make sure it\'s turned on. Your product should show up as detected in a few seconds. If it doesn\'t double check that bluetooth is enabled on your device.</string>
+    <string name="device_troubleshoot_see_faq">Contact Support</string>
+    <string name="device_troubleshoot_got_it">Got it</string>
+
+    <!-- Contact Support dialog -->
+    <string name="contact_support">Contact Support</string>
+    <string name="call"><b>Call</b></string>
+    <string name="contact_support_details">Support Number: 800 820 6939. Available Monday to Friday, Beijing time from 9:00 to 18:00.</string>
+    <string name="call_number">8008206939</string>
+
+    <!-- Available products-->
+    <string name="premium_rock_play_sleeper">Premium Rock\'N Play Sleeper</string>
+    <string name="device_settings_seahorse_placeholder">Seahorse Soother</string>
+
+    <!-- Dashboard-->
+    <string name="playing">Playing :  </string>
+    <string name="music_sound">Music &amp; Sound :  </string>
+    <string name="projection">Projection : </string>
+    <string name="projection_light">Projection &amp; Light :  </string>
+    <string name="motion">Motion :  </string>
+    <string name="preset_one">Preset 1</string>
+    <string name="select">Select</string>
+    <string name="on">On</string>
+    <string name="device_off">off</string>
+    <string name="timer_on">Timer: On</string>
+    <string name="timer_off">Timer: Off</string>
+    <string name="light">Light :  </string>
+    <string name="dashboard_none">None</string>
+    <string name="dashboard_connecting_status">Connecting</string>
+
+    <!--Play Services Modal-->
+    <string name="playservices_install_message">Please install Google Play Services and restart this app</string>
+    <string name="playservices_device_not_supported">This device is not supported</string>
+    <string name="playservices_error">Error</string>
+    <string name="playservices_okay">Okay</string>
+
+    <!--Default Device names-->
+    <string name="rock_n_play">Rock N Play</string>
+    <string name="seahorse">Seahorse</string>
+    <string name="premium_rock_n_play_sleeper">Premium Rock \'N Play Sleeper</string>
+    <string name="deluxe_soother">Deluxe Soother</string>
+
+    <!--Software Update Dialog Modal-->
+    <string name="dialog_update_title">Software Update</string>
+    <string name="dialog_update_message">An important update is available and ready to be installed.</string>
+    <string name="dialog_update_ok">Update</string>
+
+    <!--Environment Switch Screen-->
+    <string name="environment_switch_server_url">Server URL</string>
+    <string name="environment_switch_mqtt_url">Mqtt URL</string>
+
+    <!--Extras/Utils-->
+    <string name="apostrophe_s">\’s</string>
+    <string name="hyphen"> - </string>
+    <string name="test">Test</string>
+    <string name="progressbar_please_wait">Please wait...</string>
+    <string name="updating_firmware">Updating Firmware</string>
+    <string name="firmware_updating_message">Stay within 6 feet of product and keep the app open until update is complete</string>
+
+    <!-- License URLs-->
+    <string name="license_info_url">https://s3-us-west-2.amazonaws.com/sproutling-marketing/Open+Source+Attribution/manifest.csv.html</string>
+    <string name="privacy_policy_url">https://www.mattel.com/en-us/privacy-statement</string>
+    <string name="terms_of_service_url">https://eula.cn.platform.mattel/Mattel_Mobile_Apps_-_End_User_License_Agreement_EULA.html</string>
+
+    <string name="location_permission_granted">Location access allowed</string>
+    <string name="location_permission_denied">Location access denied</string>
+    <string name="location_access_enabled">Location access enabled</string>
+    <string name="location_access_disabled">Location access denied</string>
+    <string name="bluetooth_on">Bluetooth is now on</string>
+    <string name="location_screen_permission">Location Permission</string>
+    <string name="try_again">Try again</string>
+
+    <!--Account Settings Logout Dialog-->
+    <string name="logout_modal_title">Log Out</string>
+    <string name="logout_modal_message">Are you sure you want to log out? For security reasons, you will need to pair with your products again when you sign in next time.</string>
+    <string name="logout_modal_logOutButton">Yes, log out</string>
+    <string name="logout_modal_cancelButton">Cancel</string>
+
+    <!--new strings-->
+    <string name="my_information_change_password_button_title">Change Password</string>
+    <string name="settings_change_password_section_password">Password</string>
+    <string name="settings_change_password_old_password_error">Old password does not match</string>
+    <string name="settings_change_password_old_password_hint">Old Password</string>
+    <string name="settings_change_password_error">Wrong Password</string>
+    <string name="settings_change_password_new_password_hint">New Password</string>
+    <string name="settings_change_password_retype_password_hint">Re-type New Password</string>
+
+
+
+</resources>
